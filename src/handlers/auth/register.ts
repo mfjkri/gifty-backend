@@ -15,6 +15,7 @@ export default async function handleRegister(req: Request, res: Response) {
     const username = req.body.username as string;
     const password = req.body.password as string;
     const email = req.body.email as string;
+    const birthday = req.body.birthday as string;
 
     if (
       (await User.findOne({ where: { username } })) ||
@@ -33,6 +34,7 @@ export default async function handleRegister(req: Request, res: Response) {
       username,
       email,
       password: hashedPassword,
+      birthday: new Date(birthday),
       createdAt: new Date(),
       updatedAt: new Date(),
     });

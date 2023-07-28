@@ -16,6 +16,10 @@ export default class User extends Model<
   declare username: string;
   declare email: string;
   declare password: string;
+
+  declare birthday: Date;
+  declare avatarURL: CreationOptional<string>;
+
   declare createdAt: Date;
   declare updatedAt: Date;
 }
@@ -28,6 +32,7 @@ export function init() {
         primaryKey: true,
         autoIncrement: true,
       },
+
       username: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -42,6 +47,16 @@ export function init() {
         type: DataTypes.STRING,
         allowNull: false,
       },
+
+      birthday: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
+      avatarURL: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
