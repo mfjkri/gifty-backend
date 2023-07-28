@@ -4,7 +4,6 @@ import User from "../../models/user";
 
 const SUCCESS_CHANGED_BIRTHDAY = "Birthday changed successfully";
 
-const ERROR_USER_DOES_NOT_EXIST = "User does not exist";
 const ERROR_FAILED_TO_CHANGE_BIRTHDAY = "Failed to change birthday";
 
 export default async function handleChangeBirthday(
@@ -12,13 +11,9 @@ export default async function handleChangeBirthday(
   res: Response
 ) {
   try {
-    const userId = req.body.userId as number;
+    const user = req.body.user as User;
     const newBirthday = req.body.newBirthday as string;
 
-    const user = await User.findOne({ where: { id: userId } });
-    if (!user) {
-      return res.status(404).json({ message: ERROR_USER_DOES_NOT_EXIST });
-    }
     user.birthday = new Date(newBirthday);
     await user.save();
 

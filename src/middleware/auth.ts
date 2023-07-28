@@ -2,6 +2,10 @@ import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
 import { getConfig } from "../config/config";
+import User from "../models/user";
+
+const ERROR_INVALID_USER_IN_AUTHENTICATE_TOKEN =
+  "Invalid user in authenticate token";
 
 const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
   const token = req.header("Authorization");
@@ -9,17 +13,24 @@ const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
     return res.status(401).json({ message: "Authentication token missing" });
   }
 
-  jwt.verify(token, getConfig().JWTSecretKey, (err, user) => {
+  jwt.verify(token, getConfig().JWTSecretKey, async (err, user) => {
     if (err) {
       return res.status(403).json({ message: "Invalid token" });
     }
     if (user && typeof user !== "string") {
-      req.body.userId = user.userId;
+      const userModel = await User.findOne({ where: { id: user.userId } });
+      if (!userModel) {
+        return res
+          .status(403)
+          .json({ message: ERROR_INVALID_USER_IN_AUTHENTICATE_TOKEN });
+      } else {
+        req.body.user = userModel;
+      }
       next();
     } else {
       return res
         .status(403)
-        .json({ message: "Invalid user in authenticate token" });
+        .json({ message: ERROR_INVALID_USER_IN_AUTHENTICATE_TOKEN });
     }
   });
 };

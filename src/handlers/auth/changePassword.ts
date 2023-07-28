@@ -5,7 +5,6 @@ import User from "../../models/user";
 
 const SUCCESS_CHANGED_PASSWORD = "Password changed successfully";
 
-const ERROR_USER_DOES_NOT_EXIST = "User does not exist";
 const ERROR_FAILED_TO_CHANGE_PASSWORD = "Failed to change password";
 
 export default async function handleChangePassword(
@@ -13,13 +12,9 @@ export default async function handleChangePassword(
   res: Response
 ) {
   try {
-    const userId = req.body.userId as number;
+    const user = req.body.user as User;
     const newPassword = req.body.newPassword as string;
 
-    const user = await User.findOne({ where: { id: userId } });
-    if (!user) {
-      return res.status(404).json({ message: ERROR_USER_DOES_NOT_EXIST });
-    }
     user.password = await bcrypt.hash(newPassword, 10);
     await user.save();
 
