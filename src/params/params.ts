@@ -74,6 +74,13 @@ function validateParams(r: any, params: Params): ValidationError {
           };
         }
       }
+    } else if (param.type === "string") {
+      if (paramValue === "") {
+        return {
+          error: true,
+          message: `Parameter ${paramName} cannot be empty`,
+        };
+      }
     } else {
       if (typeof paramValue !== param.type) {
         return {
