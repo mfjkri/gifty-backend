@@ -1,7 +1,8 @@
 import { Express } from "express";
 
-import initAuthRoutes from "./auth/auth";
+import PublicRouters from "./public/public";
+import ProtectedRouters from "./protected/protected";
 
 export default function initRoutes(expressApp: Express) {
-  initAuthRoutes(expressApp);
+  expressApp.use(PublicRouters, ProtectedRouters);
 }

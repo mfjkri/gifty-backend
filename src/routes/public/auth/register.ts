@@ -1,8 +1,8 @@
 import { Router, Request, Response } from "express";
 
-import { checkParams } from "../../params/params";
-import RegisterParams from "../../params/auth/register";
-import handleRegister from "../../handlers/auth/register";
+import { checkParams } from "../../../params/params";
+import RegisterParams from "../../../params/auth/register";
+import handleRegister from "../../../handlers/auth/register";
 
 const router: Router = Router();
 
