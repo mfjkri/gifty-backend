@@ -1,3 +1,7 @@
 import { Express } from "express";
 
-export default function initRoutes(expressApp: Express) {}
+import LoginRouter from "./login";
+
+export default function initRoutes(expressApp: Express) {
+  expressApp.use("/auth", LoginRouter);
+}
