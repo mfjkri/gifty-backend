@@ -13,8 +13,14 @@ const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
     if (err) {
       return res.status(403).json({ message: "Invalid token" });
     }
-    // req.user = user;
-    next();
+    if (user && typeof user !== "string") {
+      req.body.userId = user.userId;
+      next();
+    } else {
+      return res
+        .status(403)
+        .json({ message: "Invalid user in authenticate token" });
+    }
   });
 };
 
