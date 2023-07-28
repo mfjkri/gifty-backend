@@ -26,6 +26,9 @@ logs
 # https://docs.npmjs.com/cli/shrinkwrap#caveats
 node_modules
 
+# Distribution directory
+dist
+
 # Debug log from npm
 npm-debug.log
 
