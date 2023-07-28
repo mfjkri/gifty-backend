@@ -13,8 +13,8 @@ export default async function handleChangeUsername(
   res: Response
 ) {
   try {
-    const newUsername = req.body.newUsername as string;
     const userId = req.body.userId as number;
+    const newUsername = req.body.newUsername as string;
 
     const user = await User.findOne({ where: { id: userId } });
     if (!user) {

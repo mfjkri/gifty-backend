@@ -7,12 +7,12 @@ const SUCCESS_CHANGED_EMAIL = "Email changed successfully";
 const ERROR_USER_DOES_NOT_EXIST = "User does not exist";
 const ERROR_USER_ALREADY_EXIST = "User already exists";
 const ERROR_INVALID_EMAIL_FORMAT = "Invalid email format";
-const ERROR_FAILED_TO_CHANGE_EMAIL = "Failed to change Email";
+const ERROR_FAILED_TO_CHANGE_EMAIL = "Failed to change email";
 
 export default async function handleChangeEmail(req: Request, res: Response) {
   try {
-    const newEmail = req.body.newEmail as string;
     const userId = req.body.userId as number;
+    const newEmail = req.body.newEmail as string;
 
     const user = await User.findOne({ where: { id: userId } });
     if (!user) {

@@ -6,7 +6,7 @@ import handleChangePassword from "../../../handlers/auth/changePassword";
 
 const router: Router = Router();
 
-router.post("/changePassword", async (req: Request, res: Response) => {
+router.put("/changePassword", async (req: Request, res: Response) => {
   if (!checkParams(req, res, ChangePasswordParams)) {
     return;
   }

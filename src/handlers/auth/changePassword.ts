@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 
 import User from "../../models/user";
-import signToken from "./jwt";
 
 const SUCCESS_CHANGED_PASSWORD = "Password changed successfully";
 
@@ -14,8 +13,8 @@ export default async function handleChangePassword(
   res: Response
 ) {
   try {
-    const newPassword = req.body.newPassword as string;
     const userId = req.body.userId as number;
+    const newPassword = req.body.newPassword as string;
 
     const user = await User.findOne({ where: { id: userId } });
     if (!user) {

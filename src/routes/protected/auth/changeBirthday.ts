@@ -6,7 +6,7 @@ import handleChangeBirthday from "../../../handlers/auth/changeBirthday";
 
 const router: Router = Router();
 
-router.post("/changeBirthday", async (req: Request, res: Response) => {
+router.put("/changeBirthday", async (req: Request, res: Response) => {
   if (!checkParams(req, res, ChangeBirthdayParams)) {
     return;
   }

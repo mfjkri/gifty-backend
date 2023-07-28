@@ -6,7 +6,7 @@ import handleChangeUsername from "../../../handlers/auth/changeUsername";
 
 const router: Router = Router();
 
-router.post("/changeUsername", async (req: Request, res: Response) => {
+router.put("/changeUsername", async (req: Request, res: Response) => {
   if (!checkParams(req, res, ChangeUsernameParams)) {
     return;
   }

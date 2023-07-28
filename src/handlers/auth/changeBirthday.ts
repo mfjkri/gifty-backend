@@ -12,8 +12,8 @@ export default async function handleChangeBirthday(
   res: Response
 ) {
   try {
-    const newBirthday = req.body.newBirthday as string;
     const userId = req.body.userId as number;
+    const newBirthday = req.body.newBirthday as string;
 
     const user = await User.findOne({ where: { id: userId } });
     if (!user) {

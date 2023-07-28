@@ -6,7 +6,7 @@ import handleChangeEmail from "../../../handlers/auth/changeEmail";
 
 const router: Router = Router();
 
-router.post("/changeEmail", async (req: Request, res: Response) => {
+router.put("/changeEmail", async (req: Request, res: Response) => {
   if (!checkParams(req, res, ChangeEmailParams)) {
     return;
   }
