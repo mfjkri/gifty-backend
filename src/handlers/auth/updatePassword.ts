@@ -17,7 +17,7 @@ export default async function handleUpdatePassword(
     user.password = params.newPassword;
     await user.save();
 
-    res.status(201).json({ message: SUCCESS_UPDATED_PASSWORD });
+    res.status(201).json({ message: SUCCESS_UPDATED_PASSWORD, data: { user } });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_UPDATE_PASSWORD, error });
   }

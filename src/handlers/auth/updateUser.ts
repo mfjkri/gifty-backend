@@ -25,7 +25,7 @@ export default async function handleUpdateUser(
     }
     await user.save();
 
-    res.status(201).json({ message: SUCCESS_UPDATED_USER });
+    res.status(201).json({ message: SUCCESS_UPDATED_USER, data: { user } });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_UPDATE_USER, error });
   }

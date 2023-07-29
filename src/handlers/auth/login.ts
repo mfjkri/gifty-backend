@@ -31,7 +31,7 @@ export default async function handleLogin(
     }
 
     const token = signToken(user);
-    res.json({ message: SUCCESS_USER_LOGGED_IN, token });
+    res.json({ message: SUCCESS_USER_LOGGED_IN, data: { token, user } });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LOGIN, error });
   }
