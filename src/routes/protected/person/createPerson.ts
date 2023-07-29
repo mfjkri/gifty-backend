@@ -1,16 +1,17 @@
 import { Router, Request, Response } from "express";
 
-import { checkParams } from "../../../params/params";
-import CreatePersonParams from "../../../params/person/createPerson";
+import { parseParams } from "../../../params/person/createPerson";
 import handleCreatePerson from "../../../handlers/person/createPerson";
 
 const router: Router = Router();
 
 router.post("/", async (req: Request, res: Response) => {
-  if (!checkParams(req, res, CreatePersonParams)) {
-    return;
+  const params = parseParams(req.body);
+  if (!params) {
+    return res.status(400).json({ message: "Invalid params" });
   }
-  handleCreatePerson(req, res);
+
+  await handleCreatePerson(req, res, params);
 });
 
 export default router;
