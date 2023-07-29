@@ -7,6 +7,7 @@ import {
 } from "sequelize";
 
 import getDB from "../database/database";
+import { hashPassword } from "../utilities/auth";
 
 export default class User extends Model<
   InferAttributes<User>,
@@ -20,12 +21,12 @@ export default class User extends Model<
   declare birthday: Date;
   declare avatarURL: CreationOptional<string>;
 
-  declare createdAt: Date;
-  declare updatedAt: Date;
+  declare createdAt: CreationOptional<Date>;
+  declare updatedAt: CreationOptional<Date>;
 }
 
 export function init() {
-  return User.init(
+  User.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -62,4 +63,21 @@ export function init() {
     },
     { sequelize: getDB() }
   );
+
+  User.beforeCreate(async (user, options) => {
+    user.createdAt = new Date();
+    user.updatedAt = new Date();
+
+    const hashedPassword = await hashPassword(user.password);
+    user.password = hashedPassword;
+  });
+
+  User.beforeUpdate(async (user, options) => {
+    user.updatedAt = new Date();
+
+    if (options?.fields?.includes("password")) {
+      const hashedPassword = await hashPassword(user.password);
+      user.password = hashedPassword;
+    }
+  });
 }

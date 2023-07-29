@@ -1,8 +1,18 @@
-import { Params } from "../params";
+import { castParams } from "../params";
 
-const LoginParams: Params = [
-  { name: "email", type: "string" },
-  { name: "password", type: "string" },
-];
+export interface LoginParams {
+  email: string;
+  password: string;
+}
 
-export default LoginParams;
+export function parseParams(json: any): LoginParams | undefined {
+  return castParams<LoginParams>(json, typeMap);
+}
+
+const typeMap: any = {
+  props: [
+    { json: "email", js: "email", typ: "" },
+    { json: "password", js: "password", typ: "" },
+  ],
+  additional: false,
+};

@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 
 import User from "../../models/user";
 import signToken from "./jwt";
+import { LoginParams } from "../../params/auth/login";
 
 const SUCCESS_USER_LOGGED_IN = "User logged in successfully";
 
@@ -10,7 +11,11 @@ const ERROR_USER_DOES_NOT_EXIST = "User does not exist";
 const ERROR_INVALID_PASSWORD = "Invalid password";
 const ERROR_FAILED_TO_LOGIN = "Failed to login";
 
-export default async function handleLogin(req: Request, res: Response) {
+export default async function handleLogin(
+  req: Request,
+  res: Response,
+  params: LoginParams
+) {
   try {
     const password = req.body.password as string;
     const email = req.body.email as string;

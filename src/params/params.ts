@@ -1,110 +1,122 @@
-import { Request, Response } from "express";
-
-import { ValidationError } from "../errors/error";
-
-export type ParamType = "string" | "number" | "boolean" | "object" | "array";
-
-export interface ParamField {
-  name: string;
-  type: ParamType;
-  optional?: boolean;
-  defaultValue?: any;
-  children?: Params;
+export function castParams<T>(req: any, typeMap: any): T | undefined {
+  try {
+    return cast(req, typeMap);
+  } catch (error) {
+    console.log("Invalid param:", error);
+    return undefined;
+  }
 }
 
-export type Params = ParamField[];
+function invalidValue(typ: any, val: any, key: any = ""): never {
+  if (key) {
+    throw Error(
+      `Invalid value for key "${key}". Expected type ${JSON.stringify(
+        typ
+      )} but got ${JSON.stringify(val)}`
+    );
+  }
+  throw Error(
+    `Invalid value ${JSON.stringify(val)} for type ${JSON.stringify(typ)}`
+  );
+}
 
-function validateParams(r: any, params: Params): ValidationError {
-  for (const param of params) {
-    const paramName = param.name;
-    const paramValue = r[paramName];
+function jsonToJSProps(typ: any): any {
+  if (typ.jsonToJS === undefined) {
+    const map: any = {};
+    typ.props.forEach(
+      (p: any) =>
+        (map[p.json] = {
+          key: p.js,
+          typ: p.typ,
+          opt: p.opt || false,
+          defaultValue: p.defaultValue,
+        })
+    );
+    typ.jsonToJS = map;
+  }
+  return typ.jsonToJS;
+}
 
-    if (paramValue === undefined) {
-      if (param.optional) {
-        if (param.defaultValue !== undefined) {
-          r[paramName] = param.defaultValue;
-        }
-      } else {
-        return {
-          error: true,
-          message: `Required parameter ${paramName} missing`,
-        };
-      }
-    } else if (param.type === "object") {
-      if (!param.children) {
-        return {
-          error: true,
-          message: `Parameter ${paramName} is invalid`,
-        };
-      }
+function transform(val: any, typ: any, getProps: any, key: any = ""): any {
+  function transformPrimitive(typ: string, val: any): any {
+    if (typeof typ === typeof val) return val;
+    return invalidValue(typ, val, key);
+  }
 
-      if (typeof paramValue !== "object" || Array.isArray(paramValue)) {
-        return {
-          error: true,
-          message: `Parameter ${paramName} must be an object`,
-        };
-      }
-      const { error, message } = validateParams(paramValue, param.children);
-      if (error) {
-        return {
-          error,
-          message,
-        };
-      }
-    } else if (param.type === "array") {
-      if (!param.children) {
-        return {
-          error: true,
-          message: `Parameter ${paramName} is invalid`,
-        };
-      }
-
-      if (!Array.isArray(paramValue)) {
-        return {
-          error: true,
-          message: `Parameter ${paramName} must be an array`,
-        };
-      }
-
-      for (const value of paramValue) {
-        if (typeof value !== param.children[0].type) {
-          return {
-            error: true,
-            message: `Parameter ${paramName} must be an array of ${param.children[0].type}`,
-          };
-        }
-      }
-    } else if (param.type === "string") {
-      if (paramValue === "") {
-        return {
-          error: true,
-          message: `Parameter ${paramName} cannot be empty`,
-        };
-      }
-    } else {
-      if (typeof paramValue !== param.type) {
-        return {
-          error: true,
-          message: `Parameter ${paramName} must be of type ${param.type}`,
-        };
-      }
+  function transformUnion(typs: any[], val: any): any {
+    const l = typs.length;
+    for (let i = 0; i < l; i++) {
+      const typ = typs[i];
+      try {
+        return transform(val, typ, getProps);
+      } catch (_) {}
     }
+    return invalidValue(typs, val);
   }
-  return {
-    error: false,
-    message: "",
-  };
+
+  function transformEnum(cases: string[], val: any): any {
+    if (cases.indexOf(val) !== -1) return val;
+    return invalidValue(cases, val);
+  }
+
+  function transformArray(typ: any, val: any): any {
+    if (!Array.isArray(val)) return invalidValue("array", val);
+    return val.map((el) => transform(el, typ, getProps));
+  }
+
+  function transformDate(val: any): any {
+    if (val === null) {
+      return null;
+    }
+    const d = new Date(val);
+    if (isNaN(d.valueOf())) {
+      return invalidValue("Date", val);
+    }
+    return d;
+  }
+
+  function transformObject(
+    props: { [k: string]: any },
+    additional: any,
+    val: any
+  ): any {
+    if (val === null || typeof val !== "object" || Array.isArray(val)) {
+      return invalidValue("object", val);
+    }
+    const result: any = {};
+    Object.getOwnPropertyNames(props).forEach((key) => {
+      const prop = props[key];
+      const v = Object.prototype.hasOwnProperty.call(val, key)
+        ? val[key]
+        : prop.opt
+        ? prop.defaultValue
+        : undefined;
+      result[prop.key] = transform(v, prop.typ, getProps, prop.key);
+    });
+    return result;
+  }
+
+  if (typ === "any") return val;
+  if (typ === null) {
+    if (val === null) return val;
+    return invalidValue(typ, val);
+  }
+  if (typ === false) return invalidValue(typ, val);
+  if (Array.isArray(typ)) return transformEnum(typ, val);
+  if (typeof typ === "object") {
+    return typ.hasOwnProperty("unionMembers")
+      ? transformUnion(typ.unionMembers, val)
+      : typ.hasOwnProperty("arrayItems")
+      ? transformArray(typ.arrayItems, val)
+      : typ.hasOwnProperty("props")
+      ? transformObject(getProps(typ), typ.additional, val)
+      : invalidValue(typ, val);
+  }
+
+  if (typ === Date && typeof val !== "number") return transformDate(val);
+  return transformPrimitive(typ, val);
 }
 
-export const checkParams = (
-  req: Request,
-  res: Response,
-  params: Params
-): boolean => {
-  const { error, message } = validateParams(req.body, params);
-  if (error) {
-    res.status(400).json({ message });
-    return false;
-  }
-  return true;
-};
+function cast<T>(val: any, typeMap: any): T {
+  return transform(val, typeMap, jsonToJSProps);
+}

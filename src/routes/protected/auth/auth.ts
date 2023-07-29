@@ -1,18 +1,10 @@
 import { Router } from "express";
 
-import ChangeBirthdayRouter from "./changeBirthday";
-import ChangeEmailRouter from "./changeEmail";
-import ChangePasswordRouter from "./changePassword";
-import ChangeUsernameRouter from "./changeUsername";
+import UpdatePasswordRouter from "./updatePassword";
+import UpdateUserRouter from "./updateUser";
 
 const router: Router = Router();
 
-router.use(
-  "/auth",
-  ChangeBirthdayRouter,
-  ChangeEmailRouter,
-  ChangePasswordRouter,
-  ChangeUsernameRouter
-);
+router.use("/auth", UpdatePasswordRouter, UpdateUserRouter);
 
 export default router;
