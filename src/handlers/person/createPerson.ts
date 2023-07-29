@@ -29,7 +29,7 @@ export default async function handleCreatePerson(
       updatedAt: new Date(),
     });
 
-    res.status(201).json({ message: SUCCESS_CREATED_PERSON, person });
+    res.status(201).json({ message: SUCCESS_CREATED_PERSON, data: { person } });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_CREATE_PERSON, error });
   }
