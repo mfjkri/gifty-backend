@@ -4,6 +4,7 @@ import CreatePersonRouter from "./createPerson";
 import ReadPersonRouter from "./readPerson";
 import UpdatePersonRouter from "./updatePerson";
 import DeletePersonRouter from "./deletePerson";
+import ListPersonRouter from "./listPerson";
 
 const router: Router = Router();
 
@@ -12,7 +13,8 @@ router.use(
   CreatePersonRouter,
   ReadPersonRouter,
   UpdatePersonRouter,
-  DeletePersonRouter
+  DeletePersonRouter,
+  ListPersonRouter
 );
 
 export default router;
