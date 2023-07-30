@@ -17,12 +17,12 @@ export default class Listing extends Model<
   declare title: string;
   declare description: string;
   declare source: string;
-  declare types: Array<string>;
+  declare categories: Array<string>;
 
   declare price: number;
   declare platform: string;
   declare purchaseUrl: string;
-  declare isAvailable: boolean;
+  declare isAvailable: CreationOptional<boolean>;
 
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
@@ -51,7 +51,7 @@ export function init() {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      types: {
+      categories: {
         type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },

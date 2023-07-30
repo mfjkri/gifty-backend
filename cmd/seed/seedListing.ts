@@ -5,7 +5,7 @@ const listings = [
     title: "Listing 1",
     description: "Description 1",
     source: "Source 1",
-    types: ["Type 1", "Type 2"],
+    categories: ["Type 1", "Type 2"],
 
     price: 100,
     platform: "Platform 1",
@@ -19,7 +19,7 @@ const listings = [
     title: "Listing 2",
     description: "Description 2",
     source: "Source 2",
-    types: ["Type 2", "Type 3"],
+    categories: ["Type 2", "Type 3"],
 
     price: 200,
     platform: "Platform 2",
@@ -33,7 +33,7 @@ const listings = [
     title: "Listing 3",
     description: "Description 3",
     source: "Source 3",
-    types: ["Type 1", "Type 2", "Type 3"],
+    categories: ["Type 1", "Type 2", "Type 3"],
 
     price: 300,
     platform: "Platform 3",
