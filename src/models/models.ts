@@ -1,4 +1,4 @@
-const models = ["user", "person", "listing", "savedListing"];
+const models = ["user", "person", "listing", "savedListing", "giftedListing"];
 
 export default async function migrateModels() {
   for (const model of models) {
