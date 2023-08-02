@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 
 import { connectDB, getDB } from "./database/database";
 import { getConfig, loadEnv } from "./config/config";
@@ -12,6 +13,7 @@ async function Main() {
   const config = getConfig();
   const expressApp = express();
 
+  expressApp.use(cors());
   expressApp.use(express.json());
 
   initRoutes(expressApp);
