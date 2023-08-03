@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 
 import { getConfig } from "../config/config";
 import User from "../models/user";
+import Avatar from "../models/avatar";
 
 const ERROR_INVALID_USER_IN_AUTHENTICATE_TOKEN =
   "Invalid user in authenticate token";
@@ -18,7 +19,10 @@ const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
       return res.status(403).json({ message: "Invalid token" });
     }
     if (user && typeof user !== "string") {
-      const userModel = await User.findOne({ where: { id: user.userId } });
+      const userModel = await User.findOne({
+        where: { id: user.userId },
+        include: { model: Avatar, as: "avatar" },
+      });
       if (!userModel) {
         return res
           .status(403)
