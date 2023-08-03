@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 
+import Listing from "../../models/listing";
 import SavedListing from "../../models/savedListing";
 import User from "../../models/user";
 import { SaveListingParams } from "../../params/savedListing/unsaveListing";
@@ -17,6 +18,7 @@ export default async function handleSaveListing(
     const user: User = req.body.user;
     const savedListings = await SavedListing.findAll({
       where: { userId: user.id, listingId: params.id },
+      include: { model: Listing, as: "listing" },
     });
 
     if (savedListings.length === 0) {
@@ -24,6 +26,10 @@ export default async function handleSaveListing(
         userId: user.id,
         listingId: params.id,
         isSaved: true,
+      });
+
+      await savedListing.reload({
+        include: { model: Listing, as: "listing" },
       });
 
       return res.status(201).json({

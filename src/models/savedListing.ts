@@ -1,4 +1,7 @@
 import {
+  Association,
+  BelongsToGetAssociationMixin,
+  BelongsToSetAssociationMixin,
   CreationOptional,
   DataTypes,
   InferAttributes,
@@ -6,8 +9,9 @@ import {
   Model,
 } from "sequelize";
 
-import getDB from "../database/database";
+import Listing from "./listing";
 import User from "./user";
+import getDB from "../database/database";
 
 export default class SavedListing extends Model<
   InferAttributes<SavedListing>,
@@ -22,6 +26,15 @@ export default class SavedListing extends Model<
 
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
+
+  public getListing!: BelongsToGetAssociationMixin<Listing>;
+  public setListing!: BelongsToSetAssociationMixin<Listing, number>;
+
+  public readonly listing?: Listing;
+
+  public static associations: {
+    avatar: Association<SavedListing, Listing>;
+  };
 }
 
 export function init() {
@@ -65,4 +78,6 @@ export function init() {
     listing.createdAt = new Date();
     listing.updatedAt = new Date();
   });
+
+  SavedListing.belongsTo(Listing, { as: "listing", foreignKey: "listingId" });
 }

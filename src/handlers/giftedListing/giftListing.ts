@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 
 import GiftedListing from "../../models/giftedListing";
+import Listing from "../../models/listing";
 import User from "../../models/user";
 import { GiftListingParams } from "../../params/giftedListing/ungiftListing";
 
@@ -17,6 +18,7 @@ export default async function handleGiftListing(
     const user: User = req.body.user;
     const giftedListings = await GiftedListing.findAll({
       where: { userId: user.id, listingId: params.id },
+      include: { model: Listing, as: "listing" },
     });
 
     if (giftedListings.length === 0) {
@@ -24,6 +26,10 @@ export default async function handleGiftListing(
         userId: user.id,
         listingId: params.id,
         isGifted: true,
+      });
+
+      await giftedListing.reload({
+        include: { model: Listing, as: "listing" },
       });
 
       return res.status(201).json({
