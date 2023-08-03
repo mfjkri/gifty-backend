@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 import User from "../../models/user";
-import signToken from "./jwt";
+import getTokens from "./jwt";
 import { RegisterParams } from "../../params/auth/register";
 
 const SUCCESS_USER_REGISTERED = "User registered successfully";
@@ -36,10 +36,11 @@ export default async function handleRegister(
     });
     await user.save();
 
-    const token = signToken(user);
-    res
-      .status(201)
-      .json({ message: SUCCESS_USER_REGISTERED, data: { token, user } });
+    const tokens = getTokens(user);
+    res.status(201).json({
+      message: SUCCESS_USER_REGISTERED,
+      data: { tokens, user },
+    });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_REGISTER_USER, error });
   }
