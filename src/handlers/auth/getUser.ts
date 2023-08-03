@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 
+import Avatar from "../../models/avatar";
 import User from "../../models/user";
 import { GetUserParams } from "../../params/auth/getUser";
 
@@ -18,7 +19,10 @@ export default async function handleGetUser(
     if (!params.id || params.id === 0) {
       user = req.body.user;
     } else {
-      user = await User.findOne({ where: { id: params.id } });
+      user = await User.findOne({
+        where: { id: params.id },
+        include: { model: Avatar, as: "avatar" },
+      });
     }
 
     if (!user) {
