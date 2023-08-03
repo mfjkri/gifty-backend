@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 
 import User from "../../models/user";
-import signToken from "./jwt";
+import getTokens from "./jwt";
 import { LoginParams } from "../../params/auth/login";
 
 const SUCCESS_USER_LOGGED_IN = "User logged in successfully";
@@ -30,8 +30,11 @@ export default async function handleLogin(
       return res.status(401).json({ message: ERROR_INVALID_PASSWORD });
     }
 
-    const token = signToken(user);
-    res.json({ message: SUCCESS_USER_LOGGED_IN, data: { token, user } });
+    const tokens = getTokens(user);
+    res.json({
+      message: SUCCESS_USER_LOGGED_IN,
+      data: { tokens, user },
+    });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LOGIN, error });
   }
