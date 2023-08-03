@@ -1,4 +1,7 @@
 import {
+  Association,
+  BelongsToGetAssociationMixin,
+  BelongsToSetAssociationMixin,
   CreationOptional,
   DataTypes,
   InferAttributes,
@@ -8,6 +11,7 @@ import {
 
 import getDB from "../database/database";
 import { hashPassword } from "../utilities/auth";
+import Avatar from "./avatar";
 
 export default class User extends Model<
   InferAttributes<User>,
@@ -19,10 +23,19 @@ export default class User extends Model<
   declare password: string;
 
   declare birthday: Date;
-  declare avatarURL: CreationOptional<string>;
+  declare avatarId: CreationOptional<number>;
 
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
+
+  public getAvatar!: BelongsToGetAssociationMixin<Avatar>;
+  public setAvatar!: BelongsToSetAssociationMixin<Avatar, number>;
+
+  public readonly avatar?: Avatar;
+
+  public static associations: {
+    avatar: Association<User, Avatar>;
+  };
 }
 
 export function init() {
@@ -53,9 +66,13 @@ export function init() {
         type: DataTypes.DATE,
         allowNull: false,
       },
-      avatarURL: {
-        type: DataTypes.STRING,
+      avatarId: {
+        type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+          model: Avatar,
+          key: "id",
+        },
       },
 
       createdAt: DataTypes.DATE,
@@ -69,6 +86,23 @@ export function init() {
     user.updatedAt = new Date();
 
     const hashedPassword = await hashPassword(user.password);
+    const avatar = await Avatar.create({
+      bgColor: "blue",
+      faceColor: "beige",
+      hairStyle: "normal",
+      hairColor: "black",
+      hatStyle: "none",
+      hatColor: "black",
+      shirtStyle: "short",
+      shirtColor: "red",
+      earSize: "small",
+      eyeStyle: "circle",
+      glassesStyle: "none",
+      noseStyle: "long",
+      mouthStyle: "smile",
+      sex: "male",
+    });
+    user.avatarId = avatar.id;
     user.password = hashedPassword;
   });
 
@@ -80,4 +114,6 @@ export function init() {
       user.password = hashedPassword;
     }
   });
+
+  User.belongsTo(Avatar, { as: "avatar", foreignKey: "avatarId" });
 }

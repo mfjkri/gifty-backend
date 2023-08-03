@@ -35,7 +35,11 @@ function initDB() {
 }
 
 function initModels() {
-  const modelDefiners = [require("./models/user"), require("./models/person")];
+  const modelDefiners = [
+    require("./models/avatar"),
+    require("./models/user"),
+    require("./models/person"),
+  ];
   for (const modelDefiner of modelDefiners) {
     modelDefiner.init();
   }
