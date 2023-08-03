@@ -32,7 +32,7 @@ export default async function handleGetUser(
           username: user.username,
           email: user.email,
           birthday: user.birthday,
-          avatarURL: user.avatarURL,
+          avatar: user.avatar,
           joinedAt: user.createdAt,
         },
       },
