@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express";
 
-import { parseParams } from "../../../params/savedListing/saveListing";
+import { parseParams } from "../../../params/giftedListing/giftListing";
 import handleGiftListing from "../../../handlers/giftedListing/giftListing";
 
 const router: Router = Router();
