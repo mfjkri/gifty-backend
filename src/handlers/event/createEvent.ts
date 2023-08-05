@@ -25,7 +25,7 @@ export default async function handleCreateEvent(
       updatedAt: new Date(),
     });
 
-    res.status(201).json({ message: SUCCESS_CREATED_EVENT, data: { event } });
+    res.status(201).json({ message: SUCCESS_CREATED_EVENT, event });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_CREATE_EVENT, error });
   }

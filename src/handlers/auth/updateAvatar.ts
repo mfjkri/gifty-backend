@@ -30,7 +30,7 @@ export default async function handleUpdateAvatar(
       avatar.save();
     }
 
-    res.status(201).json({ message: SUCCESS_UPDATED_AVATAR, data: { user } });
+    res.status(201).json({ message: SUCCESS_UPDATED_AVATAR, user });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_UPDATE_AVATAR, error });
   }

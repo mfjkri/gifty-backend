@@ -17,7 +17,7 @@ export default async function handleDeleteEvent(
 ) {
   try {
     const user = req.body.user as User;
-    const event = await Event.findOne({ where: { id: params.id } });
+    const event = await Event.findOne({ where: { id: req.params.id } });
 
     if (!event) {
       return res.status(400).json({ message: ERROR_EVENT_DOES_NOT_EXIST });
@@ -27,7 +27,7 @@ export default async function handleDeleteEvent(
     }
     await event.destroy();
 
-    res.status(201).json({ message: SUCCESS_DELETED_EVENT, data: { event } });
+    res.status(201).json({ message: SUCCESS_DELETED_EVENT, event });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_DELETE_EVENT, error });
   }

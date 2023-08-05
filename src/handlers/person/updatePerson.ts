@@ -34,7 +34,7 @@ export default async function handleUpdatePerson(
     }
     await person.save();
 
-    res.status(201).json({ message: SUCCESS_UPDATE_PERSON, data: { person } });
+    res.status(201).json({ message: SUCCESS_UPDATE_PERSON, person });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_UPDATE_PERSON, error });
   }

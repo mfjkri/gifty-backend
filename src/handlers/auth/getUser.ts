@@ -31,14 +31,12 @@ export default async function handleGetUser(
 
     return res.status(201).json({
       message: SUCCESS_FETCHED_USER,
-      data: {
-        user: {
-          username: user.username,
-          email: user.email,
-          birthday: user.birthday,
-          avatar: user.avatar,
-          joinedAt: user.createdAt,
-        },
+      user: {
+        username: user.username,
+        email: user.email,
+        birthday: user.birthday,
+        avatar: user.avatar,
+        joinedAt: user.createdAt,
       },
     });
   } catch (error) {

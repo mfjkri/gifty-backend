@@ -77,7 +77,7 @@ export default async function handleListListing(
 
     res.status(201).json({
       message: SUCCESS_LIST_LISTING,
-      data: { listing: listingsJoined },
+      listing: listingsJoined,
     });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LIST_LISTING, error });

@@ -37,7 +37,7 @@ export default async function handleUpdateEvent(
     }
     await event.save();
 
-    res.status(201).json({ message: SUCCESS_UPDATE_EVENT, data: { event } });
+    res.status(201).json({ message: SUCCESS_UPDATE_EVENT, event });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_UPDATE_EVENT, error });
   }

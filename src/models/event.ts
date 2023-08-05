@@ -44,7 +44,6 @@ export function init() {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
       date: {
         type: DataTypes.DATE,

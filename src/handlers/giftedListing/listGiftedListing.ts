@@ -23,7 +23,7 @@ export default async function handleListGiftedListing(
 
     res.status(201).json({
       message: SUCCESS_LISTED_GIFTED_LISTING,
-      data: { giftedListings: giftedListings },
+      giftedListings,
     });
   } catch (error) {
     res
