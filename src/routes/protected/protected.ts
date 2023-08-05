@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import authenticateToken from "../../middleware/auth";
 import AuthRouter from "./auth/auth";
+import EventRouter from "./event/event";
 import GiftedListingRouter from "./giftedListing/giftedListing";
 import ListingRouter from "./listing/listing";
 import PersonRouter from "./person/person";
@@ -13,6 +14,7 @@ router.use(
   "/api",
   authenticateToken,
   AuthRouter,
+  EventRouter,
   GiftedListingRouter,
   ListingRouter,
   PersonRouter,
