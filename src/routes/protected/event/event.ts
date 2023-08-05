@@ -4,6 +4,7 @@ import CreateEventRouter from "./createEvent";
 import ReadEventRouter from "./readEvent";
 import UpdateEventRouter from "./updateEvent";
 import DeleteEventRouter from "./deleteEvent";
+import ListEventRouter from "./listEvent";
 
 const router: Router = Router();
 
@@ -12,7 +13,8 @@ router.use(
   CreateEventRouter,
   ReadEventRouter,
   UpdateEventRouter,
-  DeleteEventRouter
+  DeleteEventRouter,
+  ListEventRouter
 );
 
 export default router;
