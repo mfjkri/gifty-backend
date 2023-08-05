@@ -1,16 +1,19 @@
 import express from "express";
+import cors from "cors";
 
 import { connectDB, getDB } from "./database/database";
 import { getConfig, loadEnv } from "./config/config";
 import initRoutes from "./routes/routes";
+import migrateModels from "./models/models";
 
-const Main = async () => {
-  init();
+async function Main() {
+  await init();
 
   const db = getDB();
   const config = getConfig();
   const expressApp = express();
 
+  expressApp.use(cors());
   expressApp.use(express.json());
 
   initRoutes(expressApp);
@@ -22,27 +25,16 @@ const Main = async () => {
       );
     })
   );
-};
+}
 
-function init() {
+export async function init() {
   loadEnv();
-  initDB();
+  await initDB();
 }
 
-function initDB() {
-  connectDB();
-  initModels();
-}
-
-function initModels() {
-  const modelDefiners = [
-    require("./models/avatar"),
-    require("./models/user"),
-    require("./models/person"),
-  ];
-  for (const modelDefiner of modelDefiners) {
-    modelDefiner.init();
-  }
+async function initDB() {
+  await connectDB();
+  await migrateModels();
 }
 
 export default Main;
