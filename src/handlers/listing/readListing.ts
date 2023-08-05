@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
 
 import { ReadListingParams } from "../../params/listing/readListing";
-import Listing from "../../models/listing";
+import { getListing } from "./listing";
+import User from "../../models/user";
 
 const SUCCESS_READ_LISTING = "Listing read successfully";
 
@@ -14,12 +15,17 @@ export default async function handleReadListing(
   params: ReadListingParams
 ) {
   try {
-    const listing = await Listing.findOne({ where: { id: params.id } });
+    const user: User = req.body.user;
+
+    const listing = await getListing(params.id, user, res);
     if (!listing) {
-      return res.status(400).json({ message: ERROR_LISTING_DOES_NOT_EXIST });
+      return;
     }
 
-    res.status(201).json({ message: SUCCESS_READ_LISTING, data: { listing } });
+    res.status(201).json({
+      message: SUCCESS_READ_LISTING,
+      data: { listing },
+    });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_READ_LISTING, error });
   }

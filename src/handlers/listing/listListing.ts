@@ -2,6 +2,7 @@ import { Op, OrderItem } from "sequelize";
 import { Request, Response } from "express";
 
 import { ListListingParams } from "../../params/listing/listListing";
+import { getListing } from "./listing";
 import Listing from "../../models/listing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
@@ -61,14 +62,23 @@ export default async function handleListListing(
       order.push(["updatedAt", "DESC"]);
     }
 
-    console.log("whereClause is", whereClause);
-
-    const listing = await Listing.findAll({
+    const listings = await Listing.findAll({
       where: whereClause,
       order,
     });
 
-    res.status(201).json({ message: SUCCESS_LIST_LISTING, data: { listing } });
+    const listingsJoined: any[] = [];
+    for (const listing of listings) {
+      const listingJoined = await getListing(listing.id, req.body.user, res);
+      if (listingJoined) {
+        listingsJoined.push(listingJoined);
+      }
+    }
+
+    res.status(201).json({
+      message: SUCCESS_LIST_LISTING,
+      data: { listing: listingsJoined },
+    });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LIST_LISTING, error });
   }
