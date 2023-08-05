@@ -39,7 +39,8 @@ export default async function handleRegister(
     const tokens = getTokens(user);
     res.status(201).json({
       message: SUCCESS_USER_REGISTERED,
-      data: { tokens, user },
+      tokens,
+      user,
     });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_REGISTER_USER, error });

@@ -24,7 +24,7 @@ export default async function handleReadListing(
 
     res.status(201).json({
       message: SUCCESS_READ_LISTING,
-      data: { listing },
+      listing,
     });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_READ_LISTING, error });

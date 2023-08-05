@@ -26,7 +26,7 @@ export default async function handleReadEvent(
       return res.status(400).json({ message: ERROR_MISSING_PERMISSIONS });
     }
 
-    res.status(201).json({ message: SUCCESS_READ_EVENT, data: { event } });
+    res.status(201).json({ message: SUCCESS_READ_EVENT, event });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_READ_EVENT, error });
   }

@@ -17,7 +17,7 @@ export default async function handleListEvent(
     const user: User = req.body.user;
     const events = await Event.findAll({ where: { userId: user.id } });
 
-    res.status(201).json({ message: SUCCESS_LIST_EVENT, data: { events } });
+    res.status(201).json({ message: SUCCESS_LIST_EVENT, events });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LIST_EVENT, error });
   }

@@ -34,7 +34,7 @@ export default async function handleSaveListing(
 
       return res.status(201).json({
         message: SUCCESS_SAVED_LISTING,
-        data: { savedListing },
+        savedListing,
       });
     } else {
       if (savedListings.length > 1) {
@@ -48,7 +48,7 @@ export default async function handleSaveListing(
 
       res.status(201).json({
         message: SUCCESS_SAVED_LISTING,
-        data: { savedListing: savedListings[0] },
+        savedListing: savedListings[0],
       });
     }
   } catch (error) {

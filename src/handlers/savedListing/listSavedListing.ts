@@ -23,7 +23,7 @@ export default async function handleListSavedListing(
 
     res.status(201).json({
       message: SUCCESS_LISTED_SAVED_LISTING,
-      data: { savedListings },
+      savedListings,
     });
   } catch (error) {
     res

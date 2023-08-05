@@ -26,7 +26,7 @@ export default async function handleReadPerson(
       return res.status(400).json({ message: ERROR_MISSING_PERMISSIONS });
     }
 
-    res.status(201).json({ message: SUCCESS_READ_PERSON, data: { person } });
+    res.status(201).json({ message: SUCCESS_READ_PERSON, person });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_READ_PERSON, error });
   }

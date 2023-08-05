@@ -27,7 +27,7 @@ export default async function handleDeleteEvent(
     }
     await event.destroy();
 
-    res.status(201).json({ message: SUCCESS_DELETED_EVENT, data: { event } });
+    res.status(201).json({ message: SUCCESS_DELETED_EVENT, event });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_DELETE_EVENT, error });
   }

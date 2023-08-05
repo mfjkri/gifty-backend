@@ -34,7 +34,7 @@ export default async function handleGiftListing(
 
       return res.status(201).json({
         message: SUCCESS_GIFTED_LISTING,
-        data: { savedListing: giftedListing },
+        giftedListing,
       });
     } else {
       if (giftedListings.length > 1) {
@@ -48,7 +48,7 @@ export default async function handleGiftListing(
 
       res.status(201).json({
         message: SUCCESS_GIFTED_LISTING,
-        data: { savedListing: giftedListings[0] },
+        giftedListing: giftedListings[0],
       });
     }
   } catch (error) {
