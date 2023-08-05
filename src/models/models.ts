@@ -1,7 +1,10 @@
 const models = [
   "avatar",
   "user",
+
+  "event",
   "person",
+
   "listing",
   "savedListing",
   "giftedListing",
