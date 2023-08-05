@@ -7,6 +7,7 @@ import {
   InferAttributes,
   InferCreationAttributes,
   Model,
+  NonAttribute,
 } from "sequelize";
 
 import Listing from "./listing";
@@ -27,13 +28,13 @@ export default class GiftedListing extends Model<
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
 
-  public getListing!: BelongsToGetAssociationMixin<Listing>;
-  public setListing!: BelongsToSetAssociationMixin<Listing, number>;
+  declare getListing: BelongsToGetAssociationMixin<Listing>;
+  declare setListing: BelongsToSetAssociationMixin<Listing, number>;
 
-  public readonly listing?: Listing;
+  declare readonly listing?: NonAttribute<Listing>;
 
-  public static associations: {
-    avatar: Association<GiftedListing, Listing>;
+  declare static associations: {
+    listing: Association<GiftedListing, Listing>;
   };
 }
 
@@ -50,7 +51,7 @@ export function init() {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: GiftedListing,
+          model: Listing,
           key: "id",
         },
       },

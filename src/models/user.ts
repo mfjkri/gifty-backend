@@ -7,6 +7,7 @@ import {
   InferAttributes,
   InferCreationAttributes,
   Model,
+  NonAttribute,
 } from "sequelize";
 
 import getDB from "../database/database";
@@ -28,12 +29,12 @@ export default class User extends Model<
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
 
-  public getAvatar!: BelongsToGetAssociationMixin<Avatar>;
-  public setAvatar!: BelongsToSetAssociationMixin<Avatar, number>;
+  declare getAvatar: BelongsToGetAssociationMixin<Avatar>;
+  declare setAvatar: BelongsToSetAssociationMixin<Avatar, number>;
 
-  public readonly avatar?: Avatar;
+  declare readonly avatar?: NonAttribute<Avatar>;
 
-  public static associations: {
+  declare static associations: {
     avatar: Association<User, Avatar>;
   };
 }
