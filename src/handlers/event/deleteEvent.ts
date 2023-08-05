@@ -17,7 +17,7 @@ export default async function handleDeleteEvent(
 ) {
   try {
     const user = req.body.user as User;
-    const event = await Event.findOne({ where: { id: params.id } });
+    const event = await Event.findOne({ where: { id: req.params.id } });
 
     if (!event) {
       return res.status(400).json({ message: ERROR_EVENT_DOES_NOT_EXIST });

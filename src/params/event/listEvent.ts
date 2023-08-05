@@ -5,7 +5,8 @@ export interface ListEventParams {
 }
 
 export function parseParams(json: any): ListEventParams | undefined {
-  return castParams<ListEventParams>(json, typeMap);
+  return { orderBy: "" };
+  // return castParams<ListEventParams>(json, typeMap);
 }
 
 const typeMap: any = {
