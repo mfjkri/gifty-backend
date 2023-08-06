@@ -57,7 +57,7 @@ export function init(db?: Sequelize) {
       },
 
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DOUBLE,
         allowNull: false,
       },
       platform: {

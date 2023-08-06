@@ -1,49 +1,27 @@
 import Listing from "../../src/models/listing";
+import listingsJSON from "./seedData/listing.json";
 
-const listings = [
-  {
-    title: "Listing 1",
-    description: "Description 1",
-    source: "Source 1",
-    categories: ["Type 1", "Type 2"],
+type ListingData = {
+  title: string;
+  description: string;
+  source: string;
+  categories: Array<string>;
 
-    price: 100,
-    platform: "Platform 1",
-    purchaseUrl: "Purchase URL 1",
-    isAvailable: true,
-
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  },
-  {
-    title: "Listing 2",
-    description: "Description 2",
-    source: "Source 2",
-    categories: ["Type 2", "Type 3"],
-
-    price: 200,
-    platform: "Platform 2",
-    purchaseUrl: "Purchase URL 2",
-    isAvailable: true,
-
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  },
-  {
-    title: "Listing 3",
-    description: "Description 3",
-    source: "Source 3",
-    categories: ["Type 1", "Type 2", "Type 3"],
-
-    price: 300,
-    platform: "Platform 3",
-    purchaseUrl: "Purchase URL 3",
-    isAvailable: true,
-  },
-];
+  price: number;
+  platform: string;
+  purchaseUrl: string;
+  isAvailable: boolean;
+};
 
 export default async function seed() {
+  const categories = new Set<string>();
+  const listings: ListingData[] = listingsJSON;
   for (const listing of listings) {
+    for (const category of listing.categories) {
+      categories.add(category);
+    }
     await Listing.create(listing);
   }
+
+  console.log("Categories:", categories);
 }
