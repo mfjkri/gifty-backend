@@ -8,6 +8,7 @@ import {
   InferCreationAttributes,
   Model,
   NonAttribute,
+  Sequelize,
 } from "sequelize";
 
 import Listing from "./listing";
@@ -38,7 +39,7 @@ export default class SavedListing extends Model<
   };
 }
 
-export function init() {
+export function init(db?: Sequelize) {
   SavedListing.init(
     {
       id: {
@@ -72,7 +73,7 @@ export function init() {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    { sequelize: getDB() }
+    { sequelize: db || getDB() }
   );
 
   SavedListing.beforeCreate(async (listing) => {
