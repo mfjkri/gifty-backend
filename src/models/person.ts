@@ -18,7 +18,6 @@ export default class Person extends Model<
   declare userId: number;
 
   declare name: string;
-  declare birthday: Date;
 
   declare createdAt: Date;
   declare updatedAt: Date;
@@ -43,11 +42,6 @@ export function init(db?: Sequelize) {
 
       name: {
         type: DataTypes.STRING,
-        allowNull: false,
-      },
-
-      birthday: {
-        type: DataTypes.DATE,
         allowNull: false,
       },
 

@@ -29,9 +29,6 @@ export default async function handleUpdatePerson(
     if (params.name) {
       person.name = params.name;
     }
-    if (params.birthday) {
-      person.birthday = new Date(params.birthday);
-    }
     await person.save();
 
     res.status(201).json({ message: SUCCESS_UPDATE_PERSON, person });

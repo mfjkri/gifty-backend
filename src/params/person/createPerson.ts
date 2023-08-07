@@ -2,7 +2,6 @@ import { castParams } from "../params";
 
 export interface CreatePersonParams {
   name: string;
-  birthday: string;
 }
 
 export function parseParams(json: any): CreatePersonParams | undefined {
@@ -10,9 +9,6 @@ export function parseParams(json: any): CreatePersonParams | undefined {
 }
 
 const typeMap: any = {
-  props: [
-    { json: "name", js: "name", typ: "" },
-    { json: "birthday", js: "birthday", typ: "" },
-  ],
+  props: [{ json: "name", js: "name", typ: "" }],
   additional: false,
 };
