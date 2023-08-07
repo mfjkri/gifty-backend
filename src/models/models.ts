@@ -10,6 +10,7 @@ const models = [
   "listing",
   "savedListing",
   "giftedListing",
+  "wishlistedListing",
 ];
 
 export default async function migrateModels(db?: Sequelize) {
