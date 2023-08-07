@@ -16,7 +16,11 @@ type ListingData = {
 export default async function seed() {
   const categories = new Set<string>();
   const listings: ListingData[] = listingsJSON;
+  let index = 0;
   for (const listing of listings) {
+    listing.source = `https://picsum.photos/id/${index}/200/200`;
+    index += Math.floor(5 + Math.random() * 100);
+
     for (const category of listing.categories) {
       categories.add(category);
     }
