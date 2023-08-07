@@ -4,6 +4,7 @@ import Listing from "../../models/listing";
 import User from "../../models/user";
 import GiftedListing from "../../models/giftedListing";
 import SavedListing from "../../models/savedListing";
+import WishlistedListing from "../../models/wishlistedListing";
 
 const ERROR_LISTING_DOES_NOT_EXIST = "Listing does not exist";
 
@@ -37,6 +38,20 @@ export async function getListing(listingId: number, user: User, res: Response) {
     }
   }
 
+  const wishlisted: number[] = [];
+  {
+    const wishlistedListings = await WishlistedListing.findAll({
+      where: { userId: user.id, listingId: listing.id },
+    });
+    if (wishlistedListings.length > 0) {
+      for (const wishlistedListing of wishlistedListings) {
+        if (wishlistedListing.isWishlisted) {
+          wishlisted.push(wishlistedListing.personId);
+        }
+      }
+    }
+  }
+
   return {
     id: listing.id,
     title: listing.title,
@@ -51,6 +66,6 @@ export async function getListing(listingId: number, user: User, res: Response) {
 
     isGifted,
     isSaved,
-    wishlisted: [],
+    wishlisted,
   };
 }
