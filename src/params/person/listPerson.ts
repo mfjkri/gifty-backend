@@ -1,7 +1,7 @@
 import { castParams } from "../params";
 
 export interface ListPersonParams {
-  orderBy: string;
+  search?: string;
 }
 
 export function parseParams(json: any): ListPersonParams | undefined {
@@ -9,6 +9,14 @@ export function parseParams(json: any): ListPersonParams | undefined {
 }
 
 const typeMap: any = {
-  props: [{ json: "orderBy", js: "orderBy", typ: "" }],
+  props: [
+    {
+      json: "search",
+      js: "search",
+      typ: "",
+      opt: true,
+      defaultValue: "",
+    },
+  ],
   additional: false,
 };

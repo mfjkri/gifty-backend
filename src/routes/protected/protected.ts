@@ -7,6 +7,7 @@ import GiftedListingRouter from "./giftedListing/giftedListing";
 import ListingRouter from "./listing/listing";
 import PersonRouter from "./person/person";
 import SavedListingRouter from "./savedListing/savedListing";
+import WishlistedListingRouter from "./wishlistedListing/wishlistedListing";
 
 const router: Router = Router();
 
@@ -18,7 +19,8 @@ router.use(
   GiftedListingRouter,
   ListingRouter,
   PersonRouter,
-  SavedListingRouter
+  SavedListingRouter,
+  WishlistedListingRouter
 );
 
 export default router;

@@ -24,7 +24,6 @@ export default async function handleCreatePerson(
     const person = await Person.create({
       userId: user.id,
       name: params.name,
-      birthday: new Date(params.birthday),
       createdAt: new Date(),
       updatedAt: new Date(),
     });
