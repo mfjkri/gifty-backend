@@ -1,3 +1,5 @@
+import { Sequelize } from "sequelize";
+
 const models = [
   "avatar",
   "user",
@@ -10,9 +12,9 @@ const models = [
   "giftedListing",
 ];
 
-export default async function migrateModels() {
+export default async function migrateModels(db?: Sequelize) {
   for (const model of models) {
     const modelDefiner = require(`./${model}`);
-    await modelDefiner.init();
+    await modelDefiner.init(db);
   }
 }

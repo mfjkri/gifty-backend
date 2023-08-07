@@ -4,6 +4,7 @@ import {
   InferAttributes,
   InferCreationAttributes,
   Model,
+  Sequelize,
 } from "sequelize";
 
 import getDB from "../database/database";
@@ -37,7 +38,7 @@ export default class Avatar extends Model<
   declare updatedAt: CreationOptional<Date>;
 }
 
-export function init() {
+export function init(db?: Sequelize) {
   Avatar.init(
     {
       id: {
@@ -110,6 +111,6 @@ export function init() {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    { sequelize: getDB() }
+    { sequelize: db || getDB() }
   );
 }

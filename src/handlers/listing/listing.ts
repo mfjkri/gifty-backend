@@ -38,6 +38,7 @@ export async function getListing(listingId: number, user: User, res: Response) {
   }
 
   return {
+    id: listing.id,
     title: listing.title,
     description: listing.description,
 

@@ -4,6 +4,7 @@ import {
   InferAttributes,
   InferCreationAttributes,
   Model,
+  Sequelize,
 } from "sequelize";
 
 import getDB from "../database/database";
@@ -28,7 +29,7 @@ export default class Gift extends Model<
   declare updatedAt: CreationOptional<Date>;
 }
 
-export function init() {
+export function init(db?: Sequelize) {
   Gift.init(
     {
       id: {
@@ -73,7 +74,7 @@ export function init() {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    { sequelize: getDB() }
+    { sequelize: db || getDB() }
   );
 
   Gift.beforeCreate(async (gift) => {

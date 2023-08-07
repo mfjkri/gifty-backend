@@ -8,6 +8,7 @@ import {
   InferCreationAttributes,
   Model,
   NonAttribute,
+  Sequelize,
 } from "sequelize";
 
 import getDB from "../database/database";
@@ -39,7 +40,7 @@ export default class User extends Model<
   };
 }
 
-export function init() {
+export function init(db?: Sequelize) {
   User.init(
     {
       id: {
@@ -79,7 +80,7 @@ export function init() {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    { sequelize: getDB() }
+    { sequelize: db || getDB() }
   );
 
   User.beforeCreate(async (user, options) => {

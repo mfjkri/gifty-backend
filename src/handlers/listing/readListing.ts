@@ -17,7 +17,8 @@ export default async function handleReadListing(
   try {
     const user: User = req.body.user;
 
-    const listing = await getListing(params.id, user, res);
+    const listingId = parseInt(req.params.id);
+    const listing = await getListing(listingId, user, res);
     if (!listing) {
       return;
     }
