@@ -10,13 +10,13 @@ const SUCCESS_LIST_LISTING = "Listed listing successfully";
 const ERROR_FAILED_TO_LIST_LISTING = "Failed to list listing";
 
 export default async function handleListListing(
-  req: Request,
+  req: Request<any, any, any, ListListingParams>,
   res: Response,
   params: ListListingParams
 ) {
   try {
     const { orderBy, search, categories, platform, minPrice, maxPrice } =
-      params;
+      req.query;
     const whereClause: any = {};
 
     // Apply search filter
@@ -38,11 +38,11 @@ export default async function handleListListing(
     }
 
     // Apply price range filter
-    if (minPrice !== -Infinity && maxPrice !== Infinity) {
+    if (minPrice && maxPrice) {
       whereClause.price = { [Op.between]: [minPrice, maxPrice] };
-    } else if (minPrice !== -Infinity) {
+    } else if (minPrice) {
       whereClause.price = { [Op.gte]: minPrice };
-    } else if (maxPrice !== Infinity) {
+    } else if (maxPrice) {
       whereClause.price = { [Op.lte]: maxPrice };
     }
 
