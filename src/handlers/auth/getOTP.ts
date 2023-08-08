@@ -16,8 +16,9 @@ export default async function handleGenerateOTP(
   params: GetOTPParams
 ) {
   try {
-    const otp = Math.floor(100000 + Math.random() * 900000);
-    const expirationTime = 3600;
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const expirationTime = 900;
+    const expireAt = new Date(Date.now() + expirationTime * 1000);
 
     const user = await User.findOne({ where: { email: params.email } });
     if (!user) {
@@ -31,19 +32,16 @@ export default async function handleGenerateOTP(
     if (!resetPasswordToken) {
       resetPasswordToken = await ResetPasswordToken.create({
         userId: user.id,
-        otp: otp,
-        expirationTime: expirationTime,
+        otp,
+        expireAt,
       });
     } else {
-      resetPasswordToken.otp = otp;
-      resetPasswordToken.expirationTime = expirationTime;
-      await resetPasswordToken.save();
+      await resetPasswordToken.update({ otp, expireAt });
     }
 
     await sendEmailWithOTP(user.email, otp);
     res.status(201).json({ message: SUCCESS_OTP_GENERATED });
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: ERROR_FAILED_TO_GENERATE_OTP, error });
   }
 }

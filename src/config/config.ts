@@ -8,6 +8,8 @@ type Config = {
   DBName: string;
   DBUsername: string;
   DBPassword: string;
+  EmailUsername: string;
+  EmailPassword: string;
 };
 
 export function loadEnv() {
@@ -18,21 +20,31 @@ export function loadEnv() {
 export function getConfig(): Config {
   const {
     SERVER_PORT,
+
     JWT_SECRET_KEY,
+
     DB_HOSTNAME,
     DB_PORT,
     DB_NAME,
     DB_USERNAME,
     DB_PASSWORD,
+
+    EMAIL_USERNAME,
+    EMAIL_PASSWORD,
   } = process.env;
   return {
     ServerPort: parseInt(SERVER_PORT || "8080"),
+
     JWTSecretKey: JWT_SECRET_KEY || "secret",
+
     DBHostname: DB_HOSTNAME || "localhost",
     DBPort: parseInt(DB_PORT || "5432"),
     DBName: DB_NAME || "postgres",
     DBUsername: DB_USERNAME || "postgres",
     DBPassword: DB_PASSWORD || "postgres",
+
+    EmailUsername: EMAIL_USERNAME || "",
+    EmailPassword: EMAIL_PASSWORD || "",
   };
 }
 

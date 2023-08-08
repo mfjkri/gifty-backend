@@ -21,8 +21,8 @@ export default class ResetPasswordToken extends Model<
   declare id: CreationOptional<number>;
   declare userId: number;
 
-  declare otp: number;
-  declare expirationTime: number;
+  declare otp: string;
+  declare expireAt: Date;
 
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
@@ -46,11 +46,11 @@ export function init(db?: Sequelize) {
       },
 
       otp: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
       },
-      expirationTime: {
-        type: DataTypes.INTEGER,
+      expireAt: {
+        type: DataTypes.DATE,
         allowNull: false,
       },
 
