@@ -84,9 +84,6 @@ export function init(db?: Sequelize) {
   );
 
   User.beforeCreate(async (user, options) => {
-    user.createdAt = new Date();
-    user.updatedAt = new Date();
-
     const hashedPassword = await hashPassword(user.password);
     const avatar = await Avatar.create({
       bgColor: "blue",
@@ -109,8 +106,6 @@ export function init(db?: Sequelize) {
   });
 
   User.beforeUpdate(async (user, options) => {
-    user.updatedAt = new Date();
-
     if (options?.fields?.includes("password")) {
       const hashedPassword = await hashPassword(user.password);
       user.password = hashedPassword;

@@ -76,11 +76,6 @@ export function init(db?: Sequelize) {
     { sequelize: db || getDB() }
   );
 
-  SavedListing.beforeCreate(async (listing) => {
-    listing.createdAt = new Date();
-    listing.updatedAt = new Date();
-  });
-
   SavedListing.belongsTo(Listing, {
     as: "listing",
     foreignKey: "listingId",

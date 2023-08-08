@@ -19,8 +19,8 @@ export default class Person extends Model<
 
   declare name: string;
 
-  declare createdAt: Date;
-  declare updatedAt: Date;
+  declare createdAt: CreationOptional<Date>;
+  declare updatedAt: CreationOptional<Date>;
 }
 
 export function init(db?: Sequelize) {

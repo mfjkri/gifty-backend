@@ -76,15 +76,6 @@ export function init(db?: Sequelize) {
     { sequelize: db || getDB() }
   );
 
-  GiftedListing.beforeCreate(async (giftedListing) => {
-    giftedListing.createdAt = new Date();
-    giftedListing.updatedAt = new Date();
-  });
-
-  GiftedListing.beforeUpdate(async (giftedListing) => {
-    giftedListing.updatedAt = new Date();
-  });
-
   GiftedListing.belongsTo(Listing, {
     as: "listing",
     foreignKey: "listingId",

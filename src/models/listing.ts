@@ -70,6 +70,7 @@ export function init(db?: Sequelize) {
       },
       isAvailable: {
         type: DataTypes.BOOLEAN,
+        defaultValue: true,
         allowNull: false,
       },
 
@@ -78,14 +79,4 @@ export function init(db?: Sequelize) {
     },
     { sequelize: db || getDB() }
   );
-
-  Listing.beforeCreate(async (listing) => {
-    listing.createdAt = new Date();
-    listing.updatedAt = new Date();
-    listing.isAvailable = true;
-  });
-
-  Listing.beforeUpdate(async (listing) => {
-    listing.updatedAt = new Date();
-  });
 }

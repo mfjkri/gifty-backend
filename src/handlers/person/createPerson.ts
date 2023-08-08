@@ -24,8 +24,6 @@ export default async function handleCreatePerson(
     const person = await Person.create({
       userId: user.id,
       name: params.name,
-      createdAt: new Date(),
-      updatedAt: new Date(),
     });
 
     res.status(201).json({ message: SUCCESS_CREATED_PERSON, person });

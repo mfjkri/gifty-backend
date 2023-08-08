@@ -61,15 +61,6 @@ export function init(db?: Sequelize) {
     { sequelize: db || getDB() }
   );
 
-  Event.beforeCreate(async (listing) => {
-    listing.createdAt = new Date();
-    listing.updatedAt = new Date();
-  });
-
-  Event.beforeUpdate(async (listing) => {
-    listing.updatedAt = new Date();
-  });
-
   Event.belongsTo(User, {
     as: "user",
     foreignKey: "userId",

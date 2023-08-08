@@ -21,8 +21,6 @@ export default async function handleCreateEvent(
       name: params.name,
       date: new Date(params.date),
       reminder: params.reminder,
-      createdAt: new Date(),
-      updatedAt: new Date(),
     });
 
     res.status(201).json({ message: SUCCESS_CREATED_EVENT, event });
