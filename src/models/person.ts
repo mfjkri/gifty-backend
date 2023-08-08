@@ -50,4 +50,10 @@ export function init(db?: Sequelize) {
     },
     { sequelize: db || getDB() }
   );
+
+  Person.belongsTo(User, {
+    as: "user",
+    foreignKey: "userId",
+    onDelete: "CASCADE",
+  });
 }

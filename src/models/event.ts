@@ -69,4 +69,10 @@ export function init(db?: Sequelize) {
   Event.beforeUpdate(async (listing) => {
     listing.updatedAt = new Date();
   });
+
+  Event.belongsTo(User, {
+    as: "user",
+    foreignKey: "userId",
+    onDelete: "CASCADE",
+  });
 }

@@ -85,5 +85,14 @@ export function init(db?: Sequelize) {
     giftedListing.updatedAt = new Date();
   });
 
-  GiftedListing.belongsTo(Listing, { as: "listing", foreignKey: "listingId" });
+  GiftedListing.belongsTo(Listing, {
+    as: "listing",
+    foreignKey: "listingId",
+    onDelete: "CASCADE",
+  });
+  GiftedListing.belongsTo(User, {
+    as: "user",
+    foreignKey: "userId",
+    onDelete: "CASCADE",
+  });
 }

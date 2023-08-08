@@ -100,9 +100,16 @@ export function init(db?: Sequelize) {
   WishlistedListing.belongsTo(Listing, {
     as: "listing",
     foreignKey: "listingId",
+    onDelete: "CASCADE",
   });
   WishlistedListing.belongsTo(Person, {
     as: "person",
     foreignKey: "personId",
+    onDelete: "CASCADE",
+  });
+  WishlistedListing.belongsTo(Listing, {
+    as: "user",
+    foreignKey: "userId",
+    onDelete: "CASCADE",
   });
 }
