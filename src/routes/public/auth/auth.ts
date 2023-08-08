@@ -1,9 +1,10 @@
 import { Router } from "express";
 
+import GetOTPRouter from "./getOTP";
 import LoginRouter from "./login";
 import RegisterRouter from "./register";
 import RefreshTokenRouter from "./refreshToken";
-import GetOTPRouter from "./getOTP";
+import ResetPasswordRouter from "./resetPassword";
 
 const router: Router = Router();
 
@@ -12,7 +13,8 @@ router.use(
   GetOTPRouter,
   LoginRouter,
   RegisterRouter,
-  RefreshTokenRouter
+  RefreshTokenRouter,
+  ResetPasswordRouter
 );
 
 export default router;
