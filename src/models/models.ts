@@ -11,6 +11,7 @@ const models = [
   "savedListing",
   "giftedListing",
   "wishlistedListing",
+  "resetPasswordToken",
 ];
 
 export default async function migrateModels(db?: Sequelize) {
