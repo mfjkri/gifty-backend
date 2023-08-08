@@ -1,18 +1,23 @@
 import nodemailer from "nodemailer";
 import { getConfig } from "../config/config";
 
-const config = getConfig();
-const transporter = nodemailer.createTransport({
-  host: "smtp-relay.sendinblue.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: config.EmailUsername,
-    pass: config.EmailPassword,
-  },
-});
+let transporter: nodemailer.Transporter;
+
+export function initMailer() {
+  const config = getConfig();
+  transporter = nodemailer.createTransport({
+    host: "smtp-relay.sendinblue.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: config.EmailUsername,
+      pass: config.EmailPassword,
+    },
+  });
+}
 
 export async function sendEmailWithOTP(userEmail: string, otp: string) {
+  const config = getConfig();
   transporter
     .sendMail({
       from: config.EmailUsername,

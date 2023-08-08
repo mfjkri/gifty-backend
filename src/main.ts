@@ -5,6 +5,7 @@ import { connectDB, getDB } from "./database/database";
 import { getConfig, loadEnv } from "./config/config";
 import initRoutes from "./routes/routes";
 import migrateModels from "./models/models";
+import { initMailer } from "./utilities/mail";
 
 async function Main() {
   await init();
@@ -29,6 +30,7 @@ async function Main() {
 
 export async function init() {
   loadEnv();
+  initMailer();
   await initDB();
 }
 
