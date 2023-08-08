@@ -26,8 +26,7 @@ export default async function handleUnsaveListing(
         }
       }
 
-      savedListings[0].isSaved = false;
-      await savedListings[0].save();
+      await savedListings[0].update({ isSaved: false });
     }
 
     res.status(201).json({

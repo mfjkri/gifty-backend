@@ -26,8 +26,7 @@ export default async function handleUngiftListing(
         }
       }
 
-      giftedListings[0].isGifted = false;
-      await giftedListings[0].save();
+      await giftedListings[0].update({ isGifted: false });
     }
 
     res.status(201).json({

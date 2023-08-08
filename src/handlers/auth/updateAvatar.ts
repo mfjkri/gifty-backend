@@ -23,11 +23,9 @@ export default async function handleUpdateAvatar(
 
     if (!avatar) {
       avatar = await Avatar.create(params);
-      user.avatarId = avatar.id;
-      await user.save();
+      await user.update({ avatarId: avatar.id });
     } else {
       avatar.update(params);
-      avatar.save();
     }
 
     res.status(201).json({ message: SUCCESS_UPDATED_AVATAR, user });

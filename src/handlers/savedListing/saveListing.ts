@@ -43,8 +43,7 @@ export default async function handleSaveListing(
         }
       }
 
-      savedListings[0].isSaved = true;
-      await savedListings[0].save();
+      await savedListings[0].update({ isSaved: true });
 
       res.status(201).json({
         message: SUCCESS_SAVED_LISTING,

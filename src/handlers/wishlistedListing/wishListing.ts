@@ -56,8 +56,7 @@ export default async function handleWishListing(
         }
       }
 
-      wishlistedListings[0].isWishlisted = true;
-      await wishlistedListings[0].save();
+      await wishlistedListings[0].update({ isWishlisted: true });
 
       res.status(201).json({
         message: SUCCESS_WISHLISTED_LISTING,

@@ -43,8 +43,7 @@ export default async function handleGiftListing(
         }
       }
 
-      giftedListings[0].isGifted = true;
-      await giftedListings[0].save();
+      await giftedListings[0].update({ isGifted: true });
 
       res.status(201).json({
         message: SUCCESS_GIFTED_LISTING,

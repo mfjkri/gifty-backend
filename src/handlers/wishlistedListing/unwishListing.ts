@@ -30,8 +30,7 @@ export default async function handleUnwishListing(
         }
       }
 
-      wishlistedListings[0].isWishlisted = false;
-      await wishlistedListings[0].save();
+      await wishlistedListings[0].update({ isWishlisted: false });
     }
 
     res.status(201).json({

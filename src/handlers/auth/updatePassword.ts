@@ -29,8 +29,7 @@ export default async function handleUpdatePassword(
       return res.status(401).json({ message: ERROR_INCORRECT_PASSWORD });
     }
 
-    user.password = params.newPassword;
-    await user.save();
+    await user.update({ password: params.newPassword });
 
     res.status(201).json({ message: SUCCESS_UPDATED_PASSWORD, user });
   } catch (error) {

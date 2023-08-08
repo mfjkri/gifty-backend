@@ -34,7 +34,6 @@ export default async function handleRegister(
       password: params.password,
       birthday: new Date(params.birthday),
     });
-    await user.save();
 
     const tokens = getTokens(user);
     res.status(201).json({
