@@ -112,10 +112,9 @@ export function init(db?: Sequelize) {
     }
   });
 
-  Avatar.belongsTo(User, {
-    as: "user",
-    foreignKey: "userId",
+  User.belongsTo(Avatar, {
+    as: "avatar",
+    foreignKey: "avatarId",
     onDelete: "CASCADE",
   });
-  User.hasOne(Avatar, { as: "avatar", foreignKey: "avatarId" });
 }
