@@ -1,5 +1,6 @@
 import { Router } from "express";
 
+import DeleteUserRouter from "./deleteUser";
 import GetUserRouter from "./getUser";
 import UpdateAvatarRouter from "./updateAvatar";
 import UpdatePasswordRouter from "./updatePassword";
@@ -9,6 +10,7 @@ const router: Router = Router();
 
 router.use(
   "/auth",
+  DeleteUserRouter,
   GetUserRouter,
   UpdateAvatarRouter,
   UpdatePasswordRouter,
