@@ -1,31 +1,57 @@
+import fs from "fs";
+import path from "path";
+
 import Listing from "../../src/models/listing";
-import listingsJSON from "./seedData/listing.json";
 
-type ListingData = {
-  title: string;
-  description: string;
-  source: string;
-  categories: Array<string>;
-
-  price: number;
-  platform: string;
-  purchaseUrl: string;
-  isAvailable: boolean;
-};
+const rootDirectory = "cmd/scraper/data";
 
 export default async function seed() {
-  const categories = new Set<string>();
-  const listings: ListingData[] = listingsJSON;
-  let index = 0;
-  for (const listing of listings) {
-    listing.source = `https://picsum.photos/id/${index}/200/200`;
-    index += Math.floor(5 + Math.random() * 100);
+  try {
+    const platforms = fs.readdirSync(rootDirectory);
 
-    for (const category of listing.categories) {
-      categories.add(category);
+    for (const platform of platforms) {
+      const platformDirectory = path.join(
+        rootDirectory,
+        platform,
+        "refinedData"
+      );
+      if (fs.statSync(platformDirectory).isDirectory()) {
+        const categories = fs.readdirSync(platformDirectory);
+
+        for (const category of categories) {
+          const categoryDirectory = path.join(platformDirectory, category);
+          if (fs.statSync(categoryDirectory).isDirectory()) {
+            const pageNumbers = fs.readdirSync(categoryDirectory);
+            for (const pageNumber of pageNumbers) {
+              const pageNumberDirectory = path.join(
+                categoryDirectory,
+                pageNumber
+              );
+
+              if (fs.statSync(pageNumberDirectory).isDirectory()) {
+                const filePath = path.join(pageNumberDirectory, "refined.json");
+                const rawData = fs.readFileSync(filePath, "utf8");
+                const refinedData = JSON.parse(rawData);
+
+                for (const item of refinedData.results) {
+                  await Listing.create({
+                    title: item.title,
+                    description: item.description,
+                    source: item.image,
+                    categories: [category],
+                    price: item.price / 100000,
+                    platform: platform,
+                    purchaseUrl: item.path,
+                    isAvailable: true,
+                  });
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    await Listing.create(listing);
+  } catch (error) {
+    console.error(`Error processing files: ${error}`);
   }
-
-  console.log("Categories:", categories);
 }

@@ -39,16 +39,16 @@ export function init(db?: Sequelize) {
       },
 
       title: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1024),
         allowNull: false,
       },
 
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(2048),
         allowNull: false,
       },
       source: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1024),
         allowNull: false,
       },
       categories: {
@@ -65,7 +65,7 @@ export function init(db?: Sequelize) {
         allowNull: false,
       },
       purchaseUrl: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1024),
         allowNull: false,
       },
       isAvailable: {
