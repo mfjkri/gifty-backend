@@ -34,7 +34,7 @@ export default async function seed() {
                 source: item.image,
                 categories: [category.split(".")[0]],
                 price: item.price / 100000,
-                platform: platform,
+                platform: platform.charAt(0).toUpperCase() + platform.slice(1),
                 purchaseUrl: item.path,
                 isAvailable: true,
               });
