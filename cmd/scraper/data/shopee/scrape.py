@@ -25,7 +25,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def create_folder_structure(folder, search_param, page_number):
-    folder_path = os.path.join(SCRIPT_DIR, folder, search_param, str(page_number))
+    folder_path = os.path.join(
+        SCRIPT_DIR, folder, search_param, str(page_number))
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
 
@@ -81,7 +82,19 @@ def fill_description(raw_data_path, refined_data_path, driver, wait):
 #                                    REFINE                                    #
 # ---------------------------------------------------------------------------- #
 def generate_better_text(original_title, original_description):
-    prompt = f"Title: {original_title}\n\nDescription: {original_description}\n\nGenerate improved title and description to be used as a product listing on shopping websites.\n\nPlease write your answer in this form: Title: <title>\n\nDescription: <description>"
+    prompt = f"""
+Title: {original_title}
+Description: {original_description}
+
+Genereate improved title and description to be used as a product listing on shopping websites.
+It should not include any information that is not relevant to the product or quantity information.
+Neither should it include things like "SG Stock" or "Local Seller" as it is not relevant to the product.
+Product dimensions is okay in the description but not in the title.
+
+Please write your answer in this format: 
+Title: <title>
+Description: <description>
+"""
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
@@ -155,7 +168,8 @@ def main():
         for category in categories:
             for page_number in range(1, 4):
                 querystring = {"q": category, "p": page_number}
-                response = requests.get(url, headers=headers, params=querystring)
+                response = requests.get(
+                    url, headers=headers, params=querystring)
 
                 if response.status_code == 200:
                     folder_path = create_folder_structure(
@@ -164,9 +178,11 @@ def main():
                     file_path = os.path.join(folder_path, "raw_data.json")
 
                     with open(file_path, "w") as f:
-                        json.dump(response.text, f, ensure_ascii=False, indent=4)
+                        json.dump(response.text, f,
+                                  ensure_ascii=False, indent=4)
 
-                    print(f"Saved response for '{category}' page {page_number}")
+                    print(
+                        f"Saved response for '{category}' page {page_number}")
                 else:
                     print(
                         f"Error for '{category}' page {page_number}: {response.status_code}"
@@ -192,8 +208,10 @@ def main():
                         "desc.json",
                     )
 
-                    fill_description(desc_data_path, desc_data_path, driver, wait)
-                    print(f"Extracted description {desc_data_path} -> {desc_data_path}")
+                    fill_description(
+                        desc_data_path, desc_data_path, driver, wait)
+                    print(
+                        f"Extracted description {desc_data_path} -> {desc_data_path}")
 
         driver.quit()
 
