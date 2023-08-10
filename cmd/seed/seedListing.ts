@@ -32,7 +32,7 @@ export default async function seed() {
                 title: item.title,
                 description: item.description,
                 source: item.image,
-                categories: [category],
+                categories: [category.split(".")[0]],
                 price: item.price / 100000,
                 platform: platform,
                 purchaseUrl: item.path,
