@@ -15,18 +15,21 @@ load_dotenv()
 
 URL_BASE = "https://shopee.sg/"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_DATA_FOLDER_NAME = "rawData"
-DESC_DATA_FOLDER_NAME = "descData"
-REFINEDDATA_FOLDER_NAME = "refinedData"
+RAW_DATA_FOLDER_NAME = "1.rawData"
+DESC_DATA_FOLDER_NAME = "2.descData"
+DESC_ARCHIVE_DATA_FOLDER_NAME = "archive"
+REFINEDDATA_FOLDER_NAME = "3.refinedData"
 RAW_DATA_FOLDER = os.path.join(SCRIPT_DIR, RAW_DATA_FOLDER_NAME)
 DESC_DATA_FOLDER = os.path.join(SCRIPT_DIR, DESC_DATA_FOLDER_NAME)
+DESC_ARCHIVE_DATA_FOLDER = os.path.join(
+    DESC_DATA_FOLDER, DESC_ARCHIVE_DATA_FOLDER_NAME)
 REFINED_DATA_FOLDER = os.path.join(SCRIPT_DIR, REFINEDDATA_FOLDER_NAME)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def create_folder_structure(folder, search_param, page_number):
+def create_folder_structure(folder, search_param):
     folder_path = os.path.join(
-        SCRIPT_DIR, folder, search_param, str(page_number))
+        SCRIPT_DIR, folder, search_param)
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
 
@@ -53,26 +56,16 @@ def extract_description(path, driver, wait):
     return description_paragraph
 
 
-def fill_description(raw_data_path, refined_data_path, driver, wait):
-    with open(raw_data_path, "r", encoding="utf-8") as f:
-        raw_data = json.load(f)
-
-    refined_data = {
-        "query": raw_data["query"],
-        "region": raw_data["region"],
-        "total": raw_data["total"],
-        "results": [],
-    }
-
-    for result in raw_data["results"]:
+def fill_description(category, results, driver, wait):
+    for result in results:
         description = extract_description(result["path"], driver, wait)
         result["description"] = description.rstrip()
-        refined_data["results"].append(result)
 
-    os.makedirs(os.path.dirname(refined_data_path), exist_ok=True)
+    with open(os.path.join(DESC_DATA_FOLDER, f"{category}.json"), "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
 
-    with open(refined_data_path, "w", encoding="utf-8") as f:
-        json.dump(refined_data, f, ensure_ascii=False, indent=4)
+    with open(os.path.join(DESC_ARCHIVE_DATA_FOLDER, f"{category}.json"), "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
 
 
 # ---------------------------------------------------------------------------- #
@@ -86,12 +79,13 @@ def generate_better_text(original_title, original_description):
 Title: {original_title}
 Description: {original_description}
 
-Genereate improved title and description to be used as a product listing on shopping websites.
-It should not include any information that is not relevant to the product or quantity information.
+Generate an improved title and description to be used as a product listing on shopping websites.
+This product description and title should be as generic as possible such that it should not be specific to the listing on Shopee.
+It should not include any information that is not relevant to the product nor any quantity information.
 Neither should it include things like "SG Stock" or "Local Seller" as it is not relevant to the product.
 Product dimensions is okay in the description but not in the title.
 
-Please write your answer in this format: 
+Please write your answer in this format:
 Title: <title>
 Description: <description>
 """
@@ -109,29 +103,22 @@ Description: <description>
     return refined_title, refined_description
 
 
-def refine_data(desc_data_path, refined_data_path):
-    with open(desc_data_path, "r", encoding="utf-8") as f:
+def refine_data(filename):
+    with open(os.path.join(DESC_DATA_FOLDER, filename), "r", encoding="utf-8") as f:
         raw_data = json.load(f)
 
-    refined_data = {
-        "query": raw_data["query"],
-        "region": raw_data["region"],
-        "total": raw_data["total"],
-        "results": [],
-    }
-
-    for result in raw_data["results"]:
+    refined_data = []
+    for i in range(1, 21):
+        result = raw_data[i]
         refined_title, refined_description = generate_better_text(
             result["title"], result.get("description", "")
         )
         result["title"] = refined_title
         result["description"] = refined_description
         result["path"] = f"{URL_BASE}{result['path']}"
-        refined_data["results"].append(result)
+        refined_data.append(result)
 
-    os.makedirs(os.path.dirname(refined_data_path), exist_ok=True)
-
-    with open(refined_data_path, "w", encoding="utf-8") as f:
+    with open(os.path.join(REFINED_DATA_FOLDER, filename), "w", encoding="utf-8") as f:
         json.dump(refined_data, f, ensure_ascii=False, indent=4)
 
 
@@ -166,7 +153,7 @@ def main():
         }
 
         for category in categories:
-            for page_number in range(1, 4):
+            for page_number in range(1, 2):
                 querystring = {"q": category, "p": page_number}
                 response = requests.get(
                     url, headers=headers, params=querystring)
@@ -175,7 +162,8 @@ def main():
                     folder_path = create_folder_structure(
                         RAW_DATA_FOLDER, category, page_number
                     )
-                    file_path = os.path.join(folder_path, "raw_data.json")
+                    file_path = os.path.join(
+                        folder_path, f"{page_number}.json")
 
                     with open(file_path, "w") as f:
                         json.dump(response.text, f,
@@ -185,8 +173,7 @@ def main():
                         f"Saved response for '{category}' page {page_number}")
                 else:
                     print(
-                        f"Error for '{category}' page {page_number}: {response.status_code}"
-                    )
+                        f"Error for '{category}' page {page_number}: {response.status_code}")
 
     elif args.action == "filldesc":
         options = webdriver.ChromeOptions()
@@ -198,38 +185,30 @@ def main():
 
         login(driver)
 
-        for root, _, files in os.walk(RAW_DATA_FOLDER):
-            for file in files:
-                if file.endswith(".json"):
-                    desc_data_path = os.path.join(root, file)
-                    desc_data_path = os.path.join(
-                        DESC_DATA_FOLDER,
-                        os.path.relpath(root, RAW_DATA_FOLDER),
-                        "desc.json",
-                    )
+        os.makedirs(DESC_DATA_FOLDER, exist_ok=True)
+        os.makedirs(DESC_ARCHIVE_DATA_FOLDER, exist_ok=True)
+        for category in os.listdir(RAW_DATA_FOLDER):
+            category_path = os.path.join(RAW_DATA_FOLDER, category)
+            if os.path.isdir(category_path):
+                combined_results = []
+                for filename in os.listdir(category_path):
+                    if filename.endswith('.json'):
+                        json_path = os.path.join(category_path, filename)
+                        with open(json_path, 'r') as json_file:
+                            json_data = json.load(json_file)
+                            combined_results.extend(json_data['results'])
 
-                    fill_description(
-                        desc_data_path, desc_data_path, driver, wait)
-                    print(
-                        f"Extracted description {desc_data_path} -> {desc_data_path}")
+                fill_description(category, combined_results, driver, wait)
+                print(f"Extracted description for {category}")
 
         driver.quit()
 
     elif args.action == "refine":
-        for root, _, files in os.walk(DESC_DATA_FOLDER):
-            for file in files:
-                if file.endswith(".json"):
-                    desc_data_path = os.path.join(root, file)
-                    refined_data_path = os.path.join(
-                        REFINED_DATA_FOLDER,
-                        os.path.relpath(root, DESC_DATA_FOLDER),
-                        "refined.json",
-                    )
-
-                    refine_data(desc_data_path, refined_data_path)
-                    print(
-                        f"Generated better descriptions in {desc_data_path} -> {refined_data_path}"
-                    )
+        os.makedirs(REFINED_DATA_FOLDER, exist_ok=True)
+        for filename in os.listdir(DESC_DATA_FOLDER):
+            if filename.endswith('.json') and not os.path.exists(os.path.join(REFINED_DATA_FOLDER, filename)):
+                refine_data(filename)
+                print(f"Generated better descriptions for {filename}")
 
     else:
         print("Invalid action")
