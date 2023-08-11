@@ -73,7 +73,15 @@ export function init(db?: Sequelize) {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    { sequelize: db || getDB() }
+    {
+      sequelize: db || getDB(),
+      indexes: [
+        {
+          unique: true,
+          fields: ["userId", "listingId"],
+        },
+      ],
+    }
   );
 
   SavedListing.belongsTo(Listing, {
