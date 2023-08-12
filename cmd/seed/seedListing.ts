@@ -13,7 +13,7 @@ export default async function seed() {
       const platformDirectory = path.join(
         rootDirectory,
         platform,
-        "3.refinedData"
+        "4.formattedData"
       );
       if (fs.statSync(platformDirectory).isDirectory()) {
         const categories = fs.readdirSync(platformDirectory);
@@ -28,14 +28,15 @@ export default async function seed() {
             );
 
             for (const item of jsonData) {
+              console.log("Inserting", item.title, item);
               await Listing.create({
                 title: item.title,
                 description: item.description,
-                source: item.image,
-                categories: [category.split(".")[0]],
-                price: item.price / 100000,
-                platform: platform.charAt(0).toUpperCase() + platform.slice(1),
-                purchaseUrl: item.path,
+                source: item.source,
+                categories: item.categories,
+                price: item.price,
+                platform: item.platform,
+                purchaseUrl: item.purchaseUrl,
                 isAvailable: true,
               });
             }

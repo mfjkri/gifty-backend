@@ -18,18 +18,18 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 RAW_DATA_FOLDER_NAME = "1.rawData"
 DESC_DATA_FOLDER_NAME = "2.descData"
 DESC_ARCHIVE_DATA_FOLDER_NAME = "archive"
-REFINEDDATA_FOLDER_NAME = "3.refinedData"
+REFINED_DATA_FOLDER_NAME = "3.refinedData"
+FORMATTED_DATA_FOLDER_NAME = "4.formattedData"
 RAW_DATA_FOLDER = os.path.join(SCRIPT_DIR, RAW_DATA_FOLDER_NAME)
 DESC_DATA_FOLDER = os.path.join(SCRIPT_DIR, DESC_DATA_FOLDER_NAME)
-DESC_ARCHIVE_DATA_FOLDER = os.path.join(
-    DESC_DATA_FOLDER, DESC_ARCHIVE_DATA_FOLDER_NAME)
-REFINED_DATA_FOLDER = os.path.join(SCRIPT_DIR, REFINEDDATA_FOLDER_NAME)
+DESC_ARCHIVE_DATA_FOLDER = os.path.join(DESC_DATA_FOLDER, DESC_ARCHIVE_DATA_FOLDER_NAME)
+REFINED_DATA_FOLDER = os.path.join(SCRIPT_DIR, REFINED_DATA_FOLDER_NAME)
+FORMATTED_DATA_FOLDER = os.path.join(SCRIPT_DIR, FORMATTED_DATA_FOLDER_NAME)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def create_folder_structure(folder, search_param):
-    folder_path = os.path.join(
-        SCRIPT_DIR, folder, search_param)
+    folder_path = os.path.join(SCRIPT_DIR, folder, search_param)
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
 
@@ -61,10 +61,16 @@ def fill_description(category, results, driver, wait):
         description = extract_description(result["path"], driver, wait)
         result["description"] = description.rstrip()
 
-    with open(os.path.join(DESC_DATA_FOLDER, f"{category}.json"), "w", encoding="utf-8") as f:
+    with open(
+        os.path.join(DESC_DATA_FOLDER, f"{category}.json"), "w", encoding="utf-8"
+    ) as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(DESC_ARCHIVE_DATA_FOLDER, f"{category}.json"), "w", encoding="utf-8") as f:
+    with open(
+        os.path.join(DESC_ARCHIVE_DATA_FOLDER, f"{category}.json"),
+        "w",
+        encoding="utf-8",
+    ) as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
 
@@ -115,7 +121,6 @@ def refine_data(filename):
         )
         result["title"] = refined_title
         result["description"] = refined_description
-        result["path"] = f"{URL_BASE}{result['path']}"
         refined_data.append(result)
 
     with open(os.path.join(REFINED_DATA_FOLDER, filename), "w", encoding="utf-8") as f:
@@ -125,10 +130,41 @@ def refine_data(filename):
 # ---------------------------------------------------------------------------- #
 
 
+# ---------------------------------------------------------------------------- #
+#                                    FORMAT                                    #
+# ---------------------------------------------------------------------------- #
+def format_data(filename):
+    with open(os.path.join(REFINED_DATA_FOLDER, filename), "r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+
+    formatted_data = []
+    for data in raw_data:
+        listing = {
+            "title": data["title"],
+            "description": data["description"],
+            "source": data["image"],
+            "categories": [filename.removesuffix(".json")],
+            "price": data["price"] / 100000,
+            "platform": "Shopee",
+            "purchaseUrl": f"{URL_BASE}{data['path']}",
+        }
+        formatted_data.append(listing)
+
+    with open(
+        os.path.join(FORMATTED_DATA_FOLDER, filename), "w", encoding="utf-8"
+    ) as f:
+        json.dump(formatted_data, f, ensure_ascii=False, indent=4)
+
+
+# ---------------------------------------------------------------------------- #
+
+
 def main():
     parser = argparse.ArgumentParser(description="Shopee Scraper")
     parser.add_argument(
-        "action", choices=["populate", "filldesc", "refine"], help="Action to perform"
+        "action",
+        choices=["populate", "filldesc", "refine", "format"],
+        help="Action to perform",
     )
     args = parser.parse_args()
 
@@ -148,32 +184,27 @@ def main():
         ]
 
         headers = {
-            "X-RapidAPI-Key": os.getenv("SHOPEE_RAPID_API_KEY"),
+            "X-RapidAPI-Key": os.getenv("RAPID_API_KEY"),
             "X-RapidAPI-Host": os.getenv("SHOPEE_RAPID_API_HOST"),
         }
 
         for category in categories:
             for page_number in range(1, 2):
                 querystring = {"q": category, "p": page_number}
-                response = requests.get(
-                    url, headers=headers, params=querystring)
+                response = requests.get(url, headers=headers, params=querystring)
 
                 if response.status_code == 200:
-                    folder_path = create_folder_structure(
-                        RAW_DATA_FOLDER, category, page_number
-                    )
-                    file_path = os.path.join(
-                        folder_path, f"{page_number}.json")
+                    folder_path = create_folder_structure(RAW_DATA_FOLDER, category)
+                    file_path = os.path.join(folder_path, f"{page_number}.json")
 
                     with open(file_path, "w") as f:
-                        json.dump(response.text, f,
-                                  ensure_ascii=False, indent=4)
+                        json.dump(response.text, f, ensure_ascii=False, indent=4)
 
-                    print(
-                        f"Saved response for '{category}' page {page_number}")
+                    print(f"Saved response for '{category}' page {page_number}")
                 else:
                     print(
-                        f"Error for '{category}' page {page_number}: {response.status_code}")
+                        f"Error for '{category}' page {page_number}: {response.status_code}"
+                    )
 
     elif args.action == "filldesc":
         options = webdriver.ChromeOptions()
@@ -192,11 +223,11 @@ def main():
             if os.path.isdir(category_path):
                 combined_results = []
                 for filename in os.listdir(category_path):
-                    if filename.endswith('.json'):
+                    if filename.endswith(".json"):
                         json_path = os.path.join(category_path, filename)
-                        with open(json_path, 'r') as json_file:
+                        with open(json_path, "r") as json_file:
                             json_data = json.load(json_file)
-                            combined_results.extend(json_data['results'])
+                            combined_results.extend(json_data["results"])
 
                 fill_description(category, combined_results, driver, wait)
                 print(f"Extracted description for {category}")
@@ -206,9 +237,18 @@ def main():
     elif args.action == "refine":
         os.makedirs(REFINED_DATA_FOLDER, exist_ok=True)
         for filename in os.listdir(DESC_DATA_FOLDER):
-            if filename.endswith('.json') and not os.path.exists(os.path.join(REFINED_DATA_FOLDER, filename)):
+            if filename.endswith(".json") and not os.path.exists(
+                os.path.join(REFINED_DATA_FOLDER, filename)
+            ):
                 refine_data(filename)
                 print(f"Generated better descriptions for {filename}")
+
+    elif args.action == "format":
+        os.makedirs(FORMATTED_DATA_FOLDER, exist_ok=True)
+        for filename in os.listdir(REFINED_DATA_FOLDER):
+            if filename.endswith(".json"):
+                format_data(filename)
+                print(f"Formatted {filename}")
 
     else:
         print("Invalid action")
