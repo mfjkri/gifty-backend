@@ -8,46 +8,32 @@ import WishlistedListing from "../../models/wishlistedListing";
 
 const ERROR_LISTING_DOES_NOT_EXIST = "Listing does not exist";
 
-export async function getListing(listingId: number, user: User, res: Response) {
-  const listing = await Listing.findOne({ where: { id: listingId } });
-  if (!listing) {
-    res.status(400).json({ message: ERROR_LISTING_DOES_NOT_EXIST });
-    return null;
-  }
-
+export async function joinListing(listing: Listing, user: User) {
   let isGifted = false;
   let isSaved = false;
-  {
-    const giftedListings = await GiftedListing.findAll({
-      where: { userId: user.id, listingId: listing.id },
-    });
-    if (giftedListings.length > 0) {
-      for (const giftedListing of giftedListings) {
-        isGifted = isGifted || giftedListing.isGifted;
-      }
-    }
+  const giftedListings = await GiftedListing.findAll({
+    where: { userId: user.id, listingId: listing.id },
+  });
+  for (const giftedListing of giftedListings) {
+    isGifted = isGifted || giftedListing.isGifted;
   }
-  {
-    const savedListings = await SavedListing.findAll({
-      where: { userId: user.id, listingId: listing.id },
-    });
-    if (savedListings.length > 0) {
-      for (const savedListing of savedListings) {
-        isSaved = isSaved || savedListing.isSaved;
-      }
+  const savedListings = await SavedListing.findAll({
+    where: { userId: user.id, listingId: listing.id },
+  });
+  if (savedListings.length > 0) {
+    for (const savedListing of savedListings) {
+      isSaved = isSaved || savedListing.isSaved;
     }
   }
 
   const wishlisted: number[] = [];
-  {
-    const wishlistedListings = await WishlistedListing.findAll({
-      where: { userId: user.id, listingId: listing.id },
-    });
-    if (wishlistedListings.length > 0) {
-      for (const wishlistedListing of wishlistedListings) {
-        if (wishlistedListing.isWishlisted) {
-          wishlisted.push(wishlistedListing.personId);
-        }
+  const wishlistedListings = await WishlistedListing.findAll({
+    where: { userId: user.id, listingId: listing.id },
+  });
+  if (wishlistedListings.length > 0) {
+    for (const wishlistedListing of wishlistedListings) {
+      if (wishlistedListing.isWishlisted) {
+        wishlisted.push(wishlistedListing.personId);
       }
     }
   }
@@ -68,4 +54,14 @@ export async function getListing(listingId: number, user: User, res: Response) {
     isSaved,
     wishlisted,
   };
+}
+
+export async function getListing(listingId: number, user: User, res: Response) {
+  const listing = await Listing.findOne({ where: { id: listingId } });
+  if (!listing) {
+    res.status(400).json({ message: ERROR_LISTING_DOES_NOT_EXIST });
+    return null;
+  }
+
+  return joinListing(listing, user);
 }

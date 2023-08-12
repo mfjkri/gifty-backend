@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 
 import { getListing } from "./listing";
 import { ListSavedListingParams } from "../../params/listing/listSavedListing";
-import Listing from "../../models/listing";
+import SavedListing from "../../models/savedListing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
 
@@ -16,7 +16,6 @@ export default async function handleListSavedListing(
 ) {
   try {
     const whereClause: any = {};
-    // Apply search filter
     const searchParam = req.params.search;
     if (searchParam) {
       whereClause[Op.or] = [
@@ -28,12 +27,19 @@ export default async function handleListSavedListing(
     const order: OrderItem[] = [];
     order.push(["updatedAt", "ASC"]);
 
-    const listings = await Listing.findAll({ where: whereClause, order });
+    const savedListings = await SavedListing.findAll({
+      where: [{ userId: req.body.user.id, isSaved: true }, whereClause],
+      order,
+    });
 
     const listingsJoined: any[] = [];
-    for (const listing of listings) {
-      const listingJoined = await getListing(listing.id, req.body.user, res);
-      if (listingJoined && listingJoined.isSaved) {
+    for (const savedListing of savedListings) {
+      const listingJoined = await getListing(
+        savedListing.listingId,
+        req.body.user,
+        res
+      );
+      if (listingJoined) {
         listingsJoined.push(listingJoined);
       }
     }

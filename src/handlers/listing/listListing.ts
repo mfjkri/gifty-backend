@@ -2,7 +2,7 @@ import { Op, OrderItem } from "sequelize";
 import { Request, Response } from "express";
 
 import { ListListingParams } from "../../params/listing/listListing";
-import { getListing } from "./listing";
+import { joinListing } from "./listing";
 import Listing from "../../models/listing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
@@ -15,8 +15,16 @@ export default async function handleListListing(
   params: ListListingParams
 ) {
   try {
-    const { orderBy, search, categories, platform, minPrice, maxPrice } =
-      req.query;
+    const {
+      orderBy,
+      search,
+      categories,
+      platform,
+      minPrice,
+      maxPrice,
+      page,
+      limit,
+    } = req.query;
     const whereClause: any = {};
 
     // Apply search filter
@@ -62,22 +70,35 @@ export default async function handleListListing(
       order.push(["updatedAt", "DESC"]);
     }
 
+    // Pagination settings
+    const currentPage = page ? page : 1;
+    const itemsPerPage = limit ? limit : 10; // Default to 10 items per page
+
+    const offset = (currentPage - 1) * itemsPerPage;
+
+    const totalCount = await Listing.count({ where: whereClause });
+    const totalPages = Math.ceil(totalCount / itemsPerPage);
+
     const listings = await Listing.findAll({
       where: whereClause,
       order,
+      limit: itemsPerPage,
+      offset: offset,
     });
 
     const listingsJoined: any[] = [];
     for (const listing of listings) {
-      const listingJoined = await getListing(listing.id, req.body.user, res);
+      const listingJoined = await joinListing(listing, req.body.user);
       if (listingJoined) {
         listingsJoined.push(listingJoined);
       }
     }
 
-    res.status(201).json({
+    res.status(200).json({
       message: SUCCESS_LIST_LISTING,
       listing: listingsJoined,
+      currentPage,
+      totalPages,
     });
   } catch (error) {
     res.status(500).json({ message: ERROR_FAILED_TO_LIST_LISTING, error });

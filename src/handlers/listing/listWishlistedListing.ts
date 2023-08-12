@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 
 import { getListing } from "./listing";
 import { ListWishlistedListingParams } from "../../params/listing/listWishlistedListing";
-import Listing from "../../models/listing";
+import WishlistedListing from "../../models/wishlistedListing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
 
@@ -27,15 +27,19 @@ export default async function handleListWishlistedListing(
     const order: OrderItem[] = [];
     order.push(["updatedAt", "DESC"]);
 
-    const listings = await Listing.findAll({ where: whereClause, order });
+    const wishlistedListings = await WishlistedListing.findAll({
+      where: [{ userId: req.body.user.id, isWishlisted: true }, whereClause],
+      order,
+    });
 
     const listingsJoined: any[] = [];
-    for (const listing of listings) {
-      const listingJoined = await getListing(listing.id, req.body.user, res);
-      if (
-        listingJoined &&
-        listingJoined.wishlisted.includes(parseInt(req.params.personId))
-      ) {
+    for (const wishlistedListing of wishlistedListings) {
+      const listingJoined = await getListing(
+        wishlistedListing.listingId,
+        req.body.user,
+        res
+      );
+      if (listingJoined) {
         listingsJoined.push(listingJoined);
       }
     }

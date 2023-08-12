@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 
 import { getListing } from "./listing";
 import { ListGiftedListingParams } from "../../params/listing/listGiftedListing";
-import Listing from "../../models/listing";
+import GiftedListing from "../../models/giftedListing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
 
@@ -16,7 +16,6 @@ export default async function handleListGiftedListing(
 ) {
   try {
     const whereClause: any = {};
-    // Apply search filter
     const searchParam = req.params.search;
     if (searchParam) {
       whereClause[Op.or] = [
@@ -28,12 +27,19 @@ export default async function handleListGiftedListing(
     const order: OrderItem[] = [];
     order.push(["updatedAt", "ASC"]);
 
-    const listings = await Listing.findAll({ where: whereClause, order });
+    const giftedListings = await GiftedListing.findAll({
+      where: [{ userId: req.body.user.id, isGifted: true }, whereClause],
+      order,
+    });
 
     const listingsJoined: any[] = [];
-    for (const listing of listings) {
-      const listingJoined = await getListing(listing.id, req.body.user, res);
-      if (listingJoined && listingJoined.isGifted) {
+    for (const giftedListing of giftedListings) {
+      const listingJoined = await getListing(
+        giftedListing.listingId,
+        req.body.user,
+        res
+      );
+      if (listingJoined) {
         listingsJoined.push(listingJoined);
       }
     }

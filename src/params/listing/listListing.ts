@@ -7,6 +7,8 @@ export interface ListListingParams {
   platform?: string;
   minPrice?: number;
   maxPrice?: number;
+  page?: number;
+  limit?: number;
 }
 
 export function parseParams(json: any): ListListingParams | undefined {
