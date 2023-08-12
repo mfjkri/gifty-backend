@@ -23,7 +23,7 @@ export default async function handleListPerson(
       whereClause[Op.or] = [{ name: { [Op.iLike]: `%${searchParam}%` } }];
     }
     const order: OrderItem[] = [];
-    order.push(["updatedAt", "DESC"]);
+    order.push(["name", "ASC"]);
 
     const persons = await Person.findAll({
       where: [whereClause, { userId: user.id }],
