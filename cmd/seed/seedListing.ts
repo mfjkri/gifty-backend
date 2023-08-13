@@ -8,6 +8,7 @@ const rootDirectory = "cmd/scraper/data";
 export default async function seed() {
   try {
     const platforms = fs.readdirSync(rootDirectory);
+    const dateNow = Date.now();
 
     for (const platform of platforms) {
       const platformDirectory = path.join(
@@ -29,15 +30,23 @@ export default async function seed() {
 
             for (const item of jsonData) {
               console.log("Inserting", item.title, item);
+              const creationDate = new Date(
+                dateNow - Math.floor(Math.random() * 10000000)
+              );
+
               await Listing.create({
                 title: item.title,
                 description: item.description,
                 source: item.source,
+
                 categories: item.categories,
                 price: item.price,
                 platform: item.platform,
                 purchaseUrl: item.purchaseUrl,
                 isAvailable: true,
+
+                createdAt: creationDate,
+                updatedAt: creationDate,
               });
             }
           }
