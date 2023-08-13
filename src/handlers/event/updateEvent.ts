@@ -32,7 +32,7 @@ export default async function handleUpdateEvent(
     if (params.date) {
       event.date = new Date(params.date);
     }
-    if (params.reminder) {
+    if (params.reminder !== undefined) {
       event.reminder = params.reminder;
     }
     await event.save();
