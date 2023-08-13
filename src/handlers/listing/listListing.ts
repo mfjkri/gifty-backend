@@ -67,6 +67,8 @@ export default async function handleListListing(
       order.push(["updatedAt", "ASC"]);
     } else if (orderBy === "updatedAt_desc") {
       order.push(["updatedAt", "DESC"]);
+    } else {
+      order.push(["createdAt", "DESC"]);
     }
 
     // Pagination settings
