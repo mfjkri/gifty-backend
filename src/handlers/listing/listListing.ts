@@ -2,7 +2,6 @@ import { Op, OrderItem } from "sequelize";
 import { Request, Response } from "express";
 
 import { ListListingParams } from "../../params/listing/listListing";
-import { joinListing } from "./listing";
 import Listing from "../../models/listing";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
@@ -72,7 +71,7 @@ export default async function handleListListing(
 
     // Pagination settings
     const currentPage = page ? page : 1;
-    const itemsPerPage = limit ? limit : 10;
+    const itemsPerPage = limit ? limit : 50;
     const offset = (currentPage - 1) * itemsPerPage;
     const totalCount = await Listing.count({ where: whereClause });
     const totalPages = Math.ceil(totalCount / itemsPerPage);
