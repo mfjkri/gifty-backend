@@ -72,10 +72,8 @@ export default async function handleListListing(
 
     // Pagination settings
     const currentPage = page ? page : 1;
-    const itemsPerPage = limit ? limit : 10; // Default to 10 items per page
-
+    const itemsPerPage = limit ? limit : 10;
     const offset = (currentPage - 1) * itemsPerPage;
-
     const totalCount = await Listing.count({ where: whereClause });
     const totalPages = Math.ceil(totalCount / itemsPerPage);
 
@@ -86,17 +84,9 @@ export default async function handleListListing(
       offset: offset,
     });
 
-    const listingsJoined: any[] = [];
-    for (const listing of listings) {
-      const listingJoined = await joinListing(listing, req.body.user);
-      if (listingJoined) {
-        listingsJoined.push(listingJoined);
-      }
-    }
-
     res.status(200).json({
       message: SUCCESS_LIST_LISTING,
-      listing: listingsJoined,
+      listing: listings,
       currentPage,
       totalPages,
     });
