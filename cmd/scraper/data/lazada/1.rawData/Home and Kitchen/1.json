@@ -1,0 +1,969 @@
+{
+    "result": {
+        "status": {
+            "data": "success",
+            "code": 200,
+            "executionTime": "1.34",
+            "requestTime": "2023-08-12 12:56:26",
+            "endpoint": "item_search",
+            "requestId": "c3cb94dd045a4497028a89a3e7a78a4a",
+            "apiVersion": "3.1.2",
+            "functionsVersion": "3.0.5",
+            "la": "0.00",
+            "pmu": 879056,
+            "mu": 878736
+        },
+        "settings": {
+            "q": "Home and Kitchen",
+            "loc": "",
+            "attr": "",
+            "sort": "default",
+            "page": "1",
+            "startPrice": "",
+            "endPrice": "",
+            "region": "SG",
+            "locale": "en_SG",
+            "currency": "SGD"
+        },
+        "base": {
+            "page": "1",
+            "totalResults": "3000",
+            "pageSize": "40",
+            "q": "Home and Kitchen",
+            "sortValues": [
+                "default",
+                "priceAsc",
+                "priceDesc"
+            ],
+            "switchesList": {
+                "name": "Service & Promotion",
+                "list": [
+                    {
+                        "name": "Preferred",
+                        "id": "lazpick",
+                        "image": "//gw.alicdn.com/imgextra/i4/O1CN01eJliYM1RweaFLu1D1_!!6000000002176-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Store Pick-up",
+                        "id": "storepickup_1663549401668"
+                    },
+                    {
+                        "name": "Cashback",
+                        "id": "cashback",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01v2fTTl1L0afUjZmKP_!!6000000001237-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Shiok",
+                        "id": "sg_filter_ShiokLocaldeal",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/3bcc901fc1b937bba16bb7d75400dbfbShioklocal.png"
+                    },
+                    {
+                        "name": "Fulfilled By Lazada",
+                        "id": "FBL"
+                    },
+                    {
+                        "name": "Below $4.99",
+                        "id": "elp",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/200f45aa4ee1bf19275ea36ef18fd950SRPTAB(1).png"
+                    },
+                    {
+                        "name": "LazMall",
+                        "id": "official",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01SOxgmS1zfQX5caIQS_!!6000000006741-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Priority Delivery",
+                        "id": "FLASH_SHIPPING",
+                        "image": "//img.alicdn.com/imgextra/i4/O1CN0115NZlQ1Z3i1a58SMe_!!6000000003139-2-tps-60-61.png"
+                    },
+                    {
+                        "name": "Taobao",
+                        "id": "tbc",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01oYHpda1jfr3DHpWOg_!!6000000004576-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Free Shipping",
+                        "id": "freeShipping",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01VY6fyb1KPwum3OzZA_!!6000000001157-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Mailbox Delivery",
+                        "id": "ECONOMY"
+                    },
+                    {
+                        "name": "Coins",
+                        "id": "coins",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01u545I31bGePSQtbYH_!!6000000003438-2-tps-60-60.png"
+                    }
+                ]
+            },
+            "locationList": {
+                "name": "Location",
+                "list": [
+                    {
+                        "name": "Singapore",
+                        "id": "local"
+                    },
+                    {
+                        "name": "China",
+                        "id": "-49"
+                    },
+                    {
+                        "name": "Chile",
+                        "id": "-47"
+                    },
+                    {
+                        "name": "South Korea",
+                        "id": "-122"
+                    },
+                    {
+                        "name": "Japan",
+                        "id": "-114"
+                    },
+                    {
+                        "name": "Lithuania",
+                        "id": "-133"
+                    },
+                    {
+                        "name": "Malaysia",
+                        "id": "-158"
+                    },
+                    {
+                        "name": "Thailand",
+                        "id": "-216"
+                    }
+                ]
+            },
+            "attributeList": [
+                {
+                    "name": "Color",
+                    "list": [
+                        {
+                            "name": "White",
+                            "id": "30129:3743"
+                        },
+                        {
+                            "name": "Green",
+                            "id": "30129:3736"
+                        },
+                        {
+                            "name": "Pink",
+                            "id": "30129:3739"
+                        },
+                        {
+                            "name": "Blue",
+                            "id": "30129:3732"
+                        },
+                        {
+                            "name": "Yellow",
+                            "id": "30129:3744"
+                        },
+                        {
+                            "name": "Grey",
+                            "id": "30129:3735"
+                        },
+                        {
+                            "name": "Black",
+                            "id": "30129:3731"
+                        }
+                    ]
+                }
+            ],
+            "categoryList": {
+                "name": "Category",
+                "list": [
+                    {
+                        "name": "Bowls",
+                        "id": "shop-bowls"
+                    },
+                    {
+                        "name": "Aprons",
+                        "id": "shop-aprons"
+                    }
+                ]
+            }
+        },
+        "resultList": [
+            {
+                "item": {
+                    "itemId": "2854481012",
+                    "title": "YUYUANTIAN Home and Kitchen Bath Stopper Sewer Bathroom Accessories Colander Sink Strainer Hair Filter Drains Cover",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/yuyuantian-home-and-kitchen-bath-stopper-sewer-bathroom-accessories-colander-sink-strainer-hair-filter-drains-cover-i2854481012-s19677343887.html",
+                    "sales": null,
+                    "image": "//sg-test-11.slatic.net/p/5e9fb6a65797535454bb5d01f778333d.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-test-11.slatic.net/p/5a664a177fc06dad9d3fe560bab72d00.jpg",
+                            "sku": "2854481012_SGAMZ",
+                            "skuId": "19677343887"
+                        },
+                        {
+                            "image": "//sg-test-11.slatic.net/p/6d135d2cb1c3c2065ab4e7b7718ad0c4.jpg",
+                            "sku": "2854481012_SGAMZ",
+                            "skuId": "19677343889"
+                        },
+                        {
+                            "image": "//sg-test-11.slatic.net/p/a19242f151b231b0a1f37d801adba3be.jpg",
+                            "sku": "2854481012_SGAMZ",
+                            "skuId": "19677343888"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.36",
+                            "promotionPrice": "1.98"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000045269",
+                    "sellerTitle": "yuyuantian"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2724608515",
+                    "title": "1000ML Multi-use Stainless Steel Gravy Oil Soup Fat Separator Grease Oiler Filter Strainer Bowl With Cleaning Brush Home Kitchen Cooking Tools",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/1000ml-multi-use-stainless-steel-gravy-oil-soup-fat-separator-grease-oiler-filter-strainer-bowl-with-cleaning-brush-home-kitchen-cooking-tools-i2724608515-s18450281184.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/93aecd81e6c259646a787206ecbe8c0c.png",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/93aecd81e6c259646a787206ecbe8c0c.png",
+                            "sku": "2724608515_SGAMZ",
+                            "skuId": "18450281184"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/1679d111bcc4a671b6d83f938da07367.png",
+                            "sku": "2724608515_SGAMZ",
+                            "skuId": "18450281185"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "16.5",
+                            "promotionPrice": "9.9"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1133394502",
+                    "sellerTitle": "shihe7337363992"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2470599709",
+                    "title": "6pcs/Set Double-Layer Vegetable Washing Basket Stackable home and kitchen must buy, Colanders, basket.",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/6pcsset-double-layer-vegetable-washing-basket-stackable-home-and-kitchen-must-buy-colanders-basket-i2470599709-s14715963884.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/dd9f6768d91a4cdc6597a13d1ec6f4d9.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/e3c1def4c0d2c9ef4f0aaa35ad2e5852.jpg",
+                            "sku": "2470599709_SGAMZ",
+                            "skuId": "14715963884"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/00aeb3e8984654c172b8cfa093387814.jpg",
+                            "sku": "2470599709_SGAMZ",
+                            "skuId": "14715963885"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "15"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "100016922",
+                    "sellerTitle": "healthyliving123"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2689306271",
+                    "title": "EUMNATI Deep Frying Stainless Steel Chicken Wings Restaurant Kitchen Home Cooking Tools Food Colander Fry Basket Filter",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/eumnati-deep-frying-stainless-steel-chicken-wings-restaurant-kitchen-home-cooking-tools-food-colander-fry-basket-filter-i2689306271-s17764290738.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/97eba7e26b420b81cb7557dc5096b6b5.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//ph-live-02.slatic.net/p/60e672bdfd1ee2c67cbc470e513c3c8f.jpg",
+                            "sku": "2689306271_SGAMZ",
+                            "skuId": "17764290738"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "11.41",
+                            "promotionPrice": "6.73"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1141215376",
+                    "sellerTitle": "perrleum nation58on0"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2833897486",
+                    "title": "L-Warm Plastic Egg Yolk White Separator Tool Simple and Convenient Household Egg Separator for Home Kitchen Baking and Cooking",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/l-warm-plastic-egg-yolk-white-separator-tool-simple-and-convenient-household-egg-separator-for-home-kitchen-baking-and-cooking-i2833897486-s19534619958.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/f0dd3335f8bc1fa777b2115e6046316b.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/f0dd3335f8bc1fa777b2115e6046316b.jpg",
+                            "sku": "2833897486_SGAMZ",
+                            "skuId": "19534619958"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/dd21bbaa6623fcf3de69026518aecc70.jpg",
+                            "sku": "2833897486_SGAMZ",
+                            "skuId": "19534619959"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/7b508bb44eea54f75f0190de205ca71a.jpg",
+                            "sku": "2833897486_SGAMZ",
+                            "skuId": "19534619956"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/1070668fa0cba30bc3d8ee5f07dfe839.jpg",
+                            "sku": "2833897486_SGAMZ",
+                            "skuId": "19534619957"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/9b23c632be8a990839371b83e649abd2.jpg",
+                            "sku": "2833897486_SGAMZ",
+                            "skuId": "19534619955"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.9",
+                            "promotionPrice": "2"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000059888",
+                    "sellerTitle": "L-Warm"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2500828736",
+                    "title": "Household Colander Frying Strainer Large Filter Screen Frying Control Spoon Hotel Kitchen Commercial Encryption Spoon Household Strainer",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/household-colander-frying-strainer-large-filter-screen-frying-control-spoon-hotel-kitchen-commercial-encryption-spoon-household-strainer-i2500828736-s15145817594.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/Sd7c235ecc83249bcaa2461bf4eb88240U.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S567ef174257b487bb5d850a150f843cfR.jpg",
+                            "sku": "2500828736_SGAMZ",
+                            "skuId": "15145817594"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "7.2",
+                            "promotionPrice": "6.5"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Hong Kong SAR China"
+                },
+                "seller": {
+                    "sellerId": "1147134130",
+                    "sellerTitle": "TAO Kitchen Utensils"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2701156471",
+                    "title": "Moon Queen Kitchen Sink Drain Basket Pasta Wash Fruits and Vegetables for Bathroom Home",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/moon-queen-kitchen-sink-drain-basket-pasta-wash-fruits-and-vegetables-for-bathroom-home-i2701156471-s17929627590.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/a8c59bbce35128c89a6cb68623f4fbf2.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/a8c59bbce35128c89a6cb68623f4fbf2.jpg",
+                            "sku": "2701156471_SGAMZ",
+                            "skuId": "17929627590"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "10",
+                            "promotionPrice": "5.8"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1142205002",
+                    "sellerTitle": "Moon Queen"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2759757613",
+                    "title": "1/2pcs Universal Hooks Punch-free Non-marking Stickers Kitchen Organizer Rotated 360 Degrees Weighing Six-claw Storage Hook Home And Bar Bathroom Bath Towel Rack Kitchen Storage  Reusable and Strong Adhesion",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/12pcs-universal-hooks-punch-free-non-marking-stickers-kitchen-organizer-rotated-360-degrees-weighing-six-claw-storage-hook-home-and-bar-bathroom-bath-towel-rack-kitchen-storage-reusable-and-strong-adhesion-i2759757613-s18761635853.html",
+                    "sales": null,
+                    "image": "//my-live-01.slatic.net/p/f91a7ba06e0c847b92ad99593a988acf.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-01.slatic.net/p/7ee53ee371b18938f5bf4fbd32005bc5.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635853"
+                        },
+                        {
+                            "image": "//my-live-01.slatic.net/p/9907796fa080267226cc6f9fc47d76ee.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635852"
+                        },
+                        {
+                            "image": "//my-live-01.slatic.net/p/520f0054a07a1e5bf00eef7e41bf6187.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635848"
+                        },
+                        {
+                            "image": "//my-live-01.slatic.net/p/8bd49ec471a90e2a6a7cb97fc63b90c9.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635849"
+                        },
+                        {
+                            "image": "//my-live-01.slatic.net/p/13b1bc85347dab7b9815e897ac39e84b.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635850"
+                        },
+                        {
+                            "image": "//my-live-01.slatic.net/p/1981f97d3cd4fedf573ba31dfff73713.jpg",
+                            "sku": "2759757613_SGAMZ",
+                            "skuId": "18761635851"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "9.84",
+                            "promotionPrice": "5.4"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1188944382",
+                    "sellerTitle": "ChunHe Living"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2821855039",
+                    "title": "Women Men Coffee House Striped Home BBQ Restaurant Accessories Gardening With Pockets Cooking Baking Cleaning Kitchen Apron",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/women-men-coffee-house-striped-home-bbq-restaurant-accessories-gardening-with-pockets-cooking-baking-cleaning-kitchen-apron-i2821855039-s19468057553.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/dd3c67e9dda7c5fc5f9c7469c68838f3.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/dd3c67e9dda7c5fc5f9c7469c68838f3.jpg",
+                            "sku": "2821855039_SGAMZ",
+                            "skuId": "19468057553"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "11.73",
+                            "promotionPrice": "6.52"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1133022783",
+                    "sellerTitle": "willse"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2852144185",
+                    "title": "【Home Palace】 Lovely Pig Polyester Sleeveless Pockets Home Kitchen Cooking Anti-Splash Apron",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/home-palace-lovely-pig-polyester-sleeveless-pockets-home-kitchen-cooking-anti-splash-apron-i2852144185-s19661301782.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/c0f7cfbfc511f7af29bd7b31e906dc85.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/c0f7cfbfc511f7af29bd7b31e906dc85.jpg",
+                            "sku": "2852144185_SGAMZ",
+                            "skuId": "19661301782"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/2c6f54909a214b56754fbdc9415e204f.jpg",
+                            "sku": "2852144185_SGAMZ",
+                            "skuId": "19661301783"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/1269cbcade6dae9a39dc13d7c6823d96.jpg",
+                            "sku": "2852144185_SGAMZ",
+                            "skuId": "19661301781"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/9cd7e82007931e4ae3e8846490c46b5f.jpg",
+                            "sku": "2852144185_SGAMZ",
+                            "skuId": "19661301785"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/89fa39882135e62e7e5e0073f140f8ca.jpg",
+                            "sku": "2852144185_SGAMZ",
+                            "skuId": "19661301784"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "4.54",
+                            "promotionPrice": "2.39"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1133391776",
+                    "sellerTitle": "Home Palace"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2700698527",
+                    "title": "Creative Home Products Kitchen Products Utensils Small Supplies Home Collection Every Artifact for a Lazy Practical Life",
+                    "brandId": "0",
+                    "brandName": "",
+                    "itemUrl": "//www.lazada.sg/products/creative-home-products-kitchen-products-utensils-small-supplies-home-collection-every-artifact-for-a-lazy-practical-life-i2700698527-s17920055161.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S0c0f86b59d04414ea5415f4070cbd0a9c.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S5e3d2db006fd4d89a73222972d775e18Q.jpg",
+                            "sku": "2700698527_SGAMZ",
+                            "skuId": "17920055161"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "15.7"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100005188",
+                    "sellerTitle": "Taobao"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2467913908",
+                    "title": "JustLiving 304 Stainless Steel Kitchen Food Colander Household Large Size Filter Spoon Anti-scalding Deep Fried Large Hot Pot Colander Spoons",
+                    "brandId": "124338488",
+                    "brandName": "Just Living",
+                    "itemUrl": "//www.lazada.sg/products/justliving-304-stainless-steel-kitchen-food-colander-household-large-size-filter-spoon-anti-scalding-deep-fried-large-hot-pot-colander-spoons-i2467913908-s14691722916.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/0d83fa8d4a99bc0a271c701dcace3c49.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/0d83fa8d4a99bc0a271c701dcace3c49.jpg",
+                            "sku": "2467913908_SGAMZ",
+                            "skuId": "14691722916"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "7.2",
+                            "promotionPrice": "4.73"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000110446",
+                    "sellerTitle": "JustLiving Store"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2749356348",
+                    "title": "Plastic Egg Separator White Yolk Sifting Home Kitchen Chef Dining Cooking Gadget New",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/plastic-egg-separator-white-yolk-sifting-home-kitchen-chef-dining-cooking-gadget-new-i2749356348-s18650948981.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/b22566f9308b996cba1bb51876e61bdb.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/9c19ee16f79ee4960499d4df83f8979b.jpg",
+                            "sku": "2749356348_SGAMZ",
+                            "skuId": "18650948981"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "13.9",
+                            "promotionPrice": "9.08"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000147858",
+                    "sellerTitle": "wfisrop927"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2815842383",
+                    "title": "For Daily Use With Handle Cooking Utensil Frying Multifunction Easy Clean Oil Skimming Stainless Steel Home Draining Kitchen Strainer Colander",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/for-daily-use-with-handle-cooking-utensil-frying-multifunction-easy-clean-oil-skimming-stainless-steel-home-draining-kitchen-strainer-colander-i2815842383-s19433897995.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/0de549f91490e4a39b17066ddcbdf710.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/0de549f91490e4a39b17066ddcbdf710.jpg",
+                            "sku": "2815842383_SGAMZ",
+                            "skuId": "19433897995"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "18.94",
+                            "promotionPrice": "10.52"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000007139",
+                    "sellerTitle": "Blueskytoy158"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2791939975",
+                    "title": "DISILLUSIONSTORE77RE6 Creative Animal Pig Frog Home and Living Cooking Supplies Household Egg Yolk Extractor Silicone Chick Egg Separator Egg White Separator",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/disillusionstore77re6-creative-animal-pig-frog-home-and-living-cooking-supplies-household-egg-yolk-extractor-silicone-chick-egg-separator-egg-white-separator-i2791939975-s19285197693.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/a64dd284fd0541438756cb2ed4925c4e.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//ph-live-02.slatic.net/p/1a9893d94d311d89d64d61c045eb9cae.jpg",
+                            "sku": "2791939975_SGAMZ",
+                            "skuId": "19285197693"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "4.66",
+                            "promotionPrice": "2.75"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1140066088",
+                    "sellerTitle": "DisillusionStore77re6"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2839238288",
+                    "title": "CNY Hot pot Steamboat Multi-Function Double-Layer Rotatable Vegetable Storage Basket Washing Rotary Draining Rack Kitchen Household Tool",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/cny-hot-pot-steamboat-multi-function-double-layer-rotatable-vegetable-storage-basket-washing-rotary-draining-rack-kitchen-household-tool-i2839238288-s19573071346.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/3bf2034e5641f7cc316590490cb523fa.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/3bf2034e5641f7cc316590490cb523fa.jpg",
+                            "sku": "2839238288_SGAMZ",
+                            "skuId": "19573071346"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/24fbca39fe8fa4f719a93a840e5d694d.jpg",
+                            "sku": "2839238288_SGAMZ",
+                            "skuId": "19573071347"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "35",
+                            "promotionPrice": "23"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000204385",
+                    "sellerTitle": "BONUAN"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2777615580",
+                    "title": "Stainless Steel Kitchen Home Oil Teaware Cooking Tools Bar Portable Accessories Multipurpose Strainer",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/stainless-steel-kitchen-home-oil-teaware-cooking-tools-bar-portable-accessories-multipurpose-strainer-i2777615580-s19196521821.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/0fafb3b1c52e838737825922b56c64fb.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/0fafb3b1c52e838737825922b56c64fb.jpg",
+                            "sku": "2777615580_SGAMZ",
+                            "skuId": "19196521821"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.37",
+                            "promotionPrice": "2.98"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000007139",
+                    "sellerTitle": "Blueskytoy158"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2842779141",
+                    "title": "【Home Palace】 Double Layer Drain Basket Detachable Drain Basket Convenient Double Layer Drain Basket for Fruits and Vegetables Easy-to-use Kitchen Drainer for Washing and Drying",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/home-palace-double-layer-drain-basket-detachable-drain-basket-convenient-double-layer-drain-basket-for-fruits-and-vegetables-easy-to-use-kitchen-drainer-for-washing-and-drying-i2842779141-s19594536932.html",
+                    "sales": null,
+                    "image": "//sg-test-11.slatic.net/p/af00a4def31ed33027967ec4cfec6400.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-test-11.slatic.net/p/af00a4def31ed33027967ec4cfec6400.jpg",
+                            "sku": "2842779141_SGAMZ",
+                            "skuId": "19594536932"
+                        },
+                        {
+                            "image": "//sg-test-11.slatic.net/p/3010aa5222540de33ccbd145bc49482e.jpg",
+                            "sku": "2842779141_SGAMZ",
+                            "skuId": "19594536931"
+                        },
+                        {
+                            "image": "//sg-test-11.slatic.net/p/489f0bb506489a7d261fd7a48baf0590.jpg",
+                            "sku": "2842779141_SGAMZ",
+                            "skuId": "19594536930"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "21.2",
+                            "promotionPrice": "11.16"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1133391776",
+                    "sellerTitle": "Home Palace"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2597564869",
+                    "title": "Creative Household Supplies Household Daily Small Supplies Home Kitchen Storage Rack Artifact for a Lazy Complete Set of Utensils",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/creative-household-supplies-household-daily-small-supplies-home-kitchen-storage-rack-artifact-for-a-lazy-complete-set-of-utensils-i2597564869-s16481538159.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S75c4773ce4c8430b9e0b3b948431dcad8.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S0ad2e350cbbd437997d46269f529a546R.jpg",
+                            "sku": "2597564869_SGAMZ",
+                            "skuId": "16481538159"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "10.4",
+                            "promotionPrice": "9.2"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1142895077",
+                    "sellerTitle": "TAO Home Décor"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2855616945",
+                    "title": "Modern Creative Literary Minimalist Painting Apron Home Hotel Sling Apron Stain Resistant Kitchen Cooking Accessories Cleaning LWQ3721 Aprons",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/modern-creative-literary-minimalist-painting-apron-home-hotel-sling-apron-stain-resistant-kitchen-cooking-accessories-cleaning-lwq3721-aprons-i2855616945-s19685559808.html",
+                    "sales": null,
+                    "image": "//sg-test-11.slatic.net/p/c7b2895f5af9fcc840fbfdf4c3a6c86b.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-test-11.slatic.net/p/c7b2895f5af9fcc840fbfdf4c3a6c86b.jpg",
+                            "sku": "2855616945_SGAMZ",
+                            "skuId": "19685559808"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "13",
+                            "promotionPrice": "7"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100018307",
+                    "sellerTitle": "ZeE Trade"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,1645 @@
+{
+    "result": {
+        "status": {
+            "data": "success",
+            "code": 200,
+            "executionTime": "1.16",
+            "requestTime": "2023-08-12 12:56:28",
+            "endpoint": "item_search",
+            "requestId": "f2bb0ca7e2803eb24a5b2ceb45e12adf",
+            "apiVersion": "3.1.2",
+            "functionsVersion": "3.0.5",
+            "la": "0.00",
+            "pmu": 1058520,
+            "mu": 1058200
+        },
+        "settings": {
+            "q": "Books and Stationery",
+            "loc": "",
+            "attr": "",
+            "sort": "default",
+            "page": "1",
+            "startPrice": "",
+            "endPrice": "",
+            "region": "SG",
+            "locale": "en_SG",
+            "currency": "SGD"
+        },
+        "base": {
+            "page": "1",
+            "totalResults": "3000",
+            "pageSize": "40",
+            "q": "Books and Stationery",
+            "sortValues": [
+                "default",
+                "priceAsc",
+                "priceDesc"
+            ],
+            "switchesList": {
+                "name": "Service & Promotion",
+                "list": [
+                    {
+                        "name": "Preferred",
+                        "id": "lazpick",
+                        "image": "//gw.alicdn.com/imgextra/i4/O1CN01eJliYM1RweaFLu1D1_!!6000000002176-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "LazFlash",
+                        "id": "flashsale",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/7bbea00d44e8bbd368b826c70b439a0fIconFS.png"
+                    },
+                    {
+                        "name": "Store Pick-up",
+                        "id": "storepickup_1663549401668"
+                    },
+                    {
+                        "name": "Cashback",
+                        "id": "cashback",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01v2fTTl1L0afUjZmKP_!!6000000001237-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Shiok",
+                        "id": "sg_filter_ShiokLocaldeal",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/3bcc901fc1b937bba16bb7d75400dbfbShioklocal.png"
+                    },
+                    {
+                        "name": "Fulfilled By Lazada",
+                        "id": "FBL"
+                    },
+                    {
+                        "name": "Below $4.99",
+                        "id": "elp",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/200f45aa4ee1bf19275ea36ef18fd950SRPTAB(1).png"
+                    },
+                    {
+                        "name": "LazMall",
+                        "id": "official",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01SOxgmS1zfQX5caIQS_!!6000000006741-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Priority Delivery",
+                        "id": "FLASH_SHIPPING",
+                        "image": "//img.alicdn.com/imgextra/i4/O1CN0115NZlQ1Z3i1a58SMe_!!6000000003139-2-tps-60-61.png"
+                    },
+                    {
+                        "name": "Taobao",
+                        "id": "tbc",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01oYHpda1jfr3DHpWOg_!!6000000004576-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Free Shipping",
+                        "id": "freeShipping",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01VY6fyb1KPwum3OzZA_!!6000000001157-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Mailbox Delivery",
+                        "id": "ECONOMY"
+                    },
+                    {
+                        "name": "Coins",
+                        "id": "coins",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01u545I31bGePSQtbYH_!!6000000003438-2-tps-60-60.png"
+                    }
+                ]
+            },
+            "locationList": {
+                "name": "Location",
+                "list": [
+                    {
+                        "name": "Singapore",
+                        "id": "local"
+                    },
+                    {
+                        "name": "China",
+                        "id": "-49"
+                    },
+                    {
+                        "name": "Japan",
+                        "id": "-114"
+                    },
+                    {
+                        "name": "United States",
+                        "id": "-231"
+                    },
+                    {
+                        "name": "South Korea",
+                        "id": "-122"
+                    },
+                    {
+                        "name": "Malaysia",
+                        "id": "-158"
+                    }
+                ]
+            },
+            "attributeList": [
+                {
+                    "name": "Notebook Type",
+                    "list": [
+                        {
+                            "name": "Ring Notebook",
+                            "id": "40470:122341"
+                        },
+                        {
+                            "name": "Journal",
+                            "id": "40470:122349"
+                        },
+                        {
+                            "name": "Exercise Books",
+                            "id": "40470:122340"
+                        },
+                        {
+                            "name": "Writing Pad",
+                            "id": "40470:122343"
+                        },
+                        {
+                            "name": "Pocket Notebook",
+                            "id": "40470:123360405"
+                        },
+                        {
+                            "name": "Subject Book",
+                            "id": "40470:122345"
+                        },
+                        {
+                            "name": "Spiral Notebook",
+                            "id": "40470:122342"
+                        },
+                        {
+                            "name": "Lecture Book",
+                            "id": "40470:122344"
+                        },
+                        {
+                            "name": "Graph Pads",
+                            "id": "40470:122346"
+                        },
+                        {
+                            "name": "Project Books",
+                            "id": "40470:122347"
+                        },
+                        {
+                            "name": "Compendiums",
+                            "id": "40470:122348"
+                        }
+                    ]
+                },
+                {
+                    "name": "Notebook Features",
+                    "list": [
+                        {
+                            "name": "Hard Cover",
+                            "id": "40251:109700"
+                        },
+                        {
+                            "name": "Leather Bound",
+                            "id": "40251:109696"
+                        },
+                        {
+                            "name": "Pen Holder",
+                            "id": "40251:109698"
+                        },
+                        {
+                            "name": "Pen Incuded",
+                            "id": "40251:109699"
+                        },
+                        {
+                            "name": "Lockable",
+                            "id": "40251:109697"
+                        }
+                    ]
+                },
+                {
+                    "name": "Color",
+                    "list": [
+                        {
+                            "name": "Black",
+                            "id": "30129:3731"
+                        },
+                        {
+                            "name": "White",
+                            "id": "30129:3743"
+                        },
+                        {
+                            "name": "Pink",
+                            "id": "30129:3739"
+                        },
+                        {
+                            "name": "Blue",
+                            "id": "30129:3732"
+                        },
+                        {
+                            "name": "Multicolor",
+                            "id": "30129:3759"
+                        },
+                        {
+                            "name": "Red",
+                            "id": "30129:1577"
+                        },
+                        {
+                            "name": "Green",
+                            "id": "30129:3736"
+                        },
+                        {
+                            "name": "Brown",
+                            "id": "30129:3733"
+                        },
+                        {
+                            "name": "Yellow",
+                            "id": "30129:3744"
+                        },
+                        {
+                            "name": "Purple",
+                            "id": "30129:3740"
+                        },
+                        {
+                            "name": "Grey",
+                            "id": "30129:3735"
+                        },
+                        {
+                            "name": "Navy Blue",
+                            "id": "30129:3785"
+                        },
+                        {
+                            "name": "Gold",
+                            "id": "30129:3734"
+                        },
+                        {
+                            "name": "Light blue",
+                            "id": "30129:3808"
+                        },
+                        {
+                            "name": "Orange",
+                            "id": "30129:3738"
+                        },
+                        {
+                            "name": "Silver",
+                            "id": "30129:3741"
+                        },
+                        {
+                            "name": "Bronze",
+                            "id": "30129:3753"
+                        },
+                        {
+                            "name": "Dark blue",
+                            "id": "30129:3775"
+                        },
+                        {
+                            "name": "Light Grey",
+                            "id": "30129:3831"
+                        },
+                        {
+                            "name": "ฺBlue",
+                            "id": "30129:120003003"
+                        },
+                        {
+                            "name": "Beige",
+                            "id": "30129:3737"
+                        },
+                        {
+                            "name": "Maroon",
+                            "id": "30129:1235"
+                        },
+                        {
+                            "name": "Coffee",
+                            "id": "30129:3755"
+                        },
+                        {
+                            "name": "Clear",
+                            "id": "30129:3750"
+                        },
+                        {
+                            "name": "Turquoise",
+                            "id": "30129:3742"
+                        },
+                        {
+                            "name": "Olive",
+                            "id": "30129:3764"
+                        },
+                        {
+                            "name": "Dark Brown",
+                            "id": "30129:3800"
+                        },
+                        {
+                            "name": "Blush Pink",
+                            "id": "30129:3752"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paper Type",
+                    "list": [
+                        {
+                            "name": "A5",
+                            "id": "31157:14737"
+                        },
+                        {
+                            "name": "Other",
+                            "id": "31157:3976"
+                        },
+                        {
+                            "name": "A4",
+                            "id": "31157:14118"
+                        },
+                        {
+                            "name": "A6",
+                            "id": "31157:14730"
+                        },
+                        {
+                            "name": "A7",
+                            "id": "31157:14741"
+                        },
+                        {
+                            "name": "A1",
+                            "id": "31157:14129"
+                        },
+                        {
+                            "name": "A4 Foolscap",
+                            "id": "31157:111983"
+                        },
+                        {
+                            "name": "B5",
+                            "id": "31157:14131"
+                        },
+                        {
+                            "name": "A4 Letter",
+                            "id": "31157:111982"
+                        },
+                        {
+                            "name": "A0",
+                            "id": "31157:14158"
+                        }
+                    ]
+                },
+                {
+                    "name": "Recommended Age",
+                    "list": [
+                        {
+                            "name": "8 years and above",
+                            "id": "31187:20011"
+                        },
+                        {
+                            "name": "3-4 years",
+                            "id": "31187:110008879"
+                        },
+                        {
+                            "name": "6-8 Years",
+                            "id": "31187:123905016"
+                        },
+                        {
+                            "name": "4-6 Years",
+                            "id": "31187:123680082"
+                        },
+                        {
+                            "name": "2-3 Years",
+                            "id": "31187:23277"
+                        },
+                        {
+                            "name": "0-3 months",
+                            "id": "31187:110008878"
+                        },
+                        {
+                            "name": "12-18 Months",
+                            "id": "31187:61373"
+                        },
+                        {
+                            "name": "18-24 Months",
+                            "id": "31187:61357"
+                        }
+                    ]
+                },
+                {
+                    "name": "Language",
+                    "list": [
+                        {
+                            "name": "Simplified Chinese",
+                            "id": "30139:23391"
+                        },
+                        {
+                            "name": "English",
+                            "id": "30139:12424"
+                        },
+                        {
+                            "name": "Japanese",
+                            "id": "30139:12467"
+                        },
+                        {
+                            "name": "Chinese",
+                            "id": "30139:12408"
+                        },
+                        {
+                            "name": "Sesotho",
+                            "id": "30139:12550"
+                        },
+                        {
+                            "name": "Finnish",
+                            "id": "30139:12431"
+                        },
+                        {
+                            "name": "Sindhi",
+                            "id": "30139:12558"
+                        },
+                        {
+                            "name": "Mandarin",
+                            "id": "30139:12608"
+                        },
+                        {
+                            "name": "Indonesian",
+                            "id": "30139:12445"
+                        },
+                        {
+                            "name": "Arabic",
+                            "id": "30139:12371"
+                        },
+                        {
+                            "name": "Romansch",
+                            "id": "30139:12541"
+                        },
+                        {
+                            "name": "Ndonga",
+                            "id": "30139:12519"
+                        },
+                        {
+                            "name": "Cantonese",
+                            "id": "30139:12611"
+                        },
+                        {
+                            "name": "Bribri",
+                            "id": "30139:12392"
+                        },
+                        {
+                            "name": "Byelorussian",
+                            "id": "30139:12390"
+                        },
+                        {
+                            "name": "Austronesian",
+                            "id": "30139:12395"
+                        },
+                        {
+                            "name": "Azerbaijani",
+                            "id": "30139:12396"
+                        },
+                        {
+                            "name": "Castillian",
+                            "id": "30139:12393"
+                        },
+                        {
+                            "name": "Traditional Chinese",
+                            "id": "30139:23445"
+                        },
+                        {
+                            "name": "Frisian",
+                            "id": "30139:12438"
+                        },
+                        {
+                            "name": "Finno_Ugrian",
+                            "id": "30139:12432"
+                        },
+                        {
+                            "name": "Shona",
+                            "id": "30139:12553"
+                        },
+                        {
+                            "name": "Bulgarian",
+                            "id": "30139:12399"
+                        },
+                        {
+                            "name": "Flemish",
+                            "id": "30139:12433"
+                        },
+                        {
+                            "name": "Siswati",
+                            "id": "30139:12554"
+                        },
+                        {
+                            "name": "Setswana",
+                            "id": "30139:12551"
+                        },
+                        {
+                            "name": "Slavic",
+                            "id": "30139:12552"
+                        },
+                        {
+                            "name": "Burmese",
+                            "id": "30139:12398"
+                        },
+                        {
+                            "name": "Gallegan",
+                            "id": "30139:12436"
+                        },
+                        {
+                            "name": "German",
+                            "id": "30139:12434"
+                        }
+                    ]
+                },
+                {
+                    "name": "Featured Characters Brand",
+                    "list": [
+                        {
+                            "name": "Aladdin",
+                            "id": "31174:110008799"
+                        },
+                        {
+                            "name": "Shopkins",
+                            "id": "31174:110008791"
+                        },
+                        {
+                            "name": "Pokémon",
+                            "id": "31174:61490"
+                        },
+                        {
+                            "name": "Shopkins",
+                            "id": "31174:46964"
+                        },
+                        {
+                            "name": "Disney Princess: Little Mermaid",
+                            "id": "31174:20142"
+                        },
+                        {
+                            "name": "My Little Pony",
+                            "id": "31174:20234"
+                        },
+                        {
+                            "name": "Mickey Mouse",
+                            "id": "31174:20244"
+                        },
+                        {
+                            "name": "Dora the Explorer",
+                            "id": "31174:588"
+                        },
+                        {
+                            "name": "Strawberry Shortcake",
+                            "id": "31174:20334"
+                        },
+                        {
+                            "name": "Harry Potter",
+                            "id": "31174:20212"
+                        },
+                        {
+                            "name": "Rugrats",
+                            "id": "31174:20299"
+                        },
+                        {
+                            "name": "Lyrical Nanoha A's Series",
+                            "id": "31174:21663"
+                        },
+                        {
+                            "name": "Daisy Duck",
+                            "id": "31174:20133"
+                        },
+                        {
+                            "name": "Curious George",
+                            "id": "31174:20130"
+                        },
+                        {
+                            "name": "Lulu",
+                            "id": "31174:1182"
+                        },
+                        {
+                            "name": "BB-8",
+                            "id": "31174:110002466"
+                        },
+                        {
+                            "name": "Black Widow",
+                            "id": "31174:110002467"
+                        },
+                        {
+                            "name": "Elf of the Shelf",
+                            "id": "31174:110002468"
+                        },
+                        {
+                            "name": "XMen",
+                            "id": "31174:158290"
+                        },
+                        {
+                            "name": "Peter Rabbit",
+                            "id": "31174:20250"
+                        },
+                        {
+                            "name": "Cars",
+                            "id": "31174:4324"
+                        },
+                        {
+                            "name": "Astro Boy",
+                            "id": "31174:20093"
+                        },
+                        {
+                            "name": "Care Bears",
+                            "id": "31174:4328"
+                        },
+                        {
+                            "name": "Ben 10",
+                            "id": "31174:110008808"
+                        },
+                        {
+                            "name": "Legend of Zelda",
+                            "id": "31174:20225"
+                        },
+                        {
+                            "name": "Aurora",
+                            "id": "31174:20101"
+                        },
+                        {
+                            "name": "Thomas the Tank Engine",
+                            "id": "31174:20343"
+                        },
+                        {
+                            "name": "Big Bird",
+                            "id": "31174:20143"
+                        },
+                        {
+                            "name": "Betty Boop",
+                            "id": "31174:61451"
+                        },
+                        {
+                            "name": "Popeye",
+                            "id": "31174:20263"
+                        }
+                    ]
+                },
+                {
+                    "name": "Marker Type",
+                    "list": [
+                        {
+                            "name": "Permanent",
+                            "id": "40469:14649"
+                        },
+                        {
+                            "name": "Highlighter",
+                            "id": "40469:122337"
+                        },
+                        {
+                            "name": "Washable Marker",
+                            "id": "40469:123447464"
+                        },
+                        {
+                            "name": "Whiteboard",
+                            "id": "40469:122338"
+                        },
+                        {
+                            "name": "Water Chalk",
+                            "id": "40469:131618"
+                        },
+                        {
+                            "name": "Paint & Liquid Chalk Markers",
+                            "id": "40469:122339"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pen Thickness",
+                    "list": [
+                        {
+                            "name": "Fine",
+                            "id": "40250:27986"
+                        },
+                        {
+                            "name": "0.7mm",
+                            "id": "40250:109694"
+                        },
+                        {
+                            "name": "0.3mm",
+                            "id": "40250:109692"
+                        },
+                        {
+                            "name": "0.5mm",
+                            "id": "40250:109693"
+                        },
+                        {
+                            "name": "2-5mm",
+                            "id": "40250:123228233"
+                        },
+                        {
+                            "name": "6mm",
+                            "id": "40250:122855"
+                        },
+                        {
+                            "name": "2.0mm",
+                            "id": "40250:123226299"
+                        },
+                        {
+                            "name": "0.2mm",
+                            "id": "40250:158259"
+                        },
+                        {
+                            "name": "Broad",
+                            "id": "40250:123076634"
+                        },
+                        {
+                            "name": "0.8mm",
+                            "id": "40250:123228236"
+                        },
+                        {
+                            "name": "1.5mm",
+                            "id": "40250:123228234"
+                        },
+                        {
+                            "name": "1.0mm",
+                            "id": "40250:158260"
+                        }
+                    ]
+                }
+            ],
+            "categoryList": {
+                "name": "Category",
+                "list": [
+                    {
+                        "name": "Note Books & Pads",
+                        "id": "shop-notebooks"
+                    },
+                    {
+                        "name": "Kids Diaries, Journals",
+                        "id": "shop-kids-diaries-journals-notebooks "
+                    },
+                    {
+                        "name": "Highlighters & Markers",
+                        "id": "shop-markers-highlighters"
+                    },
+                    {
+                        "name": "Arts & Crafts - Stickers",
+                        "id": "shop-stickers"
+                    },
+                    {
+                        "name": "Pencils",
+                        "id": "shop-writing-pencils"
+                    },
+                    {
+                        "name": "Arts & Crafts - Supplies",
+                        "id": "shop-drawing-painting"
+                    },
+                    {
+                        "name": "English Children's Books",
+                        "id": "english-children"
+                    },
+                    {
+                        "name": "Erasers",
+                        "id": "shop-writing-erasers"
+                    },
+                    {
+                        "name": "Storage Bins & Baskets",
+                        "id": "shop-storage-bins-baskets"
+                    },
+                    {
+                        "name": "Digital Pens",
+                        "id": "shop-digital-pens"
+                    },
+                    {
+                        "name": "Card Games",
+                        "id": "shop-card-games"
+                    },
+                    {
+                        "name": "Arts & Crafts - Printing",
+                        "id": "shop-printing-stamping"
+                    },
+                    {
+                        "name": "Effects Pedals",
+                        "id": "effects-pedals"
+                    },
+                    {
+                        "name": "Correction Liquid & Pens",
+                        "id": "shop-correction-liquid"
+                    },
+                    {
+                        "name": "English Self Help",
+                        "id": "self-help-english"
+                    },
+                    {
+                        "name": "Baby Albums",
+                        "id": "shop-baby-albums"
+                    },
+                    {
+                        "name": "Calendars Wall calendars",
+                        "id": "wall-calendars-online"
+                    },
+                    {
+                        "name": "Laundry Baskets & Hampers",
+                        "id": "shop-laundry-baskets"
+                    },
+                    {
+                        "name": "English Babies' Books",
+                        "id": "babies-books-english"
+                    },
+                    {
+                        "name": "Chinese Children's Books",
+                        "id": "chinese-children"
+                    },
+                    {
+                        "name": "General Accessories",
+                        "id": "general-accessories"
+                    },
+                    {
+                        "name": "Arts & Crafts - Kits",
+                        "id": "shop-kids-craft-kits"
+                    },
+                    {
+                        "name": "Guitar & Bass Accessories",
+                        "id": "guitar-bass-accessories-instruments"
+                    },
+                    {
+                        "name": "Band Brass Accessories",
+                        "id": "brass-accessories-instruments"
+                    },
+                    {
+                        "name": "Toy Doll Accessories",
+                        "id": "shops-doll-accessories"
+                    },
+                    {
+                        "name": "Stickers & Labels",
+                        "id": "shop-stickers-labels"
+                    },
+                    {
+                        "name": "Electronic Drums",
+                        "id": "electronic-drums"
+                    },
+                    {
+                        "name": "Wardrobe Organisers",
+                        "id": "shop-clothes-organising"
+                    },
+                    {
+                        "name": "Dollhouse Accessories",
+                        "id": "shops-dollshouse-accessories"
+                    },
+                    {
+                        "name": "Adhesives & Tape",
+                        "id": "shop-adhesives-tape"
+                    }
+                ]
+            }
+        },
+        "resultList": [
+            {
+                "item": {
+                    "itemId": "2825877246",
+                    "title": "FLAREOU Portable Income Expenditure Students Adults Saving Money Wages Salaries Account Tracker Notebook Household Finance Planner Expense Ledger Book A6 Business Bookkeeping Book",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/flareou-portable-income-expenditure-students-adults-saving-money-wages-salaries-account-tracker-notebook-household-finance-planner-expense-ledger-book-a6-business-bookkeeping-book-i2825877246-s19490553190.html",
+                    "sales": null,
+                    "image": "//ph-live-02.slatic.net/p/0d5fb74d5a4edfa848120156203ff50c.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//ph-live-02.slatic.net/p/2d7b3f2bb0f6cddfe9b1c51b24da9f35.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553190"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/1d10a4b36ba41028eb030843a17a06d3.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553191"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/db2d722f9b1813f42111b36a281c2f76.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553192"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/89ca2cf53a7d659c06772efc80fad546.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553193"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/b087d7537fa6112b4b78bdd6c210ef5c.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553194"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/3fa721d87e1b84413b1dc9b1bca8d4cc.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553195"
+                        },
+                        {
+                            "image": "//ph-live-02.slatic.net/p/24e147a87284001fe1cdfd8e5c740d01.jpg",
+                            "sku": "2825877246_SGAMZ",
+                            "skuId": "19490553189"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "8.73",
+                            "promotionPrice": "5.15"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000108230",
+                    "sellerTitle": "Flareou"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2535722805",
+                    "title": "Goodie Bag Notebook with Pen Stationery Gift Bag Christmas Gifts",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/goodie-bag-notebook-with-pen-stationery-gift-bag-christmas-gifts-i2535722805-s18512699902.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/eb520af2834baa4c519fe2df08f58157.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-test-11.slatic.net/p/11d9d14bdfc16d77fb15787f6e8fa6ef.jpg",
+                            "sku": "2535722805_SGAMZ",
+                            "skuId": "18512699902"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "1.3"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1138452015",
+                    "sellerTitle": "V'mum Palace"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2760218144",
+                    "title": "Cartoon Rabbit Plush Notebook Cute Fox Deer Hand Book Mini Diary Book For Kids Gifts Student School Office Stationery",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/cartoon-rabbit-plush-notebook-cute-fox-deer-hand-book-mini-diary-book-for-kids-gifts-student-school-office-stationery-i2760218144-s18766079315.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/7c0a095cf5215e4e3273ed3dcc4d29db.png",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/7c0a095cf5215e4e3273ed3dcc4d29db.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079315"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/78241d76063a4bde368c4d0be7fbb1e1.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079317"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/3ba0f8a581591fedab4680c03a4da328.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079316"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/dfaf753f6599eb650891103a189cf321.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079320"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/47f842d178a8d9966fbc016d51320826.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079319"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/ec8d3a2e1660a5ac1478b67b4a1b9011.png",
+                            "sku": "2760218144_SGAMZ",
+                            "skuId": "18766079318"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "8.4",
+                            "promotionPrice": "4.5"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1134012183",
+                    "sellerTitle": "BURNELLP Johni"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2718015746",
+                    "title": "JIANWU 10 Sheets Retro Memo Pad Time and Space Lovers Series Hollow Lace Border Material Paper Creative DIY Journal Stationery",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/jianwu-10-sheets-retro-memo-pad-time-and-space-lovers-series-hollow-lace-border-material-paper-creative-diy-journal-stationery-i2718015746-s18370336279.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/2669d5f247cfa3ea88211e488974a5eb.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/3b46fd4e9ba8c26ca6e7da38ebe5d1d0.jpg",
+                            "sku": "2718015746_SGAMZ",
+                            "skuId": "18370336279"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/7a67091fb3151b59756f864393406e6f.jpg",
+                            "sku": "2718015746_SGAMZ",
+                            "skuId": "18370336278"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "2.24",
+                            "promotionPrice": "1.56"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1152396064",
+                    "sellerTitle": "jianwustationery"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2701901230",
+                    "title": "JIANWU 50 Sheets translucent keynote sticky note Grid planning book kawaii notepad PET School supplies",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/jianwu-50-sheets-translucent-keynote-sticky-note-grid-planning-book-kawaii-notepad-pet-school-supplies-i2701901230-s17940937948.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/6db2c818db2a43db0f2bef5344bf0aab.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/0844ebb61f121b9a81d8e79ddfc80144.jpg",
+                            "sku": "2701901230_SGAMZ",
+                            "skuId": "17940937948"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/24e9d0073263b4ec5e94af33f4cc2ad3.jpg",
+                            "sku": "2701901230_SGAMZ",
+                            "skuId": "17940937947"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/ea0e5d9afc13a62a74fe8ef7d7411aed.jpg",
+                            "sku": "2701901230_SGAMZ",
+                            "skuId": "17940937949"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "1.51",
+                            "promotionPrice": "1.05"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1152396064",
+                    "sellerTitle": "jianwustationery"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "855990097",
+                    "title": "2pcs Korea Style Milk Tea Notebook with PVC Cover Diary Book",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/2pcs-korea-style-milk-tea-notebook-with-pvc-cover-diary-book-i855990097-s2935054164.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/539b8a4ec2d739b82052e6307fa0035e.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/539b8a4ec2d739b82052e6307fa0035e.jpg",
+                            "sku": "855990097_SGAMZ",
+                            "skuId": "2935054164"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "4.99"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1136040670",
+                    "sellerTitle": "Cutie Pie"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2841882850",
+                    "title": "1660 1660 Fairy Tale Bookstore Stickers Crafts And Scrapbooking Stickers Kids Toys Book Decorative Sticker DIY Stationery Babies' Books",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/1660-1660-fairy-tale-bookstore-stickers-crafts-and-scrapbooking-stickers-kids-toys-book-decorative-sticker-diy-stationery-babies-books-i2841882850-s19589366472.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/be1d5fa6d146604b4fae65ba60256e41.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/be1d5fa6d146604b4fae65ba60256e41.jpg",
+                            "sku": "2841882850_SGAMZ",
+                            "skuId": "19589366472"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.98",
+                            "promotionPrice": "5.76"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1136124165",
+                    "sellerTitle": "xieliqi20006"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2750925413",
+                    "title": "A6 Cartoon Loose-leaf Hand Account Book Ins Diary Notepad Student Notebook",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/a6-cartoon-loose-leaf-hand-account-book-ins-diary-notepad-student-notebook-i2750925413-s18664292049.html",
+                    "sales": null,
+                    "image": "//my-live-01.slatic.net/p/81d2a55482fa737216d1aa012d486d49.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-01.slatic.net/p/81d2a55482fa737216d1aa012d486d49.jpg",
+                            "sku": "2750925413_SGAMZ",
+                            "skuId": "18664292049"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.98",
+                            "promotionPrice": "5.46"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1166694014",
+                    "sellerTitle": "Zhenyue Fashion Stationery"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2321709150",
+                    "title": "Jerry Pupils' English Words Calligraphy Practice Paper Grade 1, 2, 3, 4, 5, 6 Synchronous People's Education Edition Standard Training Copybook Children's Calligraphy Exercise Book English Sentences Copy English Exercise Boy Exercise Book",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/jerry-pupils-english-words-calligraphy-practice-paper-grade-1-2-3-4-5-6-synchronous-peoples-education-edition-standard-training-copybook-childrens-calligraphy-exercise-book-english-sentences-copy-english-exercise-boy-exercise-book-i2321709150-s13491735233.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/Sa585b27918ed49ab858725294c8e62b6w.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S12f54dd132ce41edbd04981b5e645733x.jpg",
+                            "sku": "2321709150_SGAMZ",
+                            "skuId": "13491735233"
+                        },
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S899aadbc22b14884a26d126063d46892D.jpg",
+                            "sku": "2321709150_SGAMZ",
+                            "skuId": "19596885371"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "6.4",
+                            "promotionPrice": "5.2"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139370326",
+                    "sellerTitle": "TAO Study & Work"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2841910609",
+                    "title": "1655 1655 Fairy Tale Girl Stickers Crafts And Scrapbooking Stickers Kids Toys Book Decorative Sticker DIY Stationery Babies' Books",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/1655-1655-fairy-tale-girl-stickers-crafts-and-scrapbooking-stickers-kids-toys-book-decorative-sticker-diy-stationery-babies-books-i2841910609-s19589321982.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/e644f12771f85b4056a19526fcf41e37.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/e644f12771f85b4056a19526fcf41e37.jpg",
+                            "sku": "2841910609_SGAMZ",
+                            "skuId": "19589321982"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "8.24",
+                            "promotionPrice": "7.91"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1136124165",
+                    "sellerTitle": "xieliqi20006"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1819117853",
+                    "title": "A4 A5 Loose Leaf Binder Notebook Refillable 60 Sheet Inner Blank/Line/Grid/Cornell Inner Sketchbook Agenda Planner Bujo Supplies School Office Stationery",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/a4-a5-loose-leaf-binder-notebook-refillable-60-sheet-inner-blanklinegridcornell-inner-sketchbook-agenda-planner-bujo-supplies-school-office-stationery-i1819117853-s9654668936.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/1a2ab66e8e9314cddde1fa45c5a7bd1f.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/1a2ab66e8e9314cddde1fa45c5a7bd1f.jpg",
+                            "sku": "1819117853_SGAMZ",
+                            "skuId": "9654668936"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/ee6e6eb9646f07ba73d6e9903360beb6.jpg",
+                            "sku": "1819117853_SGAMZ",
+                            "skuId": "9654668925"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "20",
+                            "promotionPrice": "8"
+                        }
+                    },
+                    "reviewCount": "24",
+                    "averageStarRate": "4.96"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000010690",
+                    "sellerTitle": "Cengen Store"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2039397005",
+                    "title": "Thick Kraft Paper Notebook Large A4 Notebook Student 16K Exercise Book Soft Leather Exercise Book Grid Book B5 Notebook Notepad Simple Ins Style Wholesale Soft Copy Horizontal Line Stitching",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/thick-kraft-paper-notebook-large-a4-notebook-student-16k-exercise-book-soft-leather-exercise-book-grid-book-b5-notebook-notepad-simple-ins-style-wholesale-soft-copy-horizontal-line-stitching-i2039397005-s11836485297.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S90df7ebe4de841e79787f946140b8e154.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/Scba4b8134bab43e8a718f437360433b69.jpg",
+                            "sku": "2039397005_SGAMZ",
+                            "skuId": "11836485297"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "25.4",
+                            "promotionPrice": "13"
+                        }
+                    },
+                    "reviewCount": "5",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139370326",
+                    "sellerTitle": "TAO Study & Work"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2749911034",
+                    "title": "JIANWU 60 Pages/ Book Mirror Drawing Series Lace Material Paper Vehicle Line Book Creative DIY Handbook Collage Decor Stationery",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/jianwu-60-pages-book-mirror-drawing-series-lace-material-paper-vehicle-line-book-creative-diy-handbook-collage-decor-stationery-i2749911034-s18655879429.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/d7cb801418d48edb136c8c616d1823ae.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/2ce74811bdf346110507c7dd56bbe787.jpg",
+                            "sku": "2749911034_SGAMZ",
+                            "skuId": "18655879429"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.14",
+                            "promotionPrice": "2.19"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1152396064",
+                    "sellerTitle": "jianwustationery"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2382409123",
+                    "title": "Senmu B5 Loose-Leaf Paper A5 Student Loose Spiral Notebook Loose-Leaf Replacement A4 Notebook Detachable Shell Postgraduate Entrance Examination Minimalist 26-Hole Grid Lined Grid Paper Loose-Leaf Binder Notebook Can Replace the Inner Core of Wrong Que...",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/senmu-b5-loose-leaf-paper-a5-student-loose-spiral-notebook-loose-leaf-replacement-a4-notebook-detachable-shell-postgraduate-entrance-examination-minimalist-26-hole-grid-lined-grid-paper-loose-leaf-binder-notebook-can-replace-the-inner-core-of-wrong-que-i2382409123-s13959617291.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S7f2ab1dbf52a41509c7ee37a13679736q.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S2892ec51f6ff49c6bdd7ee96e09ab590b.jpg",
+                            "sku": "2382409123_SGAMZ",
+                            "skuId": "13959617291"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.5",
+                            "promotionPrice": "4.6"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139370326",
+                    "sellerTitle": "TAO Study & Work"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2167398525",
+                    "title": "Chinese Character Copybook Tian Yingzhang European Style Writing Brush Calligraphy Beginner Copy Practice Four-Foot Cooked Rice Paper",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/chinese-character-copybook-tian-yingzhang-european-style-writing-brush-calligraphy-beginner-copy-practice-four-foot-cooked-rice-paper-i2167398525-s12365915301.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/Sd5e5b69c536f47c8baa70996f0548b9cK.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/Sd5e5b69c536f47c8baa70996f0548b9cK.jpg",
+                            "sku": "2167398525_SGAMZ",
+                            "skuId": "12365915301"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "7.9",
+                            "promotionPrice": "5.6"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139370326",
+                    "sellerTitle": "TAO Study & Work"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "911164827",
+                    "title": "2sheets* Loose Leaf Cover OR 1Pc*Binder Clip A5/B5 20/26 Hole Binder Circle Colorful PP Loose-leaf Cover Index Divider Separator Notebook Accessory Stationery",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/2sheets-loose-leaf-cover-or-1pcbinder-clip-a5b5-2026-hole-binder-circle-colorful-pp-loose-leaf-cover-index-divider-separator-notebook-accessory-stationery-i911164827-s3190842882.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/6171b4c80d7606b36824a23b0fec26d6.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/10126ee035e23478f704825d0804d419.jpg",
+                            "sku": "911164827_SGAMZ",
+                            "skuId": "3190842882"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.53",
+                            "promotionPrice": "1.8"
+                        }
+                    },
+                    "reviewCount": "5",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000050624",
+                    "sellerTitle": "lg01i9"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1655169330",
+                    "title": "A5 B5 Loose Leaf Notebook Refillable Blank/Line/Grid/Dotted Inner Sketchbook Agenda planner Bujo supplies School&Office Stationery",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/a5-b5-loose-leaf-notebook-refillable-blanklinegriddotted-inner-sketchbook-agenda-planner-bujo-supplies-schooloffice-stationery-i1655169330-s7805574978.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/34e332cd0d32e7ef58405e05c1e15615.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/d236e71d4acec6d297f95a8f295187eb.jpg",
+                            "sku": "1655169330_SGAMZ",
+                            "skuId": "7805574978"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/4a6eaaf9cfa8b6f1eb98ea8bc1cb8511.jpg",
+                            "sku": "1655169330_SGAMZ",
+                            "skuId": "7805574981"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/0636f34fb2e1e69e7e4f3452a835fac1.jpg",
+                            "sku": "1655169330_SGAMZ",
+                            "skuId": "7805574985"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.8",
+                            "promotionPrice": "4"
+                        }
+                    },
+                    "reviewCount": "22",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100010716",
+                    "sellerTitle": "Ossayi"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2783686414",
+                    "title": "Jnan💖NEW💖60Pcs A5 Sanrio Notebook Kawaii Cartoon Kuromi Cinnamoroll Melody Diary Notebook Gift Box Student Gift【Ready Stock+COD】",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/jnannew60pcs-a5-sanrio-notebook-kawaii-cartoon-kuromi-cinnamoroll-melody-diary-notebook-gift-box-student-giftready-stockcod-i2783686414-s19222221992.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/2ff1b0ec69f9040c996697ba827ec80e.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/f35b1fc4d00b1e049f20fc07c87c8070.jpg",
+                            "sku": "2783686414_SGAMZ",
+                            "skuId": "19222221992"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/fb77ae5e5ceee869176093ae0cad1bd2.jpg",
+                            "sku": "2783686414_SGAMZ",
+                            "skuId": "19222221993"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "5.72",
+                            "promotionPrice": "3.39"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100067297",
+                    "sellerTitle": "Jnan"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1923072946",
+                    "title": "Greenish Blue Yi Mini Small Scroll Painting Small Zen Hanging Shaft Blank Painting Scroll Half-Sized Small Hand Roll Calligraphy Traditional Chinese Painting Creation Chinese Rice Paper Batik Retro Specific for Brush Calligraphy Work Paper",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/greenish-blue-yi-mini-small-scroll-painting-small-zen-hanging-shaft-blank-painting-scroll-half-sized-small-hand-roll-calligraphy-traditional-chinese-painting-creation-chinese-rice-paper-batik-retro-specific-for-brush-calligraphy-work-paper-i1923072946-s18256914711.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S5789fea0ac5a4e54900cc67093cf856az.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S5343aafae69144c78b912dabd19c43fa6.jpg",
+                            "sku": "1923072946_SGAMZ",
+                            "skuId": "18256914711"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "11.8",
+                            "promotionPrice": "5.4"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139370326",
+                    "sellerTitle": "TAO Study & Work"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2111013216",
+                    "title": "Autograph booklets / Note book Soft cover, 95 x 147mm, 40 sheets (80 pages)",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/autograph-booklets-note-book-soft-cover-95-x-147mm-40-sheets-80-pages-i2111013216-s11896339786.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/1c38d77e8efc3887e943f0a789d92305.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/18d4baef6a6eb82414a05c37df2d9258.jpg",
+                            "sku": "2111013216_SGAMZ",
+                            "skuId": "11896339786"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "4.49"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1144059035",
+                    "sellerTitle": "NANNA"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,1264 @@
+{
+    "result": {
+        "status": {
+            "data": "success",
+            "code": 200,
+            "executionTime": "1.51",
+            "requestTime": "2023-08-12 12:56:30",
+            "endpoint": "item_search",
+            "requestId": "9c915e61253d131b12de7b2c7d55dfa6",
+            "apiVersion": "3.1.2",
+            "functionsVersion": "3.0.5",
+            "la": "0.00",
+            "pmu": 990544,
+            "mu": 990224
+        },
+        "settings": {
+            "q": "Beauty and Personal Care",
+            "loc": "",
+            "attr": "",
+            "sort": "default",
+            "page": "1",
+            "startPrice": "",
+            "endPrice": "",
+            "region": "SG",
+            "locale": "en_SG",
+            "currency": "SGD"
+        },
+        "base": {
+            "page": "1",
+            "totalResults": "3000",
+            "pageSize": "40",
+            "q": "Beauty and Personal Care",
+            "sortValues": [
+                "default",
+                "priceAsc",
+                "priceDesc"
+            ],
+            "switchesList": {
+                "name": "Service & Promotion",
+                "list": [
+                    {
+                        "name": "Store Pick-up",
+                        "id": "storepickup_1663549401668"
+                    },
+                    {
+                        "name": "Cashback",
+                        "id": "cashback",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01v2fTTl1L0afUjZmKP_!!6000000001237-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Shiok",
+                        "id": "sg_filter_ShiokLocaldeal",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/3bcc901fc1b937bba16bb7d75400dbfbShioklocal.png"
+                    },
+                    {
+                        "name": "Below $4.99",
+                        "id": "elp",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/200f45aa4ee1bf19275ea36ef18fd950SRPTAB(1).png"
+                    },
+                    {
+                        "name": "LazMall",
+                        "id": "official",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01SOxgmS1zfQX5caIQS_!!6000000006741-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Priority Delivery",
+                        "id": "FLASH_SHIPPING",
+                        "image": "//img.alicdn.com/imgextra/i4/O1CN0115NZlQ1Z3i1a58SMe_!!6000000003139-2-tps-60-61.png"
+                    },
+                    {
+                        "name": "Taobao",
+                        "id": "tbc",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01oYHpda1jfr3DHpWOg_!!6000000004576-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Free Shipping",
+                        "id": "freeShipping",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01VY6fyb1KPwum3OzZA_!!6000000001157-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Mailbox Delivery",
+                        "id": "ECONOMY"
+                    },
+                    {
+                        "name": "RedMart",
+                        "id": "redmart",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01UcQ18729K2CI4t3PK_!!6000000008048-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Coins",
+                        "id": "coins",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01u545I31bGePSQtbYH_!!6000000003438-2-tps-60-60.png"
+                    }
+                ]
+            },
+            "locationList": {
+                "name": "Location",
+                "list": [
+                    {
+                        "name": "Singapore",
+                        "id": "local"
+                    },
+                    {
+                        "name": "China",
+                        "id": "-49"
+                    },
+                    {
+                        "name": "Japan",
+                        "id": "-114"
+                    },
+                    {
+                        "name": "South Korea",
+                        "id": "-122"
+                    },
+                    {
+                        "name": "United States",
+                        "id": "-231"
+                    },
+                    {
+                        "name": "Indonesia",
+                        "id": "-101"
+                    }
+                ]
+            },
+            "attributeList": [
+                {
+                    "name": "Body Benefits",
+                    "list": [
+                        {
+                            "name": "Moisturizing",
+                            "id": "40482:4252"
+                        },
+                        {
+                            "name": "Anti-Bacterial",
+                            "id": "40482:147427"
+                        },
+                        {
+                            "name": "Whitening",
+                            "id": "40482:14615"
+                        },
+                        {
+                            "name": "Anti-Aging",
+                            "id": "40482:4240"
+                        },
+                        {
+                            "name": "Firming",
+                            "id": "40482:130161"
+                        },
+                        {
+                            "name": "Eczema",
+                            "id": "40482:147428"
+                        },
+                        {
+                            "name": "Sun Protection",
+                            "id": "40482:113042"
+                        },
+                        {
+                            "name": "Other",
+                            "id": "40482:3976"
+                        },
+                        {
+                            "name": "Anti-bacterial",
+                            "id": "40482:109263"
+                        },
+                        {
+                            "name": "Soothing",
+                            "id": "40482:113041"
+                        }
+                    ]
+                },
+                {
+                    "name": "Color",
+                    "list": [
+                        {
+                            "name": "White",
+                            "id": "30129:3743"
+                        },
+                        {
+                            "name": "Pink",
+                            "id": "30129:3739"
+                        },
+                        {
+                            "name": "Blue",
+                            "id": "30129:3732"
+                        },
+                        {
+                            "name": "…",
+                            "id": "30129:66038"
+                        },
+                        {
+                            "name": "Green",
+                            "id": "30129:3736"
+                        },
+                        {
+                            "name": "Beige",
+                            "id": "30129:3737"
+                        },
+                        {
+                            "name": "Black",
+                            "id": "30129:3731"
+                        },
+                        {
+                            "name": "Purple",
+                            "id": "30129:3740"
+                        },
+                        {
+                            "name": "Yellow",
+                            "id": "30129:3744"
+                        },
+                        {
+                            "name": "Grey",
+                            "id": "30129:3735"
+                        },
+                        {
+                            "name": "Red",
+                            "id": "30129:1577"
+                        },
+                        {
+                            "name": "Multicolor",
+                            "id": "30129:3759"
+                        },
+                        {
+                            "name": "Orange",
+                            "id": "30129:3738"
+                        },
+                        {
+                            "name": "Brown",
+                            "id": "30129:3733"
+                        },
+                        {
+                            "name": "Silver",
+                            "id": "30129:3741"
+                        },
+                        {
+                            "name": "Clear",
+                            "id": "30129:3750"
+                        },
+                        {
+                            "name": "ฺBlue",
+                            "id": "30129:120003003"
+                        },
+                        {
+                            "name": "Lavender",
+                            "id": "30129:3760"
+                        },
+                        {
+                            "name": "white",
+                            "id": "30129:122891455"
+                        },
+                        {
+                            "name": "Khaki",
+                            "id": "30129:3762"
+                        },
+                        {
+                            "name": "Turquoise",
+                            "id": "30129:3742"
+                        },
+                        {
+                            "name": "Violet",
+                            "id": "30129:3751"
+                        },
+                        {
+                            "name": "Rainbow",
+                            "id": "30129:27417"
+                        },
+                        {
+                            "name": "Champagne",
+                            "id": "30129:3781"
+                        },
+                        {
+                            "name": "Peach",
+                            "id": "30129:23166"
+                        },
+                        {
+                            "name": "Sand Brown",
+                            "id": "30129:143165"
+                        },
+                        {
+                            "name": "Gold",
+                            "id": "30129:3734"
+                        },
+                        {
+                            "name": "Rose Gold",
+                            "id": "30129:21772"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pack Type",
+                    "list": [
+                        {
+                            "name": "Single Item",
+                            "id": "40484:130226"
+                        },
+                        {
+                            "name": "Multi-pack",
+                            "id": "40484:109611"
+                        }
+                    ]
+                },
+                {
+                    "name": "Brand Classification",
+                    "list": [
+                        {
+                            "name": "Premium",
+                            "id": "40483:49068"
+                        },
+                        {
+                            "name": "Mass",
+                            "id": "40483:130163"
+                        },
+                        {
+                            "name": "Dermacare",
+                            "id": "40483:130164"
+                        },
+                        {
+                            "name": "Masstige",
+                            "id": "40483:130162"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hair Care Benefits",
+                    "list": [
+                        {
+                            "name": "Dryness",
+                            "id": "31237:14606"
+                        },
+                        {
+                            "name": "Damage/Split Ends",
+                            "id": "31237:14595"
+                        },
+                        {
+                            "name": "Frizziness",
+                            "id": "31237:14593"
+                        },
+                        {
+                            "name": "Dandruff",
+                            "id": "31237:14604"
+                        }
+                    ]
+                },
+                {
+                    "name": "Country of origin",
+                    "list": [
+                        {
+                            "name": "Other",
+                            "id": "40371:3976"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hair Type",
+                    "list": [
+                        {
+                            "name": "Dry",
+                            "id": "120013059:4287"
+                        },
+                        {
+                            "name": "Straight Curly",
+                            "id": "120013059:121206404"
+                        },
+                        {
+                            "name": "Oily",
+                            "id": "120013059:4300"
+                        },
+                        {
+                            "name": "Normal",
+                            "id": "120013059:4278"
+                        },
+                        {
+                            "name": "Wavy",
+                            "id": "120013059:121202278"
+                        }
+                    ]
+                },
+                {
+                    "name": "Material",
+                    "list": [
+                        {
+                            "name": "Polyester",
+                            "id": "30224:4700"
+                        },
+                        {
+                            "name": "Metal",
+                            "id": "30224:3827"
+                        }
+                    ]
+                }
+            ],
+            "categoryList": {
+                "name": "Category",
+                "list": [
+                    {
+                        "name": "Bath & Body Accessories",
+                        "id": "shop-bath-body-accessories"
+                    },
+                    {
+                        "name": "Shampoo",
+                        "id": "shampoos-conditioners"
+                    },
+                    {
+                        "name": "Body Moisturizers",
+                        "id": "body-lotion-butter"
+                    },
+                    {
+                        "name": "Body Scrubs",
+                        "id": "shop-body-scrubs"
+                    },
+                    {
+                        "name": "Bath & Body Gifts & Value Sets",
+                        "id": "shop-bath-body-sets"
+                    },
+                    {
+                        "name": "Mini Cameras",
+                        "id": "shop-mini-cameras"
+                    },
+                    {
+                        "name": "Hair Styling",
+                        "id": "shop-hair-styling"
+                    },
+                    {
+                        "name": "Pasta & Noodle Makers",
+                        "id": "pasta-makers"
+                    },
+                    {
+                        "name": "Hair Removal",
+                        "id": "shop-hair-removal"
+                    },
+                    {
+                        "name": "Wireless USB Adapters",
+                        "id": "shop-wireless-usb-adapters"
+                    },
+                    {
+                        "name": "Humidifiers",
+                        "id": "shop-humidifiers"
+                    }
+                ]
+            }
+        },
+        "resultList": [
+            {
+                "item": {
+                    "itemId": "2354731818",
+                    "title": "Natural Loofah Body Scrubber Bath Exfoliating Sponge Soft Shower Brushes Clearner Pad Exfoliator Shower Puff Body Skin Care Tool",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/natural-loofah-body-scrubber-bath-exfoliating-sponge-soft-shower-brushes-clearner-pad-exfoliator-shower-puff-body-skin-care-tool-i2354731818-s13738708521.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/1276e18608188e774ba8929ecbbae0e9.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/fd0aa4bdef2128c4276a70762dde28e1.jpg",
+                            "sku": "2354731818_SGAMZ",
+                            "skuId": "13738708521"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/e7d2ea6a6e3aceb0d36593982f08c8f5.jpg",
+                            "sku": "2354731818_SGAMZ",
+                            "skuId": "13738708522"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "2.16",
+                            "promotionPrice": "1.6"
+                        }
+                    },
+                    "reviewCount": "29",
+                    "averageStarRate": "4.72"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1152234614",
+                    "sellerTitle": "Ausoon Direct Store"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1669755205",
+                    "title": "Double-Layer Shower Cap Women's Waterproof Hat Bathing Shower Cap Hair Care EVA Shower Cap Reusable Adult Style",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/double-layer-shower-cap-womens-waterproof-hat-bathing-shower-cap-hair-care-eva-shower-cap-reusable-adult-style-i1669755205-s13974221473.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/e63948f426279195d43af73c0f277fa9.png",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/1c9589aa2bbd1281d7e97c012945d9c1.jpg",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "13974221473"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/06eb258b62e32c7d2478c202c95e91fa.jpg",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "13974221472"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/f1ec959df8e6efff5b26337e17281904.jpg",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "13974221471"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/bbb2202aa8f921a940c4bb4cd95044f3.jpg",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "13974221470"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/0fa78e8e7be460072aa2e3d148bfe00e.png",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "8015810058"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/33a061047c69c9686f17e1c330974974.png",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "8193064179"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/eab419b499b9dbfc6398010efc6cba76.png",
+                            "sku": "1669755205_SGAMZ",
+                            "skuId": "8015810060"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "4.8",
+                            "promotionPrice": "3.3"
+                        }
+                    },
+                    "reviewCount": "12",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1139106107",
+                    "sellerTitle": "Sweetie Moments"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2298491173",
+                    "title": "Doxiy【Bath Artifact】60/70cm Rubber Band Body Scrub Silicone Back Scrubber for Shower, Exfoliating Long Bath Body Brush with Soft Bristles for Men and Women, For Lazy People to Rub Ash and Mud Artifacts",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/doxiybath-artifact6070cm-rubber-band-body-scrub-silicone-back-scrubber-for-shower-exfoliating-long-bath-body-brush-with-soft-bristles-for-men-and-women-for-lazy-people-to-rub-ash-and-mud-artifacts-i2298491173-s13311089362.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/52dbbc3f63a5105ac8a18685f7c3a214.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/faa04d3458bd0f91f3960abbe888a0c4.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089362"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/66ba2a2dc59aaedc48354be80e5e9695.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089360"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/c97f0d528f33ecfbd39a79c6e5909518.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089361"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/24d194c04132979d735f09da7b5dcd5a.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089367"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/33d8116419e49d1d7d67e1602ee8af6e.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089364"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/e319846b59edfd12c46974e7983243ef.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089363"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/39be46052f65f8cc4e58dd3c387bd50f.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089366"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/52130f9cb34715b4d1288821c6c4c593.jpg",
+                            "sku": "2298491173_SGAMZ",
+                            "skuId": "13311089365"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "6.55",
+                            "promotionPrice": "3.55"
+                        }
+                    },
+                    "reviewCount": "21",
+                    "averageStarRate": "4.81"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100039091",
+                    "sellerTitle": "doxiy"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2417798960",
+                    "title": "Doxiy【Bath Artifact】60/70cm Rubber Band Body Scrub Silicone Back Scrubber for Shower, Exfoliating Long Bath Body Brush with Soft Bristles for Men and Women, For Lazy People to Rub Ash and Mud Artifacts",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/doxiybath-artifact6070cm-rubber-band-body-scrub-silicone-back-scrubber-for-shower-exfoliating-long-bath-body-brush-with-soft-bristles-for-men-and-women-for-lazy-people-to-rub-ash-and-mud-artifacts-i2417798960-s14255425732.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/52dbbc3f63a5105ac8a18685f7c3a214.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/24d194c04132979d735f09da7b5dcd5a.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425732"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/faa04d3458bd0f91f3960abbe888a0c4.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425730"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/e319846b59edfd12c46974e7983243ef.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425731"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/39be46052f65f8cc4e58dd3c387bd50f.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425727"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/66ba2a2dc59aaedc48354be80e5e9695.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425728"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/c97f0d528f33ecfbd39a79c6e5909518.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425729"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/33d8116419e49d1d7d67e1602ee8af6e.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425725"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/52130f9cb34715b4d1288821c6c4c593.jpg",
+                            "sku": "2417798960_SGAMZ",
+                            "skuId": "14255425726"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "6",
+                            "promotionPrice": "4.25"
+                        }
+                    },
+                    "reviewCount": "8",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000022684",
+                    "sellerTitle": "MONANICO"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "795398634",
+                    "title": "OMAX SG 🌟ADOLPH SHOWER SHAMPOO  ESSENTIAL 🌟 TRAVEL AND HOME CARE 55 G/bottle 🌟 BUY1 FREE 1",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/omax-sg-adolph-shower-shampoo-essential-travel-and-home-care-55-gbottle-buy1-free-1-i795398634-s2619640604.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/6a9901ffe5142beb1c2c23bc699f4d79.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/30095075d8a754996e6936ace2184804.jpg",
+                            "sku": "795398634_SGAMZ",
+                            "skuId": "2619640604"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/7f206df2c50956048e13947a8b901f33.jpg",
+                            "sku": "795398634_SGAMZ",
+                            "skuId": "2619640605"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3",
+                            "promotionPrice": "2.5"
+                        }
+                    },
+                    "reviewCount": "5",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "100006883",
+                    "sellerTitle": "OMAX INTERNATIONAL"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1446084275",
+                    "title": "2 in 1 Bath and Shampoo Brush Silicone Shower Body Scrubber Exfoliating Body Brush Head Scalp Massager Brush Wet and Dry",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/2-in-1-bath-and-shampoo-brush-silicone-shower-body-scrubber-exfoliating-body-brush-head-scalp-massager-brush-wet-and-dry-i1446084275-s6676584394.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/5c201aa1b93e40826f3fb6ce653c64c4.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/5c201aa1b93e40826f3fb6ce653c64c4.jpg",
+                            "sku": "1446084275_SGAMZ",
+                            "skuId": "6676584394"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/98fbf08cd5ea55ba32175c3bd87afc16.jpg",
+                            "sku": "1446084275_SGAMZ",
+                            "skuId": "6676584393"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "9.63",
+                            "promotionPrice": "5.35"
+                        }
+                    },
+                    "reviewCount": "12",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1136568017",
+                    "sellerTitle": "Skin Station"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2433946450",
+                    "title": "Disposable Shower Cap Thickened Waterproof Household Female Bath Hair Mask Hat Head Cover Hair Dyeing Hair Treatment Oil Beauty Salon Special",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/disposable-shower-cap-thickened-waterproof-household-female-bath-hair-mask-hat-head-cover-hair-dyeing-hair-treatment-oil-beauty-salon-special-i2433946450-s14396305114.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S8467430dac804c93a8c92e803dde3b58W.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S1f11119fa59f42ddb1d34543855f75625.jpg",
+                            "sku": "2433946450_SGAMZ",
+                            "skuId": "14396305114"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "7",
+                            "promotionPrice": "6.1"
+                        }
+                    },
+                    "reviewCount": "6",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "100005188",
+                    "sellerTitle": "Taobao"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1494588750",
+                    "title": "Adults Lovely Double Layer Waterproof Elastic Bath Shower Bathroom Products Shower Caps Hair Cover Dry Hair Hat",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/adults-lovely-double-layer-waterproof-elastic-bath-shower-bathroom-products-shower-caps-hair-cover-dry-hair-hat-i1494588750-s6964244299.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/f2b503282796c3a76dbc3fa0a163fd99.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/f2b503282796c3a76dbc3fa0a163fd99.jpg",
+                            "sku": "1494588750_SGAMZ",
+                            "skuId": "6964244299"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.66",
+                            "promotionPrice": "2.16"
+                        }
+                    },
+                    "reviewCount": "30",
+                    "averageStarRate": "4.73"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000062901",
+                    "sellerTitle": "Cute Woman"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1949491148",
+                    "title": "TCHIRR 1Pcs Super Soft Cleaning Equipment Simple Design Back Scrubber Wash Body Shower Brush Mesh Sponge Bath Ball Bath Flower",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/tchirr-1pcs-super-soft-cleaning-equipment-simple-design-back-scrubber-wash-body-shower-brush-mesh-sponge-bath-ball-bath-flower-i1949491148-s10448929741.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/d4f667a894b28f96dd42ba018adb23df.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/579a8ac2fd7a9025b819e37eb5714d87.jpg",
+                            "sku": "1949491148_SGAMZ",
+                            "skuId": "10448929741"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/e0978fc2e76fb2dd29574c141ffae13b.jpg",
+                            "sku": "1949491148_SGAMZ",
+                            "skuId": "10448929740"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/ac8189b69030f106b29ae397c9a56777.jpg",
+                            "sku": "1949491148_SGAMZ",
+                            "skuId": "10448929739"
+                        },
+                        {
+                            "image": "//my-live-02.slatic.net/p/90c9ebec74d2cdb92f87340533e337fa.jpg",
+                            "sku": "1949491148_SGAMZ",
+                            "skuId": "10448929738"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "3.64",
+                            "promotionPrice": "2.15"
+                        }
+                    },
+                    "reviewCount": "145",
+                    "averageStarRate": "4.86"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1141329093",
+                    "sellerTitle": "TCHIRR Beauty Care"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2847687433",
+                    "title": "[☀ Authentic ]  Cure Natural Aqua Gel Exfoliating Care 250g   ‮ bath & body accessories   ‪  (Quality Assurance)",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/authentic-cure-natural-aqua-gel-exfoliating-care-250g-bath-body-accessories-quality-assurance-i2847687433-s19630595970.html",
+                    "sales": null,
+                    "image": "//my-test-11.slatic.net/p/5db398c8621dad1f6e9691a9698e3616.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-test-11.slatic.net/p/5db398c8621dad1f6e9691a9698e3616.jpg",
+                            "sku": "2847687433_SGAMZ",
+                            "skuId": "19630595970"
+                        },
+                        {
+                            "image": "//sg-live-01.slatic.net/p/778a3960dc5d2fd9f0926ff3db39eea1.jpg",
+                            "sku": "2847687433_SGAMZ",
+                            "skuId": "19630595969"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "53",
+                            "promotionPrice": "22.8"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000180295",
+                    "sellerTitle": "Domingo2008"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2804050424",
+                    "title": "10Pcs/Set Organic Bath Gift Natural Mini Handmade Bathing Foot Spa Bomb Rich Essential Oils Moisturizing Dry Skin Relaxing Scent",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/10pcsset-organic-bath-gift-natural-mini-handmade-bathing-foot-spa-bomb-rich-essential-oils-moisturizing-dry-skin-relaxing-scent-i2804050424-s19368314788.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/040e5786051ec53fe283efcb36bdf2e1.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/040e5786051ec53fe283efcb36bdf2e1.jpg",
+                            "sku": "2804050424_SGAMZ",
+                            "skuId": "19368314788"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "17.66",
+                            "promotionPrice": "16.78"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Hong Kong SAR China"
+                },
+                "seller": {
+                    "sellerId": "1196976212",
+                    "sellerTitle": "glowtattoo "
+                }
+            },
+            {
+                "item": {
+                    "itemId": "101999508",
+                    "title": "Herbal Sense 100% Pure Organic Cold Pressed/unrefined Oils- Rosehips Oil From Chile",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/herbal-sense-100-pure-organic-cold-pressedunrefined-oils-rosehips-oil-from-chile-i101999508-s102173335.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/original/1452d9bfb6ee0b0ea6499f07d2b6434e.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/original/1452d9bfb6ee0b0ea6499f07d2b6434e.jpg",
+                            "sku": "OE702HBAB7P4RSSGAMZ",
+                            "skuId": "102173335"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "38"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "100001497",
+                    "sellerTitle": "HERBAL SENSE PTE. LTD."
+                }
+            },
+            {
+                "item": {
+                    "itemId": "101999507",
+                    "title": "Herbal Sense 100% Pure Organic Cold Pressed/unrefined Oils-Organic jojoba Oil 100 ml",
+                    "brandId": "69039",
+                    "brandName": "Herbal Sense",
+                    "itemUrl": "//www.lazada.sg/products/herbal-sense-100-pure-organic-cold-pressedunrefined-oils-organic-jojoba-oil-100-ml-i101999507-s102173334.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/original/1ac7eb508d275e66140bf0e21d281386.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/original/1ac7eb508d275e66140bf0e21d281386.jpg",
+                            "sku": "HE512HBAA9I3ZBSGAMZ",
+                            "skuId": "102173334"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "38"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "4.50"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "100001497",
+                    "sellerTitle": "HERBAL SENSE PTE. LTD."
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2803902852",
+                    "title": "Inside Surprise Bule Bath Fizzies Vegan Essential Oil Spa 1Pcs Bath Bombs For Kids With Toys",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/inside-surprise-bule-bath-fizzies-vegan-essential-oil-spa-1pcs-bath-bombs-for-kids-with-toys-i2803902852-s19368162844.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/d34ee945e46bc57c1144da8d77a40491.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/d34ee945e46bc57c1144da8d77a40491.jpg",
+                            "sku": "2803902852_SGAMZ",
+                            "skuId": "19368162844"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "23.68",
+                            "promotionPrice": "22.5"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Hong Kong SAR China"
+                },
+                "seller": {
+                    "sellerId": "1196976212",
+                    "sellerTitle": "glowtattoo "
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2821052629",
+                    "title": "Cheong Hoong Bentong ginger bath pack (10g x 20 sachets)",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/cheong-hoong-bentong-ginger-bath-pack-10g-x-20-sachets-i2821052629-s19463568462.html",
+                    "sales": null,
+                    "image": "//my-live.slatic.net/p/05b9f6452263d8c2a0d6cf6f8e4a0826.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live.slatic.net/p/05b9f6452263d8c2a0d6cf6f8e4a0826.jpg",
+                            "sku": "2821052629_SGAMZ",
+                            "skuId": "19463568462"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "15.71"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Selangor"
+                },
+                "seller": {
+                    "sellerId": "1218288627",
+                    "sellerTitle": "Zhang Village Store"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2817577168",
+                    "title": "Duytu Handheld Silicone Body Scrubber Deep Cleaning Soft Anti-slip Brush for Home Hotel Bathroom Use",
+                    "brandId": "27432",
+                    "brandName": "OEM",
+                    "itemUrl": "//www.lazada.sg/products/duytu-handheld-silicone-body-scrubber-deep-cleaning-soft-anti-slip-brush-for-home-hotel-bathroom-use-i2817577168-s19443254982.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/d27869bd30a3f4202b52e1987664fae6.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/d27869bd30a3f4202b52e1987664fae6.jpg",
+                            "sku": "2817577168_SGAMZ",
+                            "skuId": "19443254982"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "8.34",
+                            "promotionPrice": "4.17"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000059066",
+                    "sellerTitle": "gfhfgjhh"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2345988791",
+                    "title": "1/3/5Pcs Multicolour Double Layer Mesh Soap Bag / Soap Foaming Net",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/135pcs-multicolour-double-layer-mesh-soap-bag-soap-foaming-net-i2345988791-s13662979496.html",
+                    "sales": null,
+                    "image": "//id-live-02.slatic.net/p/3b3ec35a59c44639851d8a4f40cfc8dd.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//id-live-02.slatic.net/p/6af1421091dddeaa518ca64885822b59.jpg",
+                            "sku": "2345988791_SGAMZ",
+                            "skuId": "13662979496"
+                        },
+                        {
+                            "image": "//id-live-02.slatic.net/p/3b3ec35a59c44639851d8a4f40cfc8dd.jpg",
+                            "sku": "2345988791_SGAMZ",
+                            "skuId": "13662979498"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "1.35",
+                            "promotionPrice": "0.83"
+                        }
+                    },
+                    "reviewCount": "7",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1000022684",
+                    "sellerTitle": "MONANICO"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2852706885",
+                    "title": "MUMENG Random Color 1pcs Wash Sponge Loofah Flower Bath Ball / Shower Nylon Scrubber Loofah Mesh Net Ball / Body Cleaning Mesh",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/mumeng-random-color-1pcs-wash-sponge-loofah-flower-bath-ball-shower-nylon-scrubber-loofah-mesh-net-ball-body-cleaning-mesh-i2852706885-s19667402157.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/8ef25fece62e357cf82fa28c57254e2c.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-test-11.slatic.net/p/dd19ea59c93aefbc93eb22f09fede9fd.jpg",
+                            "sku": "2852706885_SGAMZ",
+                            "skuId": "19667402157"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "12.03",
+                            "promotionPrice": "7.22"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1139958151",
+                    "sellerTitle": "aud883"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2426407431",
+                    "title": "【Hot】Sup er Big G el Dis creet Pack aging",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/hotsup-er-big-g-el-dis-creet-pack-aging-i2426407431-s14326733158.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/fe35cd2896c1c7f039d0f0a505076d64.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/fe35cd2896c1c7f039d0f0a505076d64.jpg",
+                            "sku": "2426407431_SGAMZ",
+                            "skuId": "14326733158"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "40.82",
+                            "promotionPrice": "21.92"
+                        }
+                    },
+                    "reviewCount": "29",
+                    "averageStarRate": "4.79"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1132962922",
+                    "sellerTitle": " YLYU"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2448648219",
+                    "title": "[Ready Stock] Double Layer Soap Net Bag Foaming Facial",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/ready-stock-double-layer-soap-net-bag-foaming-facial-i2448648219-s14522996008.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/1ae9efc0564f49e7932046f9e4837d53.png",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/1ae9efc0564f49e7932046f9e4837d53.png",
+                            "sku": "2448648219_SGAMZ",
+                            "skuId": "14522996008"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "0.75"
+                        }
+                    },
+                    "reviewCount": "1",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1153638169",
+                    "sellerTitle": "Love Home (Home & Living)"
+                }
+            }
+        ]
+    }
+}

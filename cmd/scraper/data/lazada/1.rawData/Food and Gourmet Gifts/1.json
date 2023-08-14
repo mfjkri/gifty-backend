@@ -1,0 +1,1310 @@
+{
+    "result": {
+        "status": {
+            "data": "success",
+            "code": 200,
+            "executionTime": "1.16",
+            "requestTime": "2023-08-12 12:58:47",
+            "endpoint": "item_search",
+            "requestId": "771dddc08dc461942929eb96306fa178",
+            "apiVersion": "3.1.2",
+            "functionsVersion": "3.0.5",
+            "la": "0.00",
+            "pmu": 934000,
+            "mu": 933680
+        },
+        "settings": {
+            "q": "Food and Gourmet Gifts",
+            "loc": "",
+            "attr": "",
+            "sort": "default",
+            "page": "1",
+            "startPrice": "",
+            "endPrice": "",
+            "region": "SG",
+            "locale": "en_SG",
+            "currency": "SGD"
+        },
+        "base": {
+            "page": "1",
+            "totalResults": "1206",
+            "pageSize": "40",
+            "q": "Food and Gourmet Gifts",
+            "sortValues": [
+                "default",
+                "priceAsc",
+                "priceDesc"
+            ],
+            "switchesList": {
+                "name": "Service & Promotion",
+                "list": [
+                    {
+                        "name": "Store Pick-up",
+                        "id": "storepickup_1663549401668"
+                    },
+                    {
+                        "name": "Cashback",
+                        "id": "cashback",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01v2fTTl1L0afUjZmKP_!!6000000001237-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Shiok",
+                        "id": "sg_filter_ShiokLocaldeal",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/3bcc901fc1b937bba16bb7d75400dbfbShioklocal.png"
+                    },
+                    {
+                        "name": "Below $4.99",
+                        "id": "elp",
+                        "image": "//lzd-img-global.slatic.net/us/lzd-onepiece/200f45aa4ee1bf19275ea36ef18fd950SRPTAB(1).png"
+                    },
+                    {
+                        "name": "LazMall",
+                        "id": "official",
+                        "image": "//gw.alicdn.com/imgextra/i3/O1CN01SOxgmS1zfQX5caIQS_!!6000000006741-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Scheduled Delivery",
+                        "id": "express_ms"
+                    },
+                    {
+                        "name": "Priority Delivery",
+                        "id": "FLASH_SHIPPING",
+                        "image": "//img.alicdn.com/imgextra/i4/O1CN0115NZlQ1Z3i1a58SMe_!!6000000003139-2-tps-60-61.png"
+                    },
+                    {
+                        "name": "Free Shipping",
+                        "id": "freeShipping",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01VY6fyb1KPwum3OzZA_!!6000000001157-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Mailbox Delivery",
+                        "id": "ECONOMY"
+                    },
+                    {
+                        "name": "RedMart",
+                        "id": "redmart",
+                        "image": "//gw.alicdn.com/imgextra/i1/O1CN01UcQ18729K2CI4t3PK_!!6000000008048-2-tps-60-60.png"
+                    },
+                    {
+                        "name": "Coins",
+                        "id": "coins",
+                        "image": "//img.alicdn.com/imgextra/i1/O1CN01u545I31bGePSQtbYH_!!6000000003438-2-tps-60-60.png"
+                    }
+                ]
+            },
+            "locationList": {
+                "name": "Location",
+                "list": [
+                    {
+                        "name": "Singapore",
+                        "id": "local"
+                    },
+                    {
+                        "name": "China",
+                        "id": "-49"
+                    },
+                    {
+                        "name": "Japan",
+                        "id": "-114"
+                    },
+                    {
+                        "name": "South Korea",
+                        "id": "-122"
+                    }
+                ]
+            },
+            "attributeList": [
+                {
+                    "name": "Dietary Needs",
+                    "list": [
+                        {
+                            "name": "Halal",
+                            "id": "90082:20772"
+                        },
+                        {
+                            "name": "GMO Free",
+                            "id": "90082:173762"
+                        },
+                        {
+                            "name": "Healthier Choice",
+                            "id": "90082:173761"
+                        },
+                        {
+                            "name": "Low Sodium",
+                            "id": "90082:173758"
+                        },
+                        {
+                            "name": "Organic",
+                            "id": "90082:3729"
+                        },
+                        {
+                            "name": "Trans fat Free",
+                            "id": "90082:173755"
+                        },
+                        {
+                            "name": "Low Fat",
+                            "id": "90082:173759"
+                        },
+                        {
+                            "name": "Gluten Free",
+                            "id": "90082:173754"
+                        },
+                        {
+                            "name": "Sugar Free",
+                            "id": "90082:167638"
+                        },
+                        {
+                            "name": "Vegan",
+                            "id": "90082:123511630"
+                        },
+                        {
+                            "name": "Low Sugar",
+                            "id": "90082:173760"
+                        },
+                        {
+                            "name": "Vegetarian",
+                            "id": "90082:14635"
+                        },
+                        {
+                            "name": "Saturated Fat Free",
+                            "id": "90082:173756"
+                        },
+                        {
+                            "name": "Caffeine Free",
+                            "id": "90082:173753"
+                        },
+                        {
+                            "name": "Nutri Grade B",
+                            "id": "90082:124584802"
+                        },
+                        {
+                            "name": "Cholesterol Free",
+                            "id": "90082:173757"
+                        },
+                        {
+                            "name": "Nut Free",
+                            "id": "90082:124000261"
+                        },
+                        {
+                            "name": "Dairy Free",
+                            "id": "90082:123324254"
+                        }
+                    ]
+                },
+                {
+                    "name": "Packaging Type",
+                    "list": [
+                        {
+                            "name": "Bag",
+                            "id": "30156:4362"
+                        },
+                        {
+                            "name": "Bottle",
+                            "id": "30156:173771"
+                        },
+                        {
+                            "name": "Cans",
+                            "id": "30156:173775"
+                        },
+                        {
+                            "name": "Refill Pouch",
+                            "id": "30156:173772"
+                        },
+                        {
+                            "name": "Glass bottles",
+                            "id": "30156:173774"
+                        },
+                        {
+                            "name": "Canister",
+                            "id": "30156:86794"
+                        },
+                        {
+                            "name": "Plastic bottles",
+                            "id": "30156:173776"
+                        },
+                        {
+                            "name": "Refill Bottle",
+                            "id": "30156:173773"
+                        },
+                        {
+                            "name": "Cannister",
+                            "id": "30156:173770"
+                        }
+                    ]
+                },
+                {
+                    "name": "Storage Type",
+                    "list": [
+                        {
+                            "name": "Cupboard",
+                            "id": "90083:173799"
+                        },
+                        {
+                            "name": "Chilled",
+                            "id": "90083:173798"
+                        },
+                        {
+                            "name": "Frozen",
+                            "id": "90083:20169"
+                        }
+                    ]
+                },
+                {
+                    "name": "Flavor",
+                    "list": [
+                        {
+                            "name": "Pork",
+                            "id": "30642:12664"
+                        },
+                        {
+                            "name": "Chocolate",
+                            "id": "30642:3746"
+                        },
+                        {
+                            "name": "Chicken",
+                            "id": "30642:20840"
+                        },
+                        {
+                            "name": "Sweet",
+                            "id": "30642:19792"
+                        },
+                        {
+                            "name": "Others",
+                            "id": "30642:4631"
+                        },
+                        {
+                            "name": "Salty & savory taste",
+                            "id": "30642:23402"
+                        },
+                        {
+                            "name": "Natural",
+                            "id": "30642:4243"
+                        },
+                        {
+                            "name": "Beef",
+                            "id": "30642:12659"
+                        },
+                        {
+                            "name": "Cheese",
+                            "id": "30642:12661"
+                        },
+                        {
+                            "name": "Apple",
+                            "id": "30642:4178"
+                        },
+                        {
+                            "name": "Pineapple",
+                            "id": "30642:14712"
+                        },
+                        {
+                            "name": "Fish",
+                            "id": "30642:12662"
+                        },
+                        {
+                            "name": "FRUITY",
+                            "id": "30642:143911"
+                        },
+                        {
+                            "name": "Cherry",
+                            "id": "30642:3769"
+                        },
+                        {
+                            "name": "Red bean taste",
+                            "id": "30642:23201"
+                        },
+                        {
+                            "name": "Lemon",
+                            "id": "30642:14711"
+                        },
+                        {
+                            "name": "Peanut",
+                            "id": "30642:23432"
+                        },
+                        {
+                            "name": "Mushroom",
+                            "id": "30642:23330"
+                        },
+                        {
+                            "name": "Grape",
+                            "id": "30642:108189"
+                        },
+                        {
+                            "name": "Sweet Potato",
+                            "id": "30642:110008785"
+                        },
+                        {
+                            "name": "Orange",
+                            "id": "30642:3738"
+                        },
+                        {
+                            "name": "SPICY",
+                            "id": "30642:116830"
+                        },
+                        {
+                            "name": "Mango",
+                            "id": "30642:3754"
+                        },
+                        {
+                            "name": "Buttery Sweet Dough",
+                            "id": "30642:108195"
+                        },
+                        {
+                            "name": "Caramel flavor",
+                            "id": "30642:23312"
+                        },
+                        {
+                            "name": "Green tea taste",
+                            "id": "30642:23038"
+                        },
+                        {
+                            "name": "Butter Vanilla",
+                            "id": "30642:108193"
+                        },
+                        {
+                            "name": "Mixed",
+                            "id": "30642:20864"
+                        }
+                    ]
+                },
+                {
+                    "name": "Color",
+                    "list": [
+                        {
+                            "name": "Brown",
+                            "id": "30129:3733"
+                        },
+                        {
+                            "name": "Red",
+                            "id": "30129:1577"
+                        },
+                        {
+                            "name": "Yellow",
+                            "id": "30129:3744"
+                        },
+                        {
+                            "name": "Beige",
+                            "id": "30129:3737"
+                        },
+                        {
+                            "name": "Ivory",
+                            "id": "30129:3767"
+                        },
+                        {
+                            "name": "Chocolate",
+                            "id": "30129:3746"
+                        },
+                        {
+                            "name": "White",
+                            "id": "30129:3743"
+                        },
+                        {
+                            "name": "Green",
+                            "id": "30129:3736"
+                        },
+                        {
+                            "name": "Black",
+                            "id": "30129:3731"
+                        },
+                        {
+                            "name": "Multicolor",
+                            "id": "30129:3759"
+                        },
+                        {
+                            "name": "Pink",
+                            "id": "30129:3739"
+                        },
+                        {
+                            "name": "Purple",
+                            "id": "30129:3740"
+                        },
+                        {
+                            "name": "Rainbow",
+                            "id": "30129:27417"
+                        },
+                        {
+                            "name": "Orange",
+                            "id": "30129:3738"
+                        },
+                        {
+                            "name": "Rose",
+                            "id": "30129:3779"
+                        },
+                        {
+                            "name": "Light blue",
+                            "id": "30129:3808"
+                        },
+                        {
+                            "name": "Blue",
+                            "id": "30129:3732"
+                        },
+                        {
+                            "name": "Light yellow",
+                            "id": "30129:3776"
+                        },
+                        {
+                            "name": "Gold",
+                            "id": "30129:3734"
+                        },
+                        {
+                            "name": "Off White",
+                            "id": "30129:3784"
+                        },
+                        {
+                            "name": "Maroon",
+                            "id": "30129:1235"
+                        },
+                        {
+                            "name": "Camel",
+                            "id": "30129:3773"
+                        },
+                        {
+                            "name": "Fluorescent Yellow",
+                            "id": "30129:3797"
+                        },
+                        {
+                            "name": "Coffee",
+                            "id": "30129:3755"
+                        },
+                        {
+                            "name": "Turquoise",
+                            "id": "30129:3742"
+                        },
+                        {
+                            "name": "Cherry",
+                            "id": "30129:3769"
+                        }
+                    ]
+                },
+                {
+                    "name": "Organic",
+                    "list": [
+                        {
+                            "name": "No",
+                            "id": "30655:2401"
+                        },
+                        {
+                            "name": "Yes",
+                            "id": "30655:2110"
+                        }
+                    ]
+                },
+                {
+                    "name": "Health Benefit",
+                    "list": [
+                        {
+                            "name": "Active",
+                            "id": "30578:22120"
+                        },
+                        {
+                            "name": "Indoor",
+                            "id": "30578:20470"
+                        },
+                        {
+                            "name": "Stomach",
+                            "id": "30578:22591"
+                        },
+                        {
+                            "name": "Weight control",
+                            "id": "30578:22595"
+                        }
+                    ]
+                }
+            ],
+            "categoryList": {
+                "name": "Category",
+                "list": [
+                    {
+                        "name": "Gourmet Food and Gifts",
+                        "id": "gourmet-food-and-gifts"
+                    },
+                    {
+                        "name": "Dog Wet Food",
+                        "id": "shop-dog-wet-food"
+                    },
+                    {
+                        "name": "Dried Herbs",
+                        "id": "shop-groceries-foodstaplescookingessentials-saltseasoning-driedherbs"
+                    },
+                    {
+                        "name": "Stickers & Labels",
+                        "id": "shop-stickers-labels"
+                    },
+                    {
+                        "name": "Asian Pastes & Sauces",
+                        "id": "shop-groceries-foodstaplescookingessentials-cookingsauceskits-asianpastessauces"
+                    },
+                    {
+                        "name": "Instant Food & Ready to Eat",
+                        "id": "shop-groceries-foodstaplescookingessentials-instantfoodreadytoeat"
+                    },
+                    {
+                        "name": "Baking Accessories",
+                        "id": "shop-groceries-foodstaplescookingessentials-homebakingsugar-bakingaccessories"
+                    },
+                    {
+                        "name": "Brain & Memory",
+                        "id": "shop-brain-memory"
+                    },
+                    {
+                        "name": "Condiments",
+                        "id": "shop-groceries-foodstaplescookingessentials-condimentsdressings-condiments"
+                    },
+                    {
+                        "name": "Dried Fruit, Nuts & Seeds",
+                        "id": "shop-groceries-foodstaplescookingessentials-homebakingsugar-driedfruitnutsseeds"
+                    },
+                    {
+                        "name": "Block Building Sets",
+                        "id": "shop-building-set-toys"
+                    },
+                    {
+                        "name": "Pretzels & Savoury Snacks",
+                        "id": "shop-groceries-chocolatesnackssweets-snacks-pretzelssavourysnacks"
+                    },
+                    {
+                        "name": "Other Specialty Kitchen Tools",
+                        "id": "shop-other-specialty-kitchen-tools"
+                    },
+                    {
+                        "name": "Playsets - Cash registers",
+                        "id": "shop-pretend-play-cash-registers"
+                    },
+                    {
+                        "name": "Seasoning",
+                        "id": "shop-groceries-foodstaplescookingessentials-saltseasoning-seasoning"
+                    },
+                    {
+                        "name": "Key Chains",
+                        "id": "shop-automotive-key-chains"
+                    },
+                    {
+                        "name": "Speciality Oil",
+                        "id": "shop-groceries-foodstaplescookingessentials-oil-specialityoil"
+                    },
+                    {
+                        "name": "Novelty Gifts",
+                        "id": "shop-novelty-gifts"
+                    },
+                    {
+                        "name": "Pens",
+                        "id": "shop-writing-pens"
+                    },
+                    {
+                        "name": "Art Pads, Diaries & Folios",
+                        "id": "shop-art-pads-diaries"
+                    },
+                    {
+                        "name": "Cup & Bowl Noodles",
+                        "id": "shop-groceries-foodstaplescookingessentials-noodlesvermicelli-instantnoodles-cupbowlnoodles"
+                    },
+                    {
+                        "name": "Playsets - Kitchen Toys",
+                        "id": "shop-toys-kitchen-food-pretend-play"
+                    },
+                    {
+                        "name": "Instant Pasta",
+                        "id": "shop-groceries-foodstaplescookingessentials-pasta-instantpasta"
+                    },
+                    {
+                        "name": "Honey",
+                        "id": "shop-groceries-breakfast-jams-honey-spreads-honey"
+                    },
+                    {
+                        "name": "Compote & Dessert",
+                        "id": "shop-groceries-chocolatesnackssweets-snacks-compotedessert"
+                    },
+                    {
+                        "name": "Dog Dry Food",
+                        "id": "shop-dry-dog-food"
+                    },
+                    {
+                        "name": "Gifting & Festive Sweets",
+                        "id": "shop-groceries-chocolatesnackssweets-sweets-giftingfestivesweets"
+                    }
+                ]
+            }
+        },
+        "resultList": [
+            {
+                "item": {
+                    "itemId": "1609602070",
+                    "title": "Olive Paste from Green Olives and Sundried Tomato, Organic, 180g",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/olive-paste-from-green-olives-and-sundried-tomato-organic-180g-i1609602070-s7574482595.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/34095064eddc630eceb7a40165b90355.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/34095064eddc630eceb7a40165b90355.jpg",
+                            "sku": "1609602070_SGAMZ",
+                            "skuId": "7574482595"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "6.85"
+                        }
+                    },
+                    "reviewCount": "4",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1000027929",
+                    "sellerTitle": "GREEKGOURMET"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1347792514",
+                    "title": "ASS KICKIN Habanero Pepper Spicy Hot Peanuts  1oz - Ultimate Spicy Gourmet Gift Peanuts - Try if you dare!",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/ass-kickin-habanero-pepper-spicy-hot-peanuts-1oz-ultimate-spicy-gourmet-gift-peanuts-try-if-you-dare-i1347792514-s5670550905.html",
+                    "sales": null,
+                    "image": "//images-na.ssl-images-amazon.com/images/I/51YU9ChZSYL.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/77e2882472f2da05651a46ada229ca65.jpg",
+                            "sku": "1347792514_SGAMZ",
+                            "skuId": "5670550905"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "61.11",
+                            "promotionPrice": "41.11"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1135638053",
+                    "sellerTitle": "MisterMart"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1825958452",
+                    "title": "Curatas Dehydrated Dried Lemon Slices",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/curatas-dehydrated-dried-lemon-slices-i1825958452-s9711172247.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/2d6bf2d03ede98dac7ffac57397c777c.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/2d6bf2d03ede98dac7ffac57397c777c.jpg",
+                            "sku": "1825958452_SGAMZ",
+                            "skuId": "9711172247"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "8.5"
+                        }
+                    },
+                    "reviewCount": "50",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1143375069",
+                    "sellerTitle": "Curatas"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1825974413",
+                    "title": "Curatas Dehydrated Dried Lime Slices",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/curatas-dehydrated-dried-lime-slices-i1825974413-s9711049708.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/f48ca2f27a93be5620b30b9ae8fdf9ae.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/f48ca2f27a93be5620b30b9ae8fdf9ae.jpg",
+                            "sku": "1825974413_SGAMZ",
+                            "skuId": "9711049708"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "9.5"
+                        }
+                    },
+                    "reviewCount": "18",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1143375069",
+                    "sellerTitle": "Curatas"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1188276219",
+                    "title": "Heavenly Crab Bee Hoon, Savoury Milky Broth, Juicy Crab meat, Delicious and Flavorful, 700 to 800 grams each, For 2 to 3 persons, Pre-Order, Ships in 7 Days",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/heavenly-crab-bee-hoon-savoury-milky-broth-juicy-crab-meat-delicious-and-flavorful-700-to-800-grams-each-for-2-to-3-persons-pre-order-ships-in-7-days-i1188276219-s4746228764.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/mdc/f56bc3a4d78e242bb663f0bed9f55988.png",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/mdc/f56bc3a4d78e242bb663f0bed9f55988.png",
+                            "sku": "1188276219_SGAMZ",
+                            "skuId": "4746228764"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "88"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1139424048",
+                    "sellerTitle": "AsiaA"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2182875961",
+                    "title": "Chee Seng Dried Japanese Scallops 集成日本干贝 (100g sealed bag)",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/chee-seng-dried-japanese-scallops-100g-sealed-bag-i2182875961-s12479587467.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/210b7be07b979cf68786de0f1992eb01.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/210b7be07b979cf68786de0f1992eb01.jpg",
+                            "sku": "2182875961_SGAMZ",
+                            "skuId": "12479587467"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "20"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1149717005",
+                    "sellerTitle": "Sunnlovebycspdg"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2251339241",
+                    "title": "[Pin Pin Piau Kay Co] Glory Nonya Kaya Coconut Jam",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/pin-pin-piau-kay-co-glory-nonya-kaya-coconut-jam-i2251339241-s12963092473.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/8db8a6e18a53a2a4b5afcf9435641747.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/8db8a6e18a53a2a4b5afcf9435641747.jpg",
+                            "sku": "2251339241_SGAMZ",
+                            "skuId": "12963092473"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "3"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1151550086",
+                    "sellerTitle": "eI9oeQHp"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2159027473",
+                    "title": "[Taiwan] Su Ji Sun Cake 315g",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/taiwan-su-ji-sun-cake-315g-i2159027473-s12303194131.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S799dbc2cd8a84dbe82f83a50e2775aadZ.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S799dbc2cd8a84dbe82f83a50e2775aadZ.jpg",
+                            "sku": "2159027473_SGAMZ",
+                            "skuId": "12303194131"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "8.3"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1147800091",
+                    "sellerTitle": "BELLSTREAM SINGAPORE"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2167404029",
+                    "title": "Dried Scallops (China) 干贝 (M) size 200g",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/dried-scallops-china-m-size-200g-i2167404029-s12365380786.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S19bc284736504e059bf0ff0afe76d8afH.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S19bc284736504e059bf0ff0afe76d8afH.jpg",
+                            "sku": "2167404029_SGAMZ",
+                            "skuId": "12365380786"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "18"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1149717005",
+                    "sellerTitle": "Sunnlovebycspdg"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2850217534",
+                    "title": "Bhutan Superfood And Herbs White Quinoa - Gluten Free",
+                    "brandId": "126274227",
+                    "brandName": "Bhutan Superfood and Herbs",
+                    "itemUrl": "//www.lazada.sg/products/bhutan-superfood-and-herbs-white-quinoa-gluten-free-i2850217534-s19646962795.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/907388fa137953929e98aeeec6bc2a46.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/907388fa137953929e98aeeec6bc2a46.jpg",
+                            "sku": "2850217534_SGAMZ",
+                            "skuId": "19646962795"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "8.7"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1154130224",
+                    "sellerTitle": "Travelling Tastebuds"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2850593839",
+                    "title": "Ashi Heychum Quinoa Quinoa Amarilla Sacaca",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/ashi-heychum-quinoa-quinoa-amarilla-sacaca-i2850593839-s19649960981.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/0e93ac44e7504a2e4a830892c01016b3.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/0e93ac44e7504a2e4a830892c01016b3.jpg",
+                            "sku": "2850593839_SGAMZ",
+                            "skuId": "19649960981"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "5.4"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1154130224",
+                    "sellerTitle": "Travelling Tastebuds"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2851872470",
+                    "title": "Olives in Brine, 100% Australian, Great Southern Groves 250 gram",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/olives-in-brine-100-australian-great-southern-groves-250-gram-i2851872470-s19659381063.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/2444b865446520b1f37fd7ea4f0345af.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/2444b865446520b1f37fd7ea4f0345af.jpg",
+                            "sku": "2851872470_SGAMZ",
+                            "skuId": "19659381063"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "11.8"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1153041392",
+                    "sellerTitle": "madeinoz.shop"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2313664556",
+                    "title": "Freeze-dried Passion Fruit Tea Passion Fruit Pieces Dried Passion Fruit Passion Fruit Tea Fruit Tea Dehydrated Passion Fruit 50g 冻干百香果茶 百香果片 百香果干 百香果茶 水果茶 夏季茶",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/freeze-dried-passion-fruit-tea-passion-fruit-pieces-dried-passion-fruit-passion-fruit-tea-fruit-tea-dehydrated-passion-fruit-50g-i2313664556-s13429138187.html",
+                    "sales": null,
+                    "image": "//my-live-02.slatic.net/p/141b2967b8485672f6a237893da3df62.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//my-live-02.slatic.net/p/141b2967b8485672f6a237893da3df62.jpg",
+                            "sku": "2313664556_SGAMZ",
+                            "skuId": "13429138187"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "14",
+                            "promotionPrice": "7.2"
+                        }
+                    },
+                    "reviewCount": "7",
+                    "averageStarRate": "4.71"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "China"
+                },
+                "seller": {
+                    "sellerId": "1142511145",
+                    "sellerTitle": "HUACH Store"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2713451102",
+                    "title": "Sone Sea Yar - Chick Pea Fried (ဆုံစည်းရာ ပဲကပ်ကြော်)",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/sone-sea-yar-chick-pea-fried-i2713451102-s18277973577.html",
+                    "sales": null,
+                    "image": "//filebroker-cdn.lazada.sg/kf/S3fc40bcafbed4cfd82bf902aa395f9bet.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//filebroker-cdn.lazada.sg/kf/S3fc40bcafbed4cfd82bf902aa395f9bet.jpg",
+                            "sku": "2713451102_SGAMZ",
+                            "skuId": "18277973577"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "4.5"
+                        }
+                    },
+                    "reviewCount": "2",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1178808064",
+                    "sellerTitle": "Chaung Thar Myanmar Mini Mart"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2850299078",
+                    "title": "Druk Metho Bhutanese Fiery Spice Bouquet",
+                    "brandId": "126266259",
+                    "brandName": "Druk Metho",
+                    "itemUrl": "//www.lazada.sg/products/druk-metho-bhutanese-fiery-spice-bouquet-i2850299078-s19647043563.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/f5b569898495e30ace39c84cdbf6e7f2.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/f5b569898495e30ace39c84cdbf6e7f2.jpg",
+                            "sku": "2850299078_SGAMZ",
+                            "skuId": "19647043563"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "5.7"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1154130224",
+                    "sellerTitle": "Travelling Tastebuds"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2588043293",
+                    "title": "Golden Milk Spice Mix Turmeric Latte Turmeric Tea",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/golden-milk-spice-mix-turmeric-latte-turmeric-tea-i2588043293-s16393894429.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/58314be8fcd5140b6328ddf405a91d4e.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/58314be8fcd5140b6328ddf405a91d4e.jpg",
+                            "sku": "2588043293_SGAMZ",
+                            "skuId": "16393894429"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "10"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1167405451",
+                    "sellerTitle": "OneFiftyPeel"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2222156239",
+                    "title": "Kerupuk Bocah Tua - Original Bocah Tua Crackers- GLUTEN FREE",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/kerupuk-bocah-tua-original-bocah-tua-crackers-gluten-free-i2222156239-s14585762691.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/4d7528bcdf8b57883d329e5f90f8049a.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/4d7528bcdf8b57883d329e5f90f8049a.jpg",
+                            "sku": "2222156239_SGAMZ",
+                            "skuId": "14585762691"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "11"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1147506298",
+                    "sellerTitle": "WINGSHOP"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1914949449",
+                    "title": "Keto/Low Carb Chili Sauce",
+                    "brandId": "123886410",
+                    "brandName": "Sunturi",
+                    "itemUrl": "//www.lazada.sg/products/ketolow-carb-chili-sauce-i1914949449-s10236539880.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/5bd672e2db04dd09d9a32060bb6549a8.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/5bd672e2db04dd09d9a32060bb6549a8.jpg",
+                            "sku": "1914949449_SGAMZ",
+                            "skuId": "10236539880"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "8.5"
+                        }
+                    },
+                    "reviewCount": "8",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1142883004",
+                    "sellerTitle": "Umami Keto"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "2439562192",
+                    "title": "[300G/500G] China Xinjiang Premium Red Dates Jujubes ( 新疆紅棗 )",
+                    "brandId": "39704",
+                    "brandName": "No Brand",
+                    "itemUrl": "//www.lazada.sg/products/300g500g-china-xinjiang-premium-red-dates-jujubes-i2439562192-s14444269030.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/be8005f80a20f94b7c29954bd5ab9fe1.jpg",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/f5edf6e947ffe9fcf26ce7f811bd07ad.jpg",
+                            "sku": "2439562192_SGAMZ",
+                            "skuId": "14444269030"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": "8",
+                            "promotionPrice": "7.5"
+                        }
+                    },
+                    "reviewCount": null,
+                    "averageStarRate": null
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1153296826",
+                    "sellerTitle": "Clanciemart"
+                }
+            },
+            {
+                "item": {
+                    "itemId": "1914874901",
+                    "title": "Keto/Low Carb Pad Thai Sauce",
+                    "brandId": "123886410",
+                    "brandName": "Sunturi",
+                    "itemUrl": "//www.lazada.sg/products/ketolow-carb-pad-thai-sauce-i1914874901-s10236482968.html",
+                    "sales": null,
+                    "image": "//sg-live-01.slatic.net/p/cb59edc1a56cddee2e44595a49cf2673.png",
+                    "thumbnails": [
+                        {
+                            "image": "//sg-live-01.slatic.net/p/cb59edc1a56cddee2e44595a49cf2673.png",
+                            "sku": "1914874901_SGAMZ",
+                            "skuId": "10236482968"
+                        }
+                    ],
+                    "sku": {
+                        "def": {
+                            "price": null,
+                            "promotionPrice": "8.5"
+                        }
+                    },
+                    "reviewCount": "6",
+                    "averageStarRate": "5.00"
+                },
+                "delivery": {
+                    "freeShipping": null,
+                    "shippingFrom": "Singapore"
+                },
+                "seller": {
+                    "sellerId": "1142883004",
+                    "sellerTitle": "Umami Keto"
+                }
+            }
+        ]
+    }
+}
