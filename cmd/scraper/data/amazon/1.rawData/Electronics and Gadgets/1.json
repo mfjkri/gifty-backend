@@ -1,0 +1,576 @@
+{
+    "page": 1,
+    "pageCount": 22,
+    "products": [
+        {
+            "name": "Amazon Basics 24 Count AA & AAA High-Performance Batteries Value Pack - 12 Double AA Batteries and 12 Triple AAA Batteries",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/712WeaMoOYL._AC_UY218_.jpg",
+                "description": "Sponsored Ad - Amazon Basics 24 Count AA & AAA High-Performance Batteries Value Pack - 12 Double AA Batteries and 12 Tripl..."
+            },
+            "totalReviews": 4159,
+            "rating": 4.75,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.82,
+                "priceFraction": "82",
+                "beforePrice": null
+            },
+            "asin": "B094D3K2W9",
+            "url": "https://www.amazon.com/dp/B094D3K2W9",
+            "position": 3
+        },
+        {
+            "name": "Bluetooth Speaker, IPX5 Waterproof Speaker with HD Sound, Up to 24H Playtime, TWS Pairing, BT5.3, Portable Wireless Speakers for Home/Party/Outdoor/Beach, Electronic Gadgets, Birthday Gift (Black)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81djh1gfUwL._AC_UY218_.jpg",
+                "description": "Sponsored Ad - Bluetooth Speaker, IPX5 Waterproof Speaker with HD Sound, Up to 24H Playtime, TWS Pairing, BT5.3, Portable ..."
+            },
+            "totalReviews": 1588,
+            "rating": 4.45,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 26.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BRKPVZB4",
+            "url": "https://www.amazon.com/dp/B0BRKPVZB4",
+            "position": 4
+        },
+        {
+            "name": "Yesimla USB C Adapter Cable Kit, Multi Charging Cable Case Convertor USB C to iOS Device/Type C/Micro/USB A Adapter, Data Transfer Contains Card Slot for Traveling, Use as Phone Holder (Black)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61Ayk50i-cL._AC_UY218_.jpg",
+                "description": "Yesimla USB C Adapter Cable Kit, Multi Charging Cable Case Convertor USB C to iOS Device/Type C/Micro/USB A Adapter, Data ..."
+            },
+            "totalReviews": 1569,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": 12.99
+            },
+            "asin": "B09NSKJYX6",
+            "url": "https://www.amazon.com/dp/B09NSKJYX6",
+            "position": 5
+        },
+        {
+            "name": "16 inch Screen Magnifier for Cell Phone 3D Magnifier Screen Enlarger for Movies,Videos,Reading,Gaming-Screen Amplifie with Foldable Phone Stand Holder. Compatible with All Smartphones-White",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71LK-Fd3t6L._AC_UY218_.jpg",
+                "description": "16 inch Screen Magnifier for Cell Phone 3D Magnifier Screen Enlarger for Movies,Videos,Reading,Gaming-Screen Amplifie with..."
+            },
+            "totalReviews": 529,
+            "rating": 3.85,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 19.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B091XV998R",
+            "url": "https://www.amazon.com/dp/B091XV998R",
+            "position": 6
+        },
+        {
+            "name": "ONXE LED USB Clock Fan with Real Time Display Function,Stocking Stuffers for Men Christmas Gadgets,1 Year Warranty (Clock",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/611kQoDpXfL._AC_UY218_.jpg",
+                "description": "ONXE LED USB Clock Fan with Real Time Display Function,Stocking Stuffers for Men Christmas Gadgets,1 Year Warranty (Clock"
+            },
+            "totalReviews": 3064,
+            "rating": 4.15,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B010M9KRHO",
+            "url": "https://www.amazon.com/dp/B010M9KRHO",
+            "position": 7
+        },
+        {
+            "name": "KuccHero Outdoor Bluetooth Speaker, LED Atmosphere Speaker Portable Waterproof Party Speaker, BT5.0, Electronic Gadgets Gifts for Men Women, Wall Mount&Hook&Stake (Black-1PCS)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/715jNNuRzHL._AC_UY218_.jpg",
+                "description": "KuccHero Outdoor Bluetooth Speaker, LED Atmosphere Speaker Portable Waterproof Party Speaker, BT5.0, Electronic Gadgets Gi..."
+            },
+            "totalReviews": 2414,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": true,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": true,
+                "priceSymbol": "$",
+                "currentPrice": 49.96,
+                "priceFraction": "96",
+                "beforePrice": null
+            },
+            "asin": "B09KGQF4PP",
+            "url": "https://www.amazon.com/dp/B09KGQF4PP",
+            "position": 11
+        },
+        {
+            "name": "Amazon Basics Electric Can Opener, Black",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/710Z3AvzcRL._AC_UY218_.jpg",
+                "description": "Sponsored Ad - Amazon Basics Electric Can Opener, Black"
+            },
+            "totalReviews": 23106,
+            "rating": 4.25,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 19.97,
+                "priceFraction": "97",
+                "beforePrice": null
+            },
+            "asin": "B07T6NNKJ4",
+            "url": "https://www.amazon.com/dp/B07T6NNKJ4",
+            "position": 12
+        },
+        {
+            "name": "PowerTRC USB 3\" Diameter Powered Plasma Ball | USB or (2 X AA) Powered | Science Toy | Electronic Plasma Light Gadget | Desk Toy | Classroom Accessory",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/41Nq4mfs+zL._AC_UY218_.jpg",
+                "description": "PowerTRC USB 3\" Diameter Powered Plasma Ball | USB or (2 X AA) Powered | Science Toy | Electronic Plasma Light Gadget | De..."
+            },
+            "totalReviews": 139,
+            "rating": 4.25,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B01BU8VFNG",
+            "url": "https://www.amazon.com/dp/B01BU8VFNG",
+            "position": 13
+        },
+        {
+            "name": "Gadget Guard Apple Iphone 14 Plus &13 Pro Max Compatible Screen Protectors- Glass Pro-Active, 2 Pack - Easy-Align Installation Tool Included",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71BztPvl00L._AC_UY218_.jpg",
+                "description": "Gadget Guard Apple Iphone 14 Plus &13 Pro Max Compatible Screen Protectors- Glass Pro-Active, 2 Pack - Easy-Align Installa..."
+            },
+            "totalReviews": 3,
+            "rating": 3.95,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 29.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C8QQ8HTD",
+            "url": "https://www.amazon.com/dp/B0C8QQ8HTD",
+            "position": 14
+        },
+        {
+            "name": "FANGOR 1080P HD Projector, WiFi Bluetooth Projectors, Max 230”Projection Screen Portable Home Theater Video Movie Proyector With Tripod, Compatible with HDMI, VGA, USB, Laptop, iOS & Android Phone",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81ucEY8tfiL._AC_UY218_.jpg",
+                "description": "FANGOR 1080P HD Projector, WiFi Bluetooth Projectors, Max 230”Projection Screen Portable Home Theater Video Movie Proyecto..."
+            },
+            "totalReviews": 7216,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 189.98,
+                "priceFraction": "98",
+                "beforePrice": 279.98
+            },
+            "asin": "B07ZNSPZWX",
+            "url": "https://www.amazon.com/dp/B07ZNSPZWX",
+            "position": 15
+        },
+        {
+            "name": "Tile Pro 1-pack. Powerful Bluetooth Tracker, Keys Finder and Item Locator for Keys, Bags, and More; Up to 400 ft Range. Water-resistant. Phone Finder. iOS and Android Compatible, Black.",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/41m+zvEulRL._AC_UY218_.jpg",
+                "description": "Tile Pro 1-pack. Powerful Bluetooth Tracker, Keys Finder and Item Locator for Keys, Bags, and More; Up to 400 ft Range. Wa..."
+            },
+            "totalReviews": 11329,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 27.99,
+                "priceFraction": "99",
+                "beforePrice": 34.99
+            },
+            "asin": "B09B2WLRWX",
+            "position": 16,
+            "url": "https://www.amazon.com/dp/B09B2WLRWX"
+        },
+        {
+            "name": "Pankoo 12x60 Monocular Telescope High Powered with Smartphone Adapter Tripod and Portable Bag, Larger Vision Monoculars for Adults with BAK4 Prism & FMC Lens, Suitable for Bird Watching Hiking Travel",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/713s2oytU4L._AC_UY218_.jpg",
+                "description": "Sponsored Ad - Pankoo 12x60 Monocular Telescope High Powered with Smartphone Adapter Tripod and Portable Bag, Larger Visio..."
+            },
+            "totalReviews": 122,
+            "rating": 4.55,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 129.98,
+                "priceFraction": "98",
+                "beforePrice": null
+            },
+            "asin": "B0BLZ3S2YN",
+            "url": "https://www.amazon.com/dp/B0BLZ3S2YN",
+            "position": 17
+        },
+        {
+            "name": "Bluetooth Speaker, IPX5 Waterproof Speaker with HD Sound, Up to 24H Playtime, TWS Pairing, BT5.3, Portable Wireless Speakers for Home/Party/Outdoor/Beach, Electronic Gadgets, Birthday Gift (Black)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81djh1gfUwL._AC_UY218_.jpg",
+                "description": "Bluetooth Speaker, IPX5 Waterproof Speaker with HD Sound, Up to 24H Playtime, TWS Pairing, BT5.3, Portable Wireless Speake..."
+            },
+            "totalReviews": 1588,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 26.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BRKPVZB4",
+            "url": "https://www.amazon.com/dp/B0BRKPVZB4",
+            "position": 21
+        },
+        {
+            "name": "7-in-1 Electronic Cleaner Kit,Keyboard Cleaner,Laptop Cleaner Kit for Monitor, Cell Phone, Bluetooth,Headset, Lego, Airpods, Laptop Camera Lens (Blue)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61mR62UW3fL._AC_UY218_.jpg",
+                "description": "7-in-1 Electronic Cleaner Kit,Keyboard Cleaner,Laptop Cleaner Kit for Monitor, Cell Phone, Bluetooth,Headset, Lego, Airpod..."
+            },
+            "totalReviews": 215,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 10.99,
+                "priceFraction": "99",
+                "beforePrice": 16.98
+            },
+            "asin": "B0B7MLB5K2",
+            "url": "https://www.amazon.com/dp/B0B7MLB5K2",
+            "position": 22
+        },
+        {
+            "name": "Perytong Sleep Headphones Wireless, Bluetooth Sports Headband Headphones with Ultra-Thin HD Stereo Speakers, unisex, Perfect for Sleeping,Workout,Jogging,Yoga,Insomnia, Air Travel, Meditation",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81FxnijzD0L._AC_UY218_.jpg",
+                "description": "Perytong Sleep Headphones Wireless, Bluetooth Sports Headband Headphones with Ultra-Thin HD Stereo Speakers, unisex, Perfe..."
+            },
+            "totalReviews": 49343,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 19.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B08R7439SN",
+            "url": "https://www.amazon.com/dp/B08R7439SN",
+            "position": 23
+        },
+        {
+            "name": "BUBM Double Layer Electronic Accessories Organizer, Travel Gadget Bag for Cables, USB Flash Drive, Plug and More, Perfect Size Fits for iPad Mini (Medium, Black)",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81fuKpzg4LL._AC_UY218_.jpg",
+                "description": "BUBM Double Layer Electronic Accessories Organizer, Travel Gadget Bag for Cables, USB Flash Drive, Plug and More, Perfect ..."
+            },
+            "totalReviews": 2950,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 17.99,
+                "priceFraction": "99",
+                "beforePrice": 23.99
+            },
+            "asin": "B014R4IGHS",
+            "url": "https://www.amazon.com/dp/B014R4IGHS",
+            "position": 24
+        },
+        {
+            "name": "AMAZTIM Fitness Tracker-100M Waterproof,50Days Extra-Long Battery 3D Curved Glass Full Metal Smart Watch,Health&Fitness Watch with 24H Heart Rate/Sleep Monitor,1.47\" HD AMOLED Display,70 Sports Modes",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/715iQYuE-uL._AC_UY218_.jpg",
+                "description": "Sponsored Ad - AMAZTIM Fitness Tracker-100M Waterproof,50Days Extra-Long Battery 3D Curved Glass Full Metal Smart Watch,He..."
+            },
+            "totalReviews": null,
+            "rating": null,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 99.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C6FB4DXV",
+            "url": "https://www.amazon.com/dp/B0C6FB4DXV",
+            "position": 25
+        },
+        {
+            "name": "PazleGee Multi Functional USB Adapter Kit Travel Gadgets Charge Card with Type-C/Type-A/Micro-USB/Lightning, Wheat Straw Fast Charging Foldable Cable Storage Box Gift",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61+py8zgLaL._AC_UY218_.jpg",
+                "description": "PazleGee Multi Functional USB Adapter Kit Travel Gadgets Charge Card with Type-C/Type-A/Micro-USB/Lightning, Wheat Straw F..."
+            },
+            "totalReviews": 31,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 10.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C4YDF413",
+            "url": "https://www.amazon.com/dp/B0C4YDF413",
+            "position": 26
+        },
+        {
+            "name": "Portable Charger Power Bank 10000mAh【2 Pack】Ultra Slim Design Portable Phone Charger with Type C Input & 2 Output Backup Charging External Battery Pack for Smart Phone, Android Phone,Tablet etc.",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61Vnm8O7EgL._AC_UY218_.jpg",
+                "description": "Portable Charger Power Bank 10000mAh【2 Pack】Ultra Slim Design Portable Phone Charger with Type C Input & 2 Output Backup C..."
+            },
+            "totalReviews": 8027,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 22.95,
+                "priceFraction": "95",
+                "beforePrice": 29.95
+            },
+            "asin": "B08XBN7HRT",
+            "url": "https://www.amazon.com/dp/B08XBN7HRT",
+            "position": 27
+        },
+        {
+            "name": "USB Charging Station with Outlets Upoy, Outlet Extender 1875W, Charging Cube Dual USB Ports Total 3.1A, C Port Block with 3 Wall Outlets, Power Adapter 3 Prong, Tech Gadget for Multiple Electronics",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61Cw91suLYL._AC_UY218_.jpg",
+                "description": "USB Charging Station with Outlets Upoy, Outlet Extender 1875W, Charging Cube Dual USB Ports Total 3.1A, C Port Block with ..."
+            },
+            "totalReviews": 932,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 20.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B09834QKSZ",
+            "url": "https://www.amazon.com/dp/B09834QKSZ",
+            "position": 28
+        },
+        {
+            "name": "JBL Tune 125TWS True Wireless In-Ear Headphones - Pure Bass Sound, 32H Battery, Bluetooth, Fast Pair, Comfortable, Wireless Calls, Music, Native Voice Assistant (Black), Small",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51ptPn4HP9L._AC_UY218_.jpg",
+                "description": "JBL Tune 125TWS True Wireless In-Ear Headphones - Pure Bass Sound, 32H Battery, Bluetooth, Fast Pair, Comfortable, Wireles..."
+            },
+            "totalReviews": 34187,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 79.95,
+                "priceFraction": "95",
+                "beforePrice": 99.95
+            },
+            "asin": "B088NGD49M",
+            "url": "https://www.amazon.com/dp/B088NGD49M",
+            "position": 29
+        },
+        {
+            "name": "Amazon Basics Rectangle Smart Plug Power Strip, Surge Protector with 3 Individually Controlled Outlets and 2 USB Ports, 2.4 GHz Wi-Fi, Works with Alexa, White",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51tf6OzxwML._AC_UY218_.jpg",
+                "description": "Sponsored Ad - Amazon Basics Rectangle Smart Plug Power Strip, Surge Protector with 3 Individually Controlled Outlets and ..."
+            },
+            "totalReviews": 2324,
+            "rating": 4.65,
+            "sponsored": true,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 26.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B095XBHVF2",
+            "url": "https://www.amazon.com/dp/B095XBHVF2",
+            "position": 30
+        }
+    ],
+    "categories": [
+        {
+            "name": "Electronics",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A172282&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_1&ds=v1%3AsDH4DwU5ptdj%2FMRy5mi2DSintPUdyzG6LzyUrNVeD%2BQ",
+            "categoryId": "n/172282"
+        },
+        {
+            "name": "Computer Accessories & Peripherals",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A172282%2Cn%3A172456&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_2&ds=v1%3A8aOUjkqePQ0aRUypcvE0%2BijnnSiAWJ4O9bnxhnNRzps",
+            "categoryId": "n/172456"
+        },
+        {
+            "name": "Portable Cell Phone & MP3 Player Speakers & Audio Docks",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A172282%2Cn%3A689637011&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_3&ds=v1%3AsXVyruPNdPQrjEo2O0%2FOpwP0Bv0Zsb2pGnGev%2FpdgIA",
+            "categoryId": "n/689637011"
+        },
+        {
+            "name": "Headphones & Earbuds",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A172282%2Cn%3A172541&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_4&ds=v1%3A1MXySSibYLaVtWT%2B4LWiSH58y3BsT%2BwxmzUAUXHdLFE",
+            "categoryId": "n/172541"
+        },
+        {
+            "name": "Cable Organizer Bags & Cases",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A172282%2Cn%3A290458&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_5&ds=v1%3Aslb4GEqvAHDAjm%2FkUpfBt4tDf8OFayxDgdhJisJMPfw",
+            "categoryId": "n/290458"
+        },
+        {
+            "name": "Cell Phone Chargers & Power Adapters",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A2407761011&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_6&ds=v1%3AanhkR1dkFfG21kwx%2Fcz3AHdoVlLpLFY7Kt%2BKrOVmRO8",
+            "categoryId": "n/2407761011"
+        },
+        {
+            "name": "Dictionaries, Thesauri & Translators",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A11072581&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_7&ds=v1%3AdkjzPv1Eut1utzk55zKfbNNEHmnN6SMztasvGdEauWc",
+            "categoryId": "n/11072581"
+        },
+        {
+            "name": "Cell Phone Automobile Accessories",
+            "categoryLink_url": "https://www.amazon.com//s?k=electronics+and+gadgets&rh=n%3A2407759011&s=relevanceblender&dc&language=en_US&qid=1691890342&rnid=2941120011&ref=sr_nr_n_8&ds=v1%3AIluEZlsI7aw%2BR4FPdjhe4k7Qp%2BT7Tj0QTTDPwLdyK3Y",
+            "categoryId": "n/2407759011"
+        }
+    ]
+}

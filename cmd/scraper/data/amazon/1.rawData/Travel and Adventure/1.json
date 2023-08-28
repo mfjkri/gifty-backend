@@ -1,0 +1,423 @@
+{
+  "page": 1,
+  "pageCount": 16,
+  "products": [
+    {
+      "name": "Epic Journeys: 245 Life-Changing Adventures",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/91lpjF5KYPL._AC_UY218_.jpg",
+        "description": "Epic Journeys: 245 Life-Changing Adventures"
+      },
+      "totalReviews": 307,
+      "rating": 4.85,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": true,
+      "amazonPrime": false,
+      "price": {
+        "discounted": true,
+        "priceSymbol": "$",
+        "currentPrice": 20.98,
+        "priceFraction": "98",
+        "beforePrice": 40.0
+      },
+      "asin": "1426220618",
+      "url": "https://www.amazon.com/dp/1426220618",
+      "position": 4
+    },
+    {
+      "name": "California Bucket List Adventure Guide & Journal: Explore 50 Natural Wonders You Must See & Log Your Experience!",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/71+KWxhHWGS._AC_UY218_.jpg",
+        "description": "California Bucket List Adventure Guide & Journal: Explore 50 Natural Wonders You Must See & Log Your Experience!"
+      },
+      "totalReviews": 235,
+      "rating": 4.15,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 15.99,
+        "priceFraction": "99",
+        "beforePrice": null
+      },
+      "asin": "1955149151",
+      "url": "https://www.amazon.com/dp/1955149151",
+      "position": 5
+    },
+    {
+      "name": "A Door into Time: An Alex Hawk Time Travel Adventure, Book 1",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/91Kodz8bTWL._AC_UY218_.jpg",
+        "description": "A Door into Time: An Alex Hawk Time Travel Adventure, Book 1"
+      },
+      "totalReviews": 2378,
+      "rating": 4.45,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 0.0,
+        "priceFraction": "00",
+        "beforePrice": null
+      },
+      "asin": "B08FBMM41L",
+      "url": "https://www.amazon.com/dp/B08FBMM41L",
+      "position": 9
+    },
+    {
+      "name": "Marco Polo: his travels and adventures.",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/81HxGn50o8L._AC_UY218_.jpg",
+        "description": "Marco Polo: his travels and adventures."
+      },
+      "totalReviews": 300,
+      "rating": 4.45,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 10.99,
+        "priceFraction": "99",
+        "beforePrice": null
+      },
+      "asin": "1925729222",
+      "url": "https://www.amazon.com/dp/1925729222",
+      "position": 10
+    },
+    {
+      "name": "Tennessee State Parks Bucket List: Trip Planner & Outdoor Adventure Log List Guide | Travel Log & Memory Journal | America Passport & Stamp Book",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/719ULB9fyTL._AC_UY218_.jpg",
+        "description": "Tennessee State Parks Bucket List: Trip Planner & Outdoor Adventure Log List Guide | Travel Log & Memory Journal | America..."
+      },
+      "totalReviews": 9,
+      "rating": 5.05,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 8.49,
+        "priceFraction": "49",
+        "beforePrice": null
+      },
+      "asin": "B09KN81NZF",
+      "url": "https://www.amazon.com/dp/B09KN81NZF",
+      "position": 11
+    },
+    {
+      "name": "Washington Bucket List Adventure Guide: Explore 100 Offbeat Destinations You Must Visit!",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/71FRS8-AfBL._AC_UY218_.jpg",
+        "description": "Washington Bucket List Adventure Guide: Explore 100 Offbeat Destinations You Must Visit!"
+      },
+      "totalReviews": 65,
+      "rating": 3.85,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": true,
+      "amazonPrime": false,
+      "price": {
+        "discounted": true,
+        "priceSymbol": "$",
+        "currentPrice": 14.89,
+        "priceFraction": "89",
+        "beforePrice": null
+      },
+      "asin": "1957590009",
+      "url": "https://www.amazon.com/dp/1957590009",
+      "position": 12
+    },
+    {
+      "name": "Route 66 Adventure Handbook: High-Octane Fifth Edition",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/71vnqjAPlyL._AC_UY218_.jpg",
+        "description": "Route 66 Adventure Handbook: High-Octane Fifth Edition"
+      },
+      "totalReviews": 434,
+      "rating": 4.75,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 12.99,
+        "priceFraction": "99",
+        "beforePrice": 19.95
+      },
+      "asin": "1595800913",
+      "url": "https://www.amazon.com/dp/1595800913",
+      "position": 13
+    },
+    {
+      "name": "Travel the World Without Worries: An Inspirational Guide to Budget and Adventure Travel (3rd Edition)",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/61zcDrhzLNL._AC_UY218_.jpg",
+        "description": "Travel the World Without Worries: An Inspirational Guide to Budget and Adventure Travel (3rd Edition)"
+      },
+      "totalReviews": 293,
+      "rating": 4.65,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 18.99,
+        "priceFraction": "99",
+        "beforePrice": 18.99
+      },
+      "asin": "179348306X",
+      "url": "https://www.amazon.com/dp/179348306X",
+      "position": 14
+    },
+    {
+      "name": "Confessions of a Middle-Aged Runaway: An RV Travel Adventure",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/711Z-56Bs-L._AC_UY218_.jpg",
+        "description": "Confessions of a Middle-Aged Runaway: An RV Travel Adventure"
+      },
+      "totalReviews": 254,
+      "rating": 4.35,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 13.29,
+        "priceFraction": "29",
+        "beforePrice": 14.99
+      },
+      "asin": "1733641009",
+      "url": "https://www.amazon.com/dp/1733641009",
+      "position": 15
+    },
+    {
+      "name": "Florida State Parks",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/51efhN5tv1L._AC_UY218_.jpg",
+        "description": "Florida State Parks"
+      },
+      "totalReviews": 306,
+      "rating": 4.45,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 19.95,
+        "priceFraction": "95",
+        "beforePrice": null
+      },
+      "asin": "0898867312",
+      "url": "https://www.amazon.com/dp/0898867312",
+      "position": 17
+    },
+    {
+      "name": "Let The Adventure Begin: 6x9 Lined Journal, Memory Book, Travel Journal, Diary To Record Your Thoughts, Graduation Gift, Teacher Gifts, Motley Map ... People Who Love To Travel (Travel Journals)",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/81aZLIkHjsL._AC_UY218_.jpg",
+        "description": "Let The Adventure Begin: 6x9 Lined Journal, Memory Book, Travel Journal, Diary To Record Your Thoughts, Graduation Gift, T..."
+      },
+      "totalReviews": 164,
+      "rating": 4.55,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 6.99,
+        "priceFraction": "99",
+        "beforePrice": null
+      },
+      "asin": "1091394768",
+      "url": "https://www.amazon.com/dp/1091394768",
+      "position": 18
+    },
+    {
+      "name": "United States, Northeast Map (National Geographic Adventure Map, 3127)",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/81KAIY7NWpL._AC_UY218_.jpg",
+        "description": "United States, Northeast Map (National Geographic Adventure Map, 3127)"
+      },
+      "totalReviews": 323,
+      "rating": 4.65,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 13.46,
+        "priceFraction": "46",
+        "beforePrice": 14.95
+      },
+      "asin": "1566957214",
+      "url": "https://www.amazon.com/dp/1566957214",
+      "position": 19
+    },
+    {
+      "name": "Mission Rome: A Scavenger Hunt Adventure (Travel Guide For Kids)",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/71nWya2i5gL._AC_UY218_.jpg",
+        "description": "Mission Rome: A Scavenger Hunt Adventure (Travel Guide For Kids)"
+      },
+      "totalReviews": 220,
+      "rating": 4.75,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": true,
+      "amazonPrime": false,
+      "price": {
+        "discounted": true,
+        "priceSymbol": "$",
+        "currentPrice": 12.97,
+        "priceFraction": "97",
+        "beforePrice": null
+      },
+      "asin": "098922676X",
+      "url": "https://www.amazon.com/dp/098922676X",
+      "position": 20
+    },
+    {
+      "name": "The Baron Trump Collection: Travels and Adventures of Little Baron Trump and his Wonderful Dog Bulger, Baron Trump's Marvelous Underground Journey, The Last President (or 1900)",
+      "leftInStock": null,
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/81lOEfMWK4L._AC_UY218_.jpg",
+        "description": "The Baron Trump Collection: Travels and Adventures of Little Baron Trump and his Wonderful Dog Bulger, Baron Trump's Marve..."
+      },
+      "totalReviews": 2583,
+      "rating": 4.65,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 12.98,
+        "priceFraction": "98",
+        "beforePrice": 8.91
+      },
+      "asin": "1789870003",
+      "url": "https://www.amazon.com/dp/1789870003",
+      "position": 21
+    },
+    {
+      "name": "The Complete Guide to Indiana State Parks",
+      "leftInStock": "Only 1 left in stock - order soon.",
+      "image": {
+        "url": "https://m.media-amazon.com/images/I/91ywdatQJXL._AC_UY218_.jpg",
+        "description": "The Complete Guide to Indiana State Parks"
+      },
+      "totalReviews": 99,
+      "rating": 4.85,
+      "sponsored": false,
+      "amazonChoice": false,
+      "bestSeller": false,
+      "amazonPrime": false,
+      "price": {
+        "discounted": false,
+        "priceSymbol": "$",
+        "currentPrice": 27.0,
+        "priceFraction": "00",
+        "beforePrice": 9.63
+      },
+      "asin": "0253025192",
+      "url": "https://www.amazon.com/dp/0253025192",
+      "position": 22
+    }
+  ],
+  "categories": [
+    {
+      "name": "Books",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_1&ds=v1%3AL72SlcNApTVxUjUmQVNOr3sMJiTgLbg74v45czipdxk",
+      "categoryId": "n/283155"
+    },
+    {
+      "name": "Specialty Travel",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A17205&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_2&ds=v1%3AHoUtzEi6HG32WMqZPg3FpUu9sWncRqxu9uCAgKgFXR0",
+      "categoryId": "n/17205"
+    },
+    {
+      "name": "US Travel Guides",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A17227&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_3&ds=v1%3AuS%2B%2BivFapuFd9F1eDr8RJ3lGWe0MeSr3XBCAseQ%2Fp54",
+      "categoryId": "n/17227"
+    },
+    {
+      "name": "Food & Lodging Travel Reference",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A17031&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_4&ds=v1%3A09y4KER1Cn2HJz9SoGSl3NVdnpoWIZ0ACICcNHwTEDM",
+      "categoryId": "n/17031"
+    },
+    {
+      "name": "Hiking & Camping",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A16384&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_5&ds=v1%3A9CC%2FRc0ot15wS0G%2BeEFYDG5bO1%2FTa559ZfYJfRckfbs",
+      "categoryId": "n/16384"
+    },
+    {
+      "name": "Travel Reference & Tips",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A17025&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_6&ds=v1%3A58d%2FX3zlFtmt4Oj6RB7h%2BWCcrjaKhk06XPouBwWA1s4",
+      "categoryId": "n/17025"
+    },
+    {
+      "name": "Travelogues & Travel Essays",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A283155%2Cn%3A17029&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_7&ds=v1%3Azm9wSMko%2BocfpK2KtJT9RbRrDcmL%2Bo6%2FiMvTVsF9820",
+      "categoryId": "n/17029"
+    },
+    {
+      "name": "Kindle Store",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A133140011&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_8&ds=v1%3AVXAw%2FB6zBRAILlnPe3Ol5azY3WHCP433lJotznY9KOA",
+      "categoryId": "n/133140011"
+    },
+    {
+      "name": "Travel",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A133140011%2Cn%3A159936011&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_9&ds=v1%3A%2FgwSUJvmXZwEluI770uGJcOAYw650B8%2FJeglH1VSJhM",
+      "categoryId": "n/159936011"
+    },
+    {
+      "name": "Movies & TV",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A2625373011&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_10&ds=v1%3AiyEAMp2bPadSdSbJg85ZyFb2hgidZutW434DAdMXRdQ",
+      "categoryId": "n/2625373011"
+    },
+    {
+      "name": "Prime Video",
+      "categoryLink_url": "https://www.amazon.com//s?k=travel+and+adventure&rh=n%3A2625373011%2Cn%3A2858778011&s=relevanceblender&dc&language=en_US&qid=1691893773&rnid=2941120011&ref=sr_nr_n_11&ds=v1%3AP%2F0xOJpLVLeSEGDBmXTevIABaaLSi2jP2HL%2BluCiz7c",
+      "categoryId": "n/2858778011"
+    }
+  ]
+}

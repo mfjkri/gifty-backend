@@ -1,0 +1,1205 @@
+{
+    "page": 1,
+    "pageCount": 48,
+    "products": [
+        {
+            "name": "YONUF",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81AvLEovwKL._AC_UL400_.jpg",
+                "description": "YONUF Boho Headbands For Women Fashion Wide Headband Yoga Workout Head Bands Hair Accessories Band 6 Pack"
+            },
+            "totalReviews": 2389,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.96,
+                "priceFraction": "96",
+                "beforePrice": null
+            },
+            "asin": "B096KWFV2K",
+            "url": "https://www.amazon.com/dp/B096KWFV2K",
+            "position": 2
+        },
+        {
+            "name": "DIMUGE",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71c1Y+V-GmL._AC_UL400_.jpg",
+                "description": "DIMUGE Metal Headband Black Head bands for Men and Women, Spring Fashion, Simple Non Slip Summer Accessories are Great Cho..."
+            },
+            "totalReviews": 7,
+            "rating": 3.95,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 6.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C2TLZXPB",
+            "url": "https://www.amazon.com/dp/B0C2TLZXPB",
+            "position": 3
+        },
+        {
+            "name": "BEAYFILY",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/718gK6VF9gL._AC_UL400_.jpg",
+                "description": "BEAYFILY 4 Pack Pearls Fashion Headbands,White Artificial Pearl Rhinestones Hairbands,Bridal Hair Hoop Party Wedding Hair ..."
+            },
+            "totalReviews": 580,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 7.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B09LS59HHH",
+            "url": "https://www.amazon.com/dp/B09LS59HHH",
+            "position": 4
+        },
+        {
+            "name": "YISSION",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81KJ1bQKE2L._AC_UL400_.jpg",
+                "description": "YISSION 2 PCS Rhinestone Headbands for Women, Glitter Crystal Headband Fashion Jeweled Headbands for Girls, Gorgeous Hair ..."
+            },
+            "totalReviews": 146,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 11.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BRNBWM9W",
+            "url": "https://www.amazon.com/dp/B0BRNBWM9W",
+            "position": 6
+        },
+        {
+            "name": "Studio Bye Bye",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/614kTLXgqZL._AC_UL400_.jpg",
+                "description": "A Fashion Coloring Book - Handbags: A coloring book for Adults and Teenagers, for stress Relief & Relaxation, for enhancin..."
+            },
+            "totalReviews": 18,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 7.9,
+                "priceFraction": "90",
+                "beforePrice": null
+            },
+            "asin": "B091F5QPHN",
+            "url": "https://www.amazon.com/dp/B091F5QPHN",
+            "position": 7
+        },
+        {
+            "name": "John Peacock",
+            "leftInStock": "Only 1 left in stock - order soon.",
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71ecLtwUCpL._AC_UL400_.jpg",
+                "description": "Fashion Accessories: The Complete 20th Century Sourcebook"
+            },
+            "totalReviews": 21,
+            "rating": 4.95,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 28.58,
+                "priceFraction": "58",
+                "beforePrice": 34.95
+            },
+            "url": "https://www.amazon.com/dp/0500019975",
+            "asin": "0500019975",
+            "position": 8
+        },
+        {
+            "name": "Hollywood Fashion Secrets",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61ly986NxrS._AC_UL400_.jpg",
+                "description": "Hollywood Fashion Secrets Bra Converting Clips, clear, 2 pcs"
+            },
+            "totalReviews": 400,
+            "rating": 4.25,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B005WU4YPA",
+            "url": "https://www.amazon.com/dp/B005WU4YPA",
+            "position": 9
+        },
+        {
+            "name": "REALHUNLEE",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71+8cdBFpyL._AC_UL400_.jpg",
+                "description": "Flower Metal Hair Claw Clips 6 Pcs Cute Large Tulip Hair Claw NonSlip Hair Barrettes Strong Hold Hair Clamps Fashion Hair ..."
+            },
+            "totalReviews": 111,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.99,
+                "priceFraction": "99",
+                "beforePrice": 15.99
+            },
+            "asin": "B0BYSG6XYC",
+            "url": "https://www.amazon.com/dp/B0BYSG6XYC",
+            "position": 10
+        },
+        {
+            "name": "GRACE KARIN",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71PcJ2yE9dL._AC_UL400_.jpg",
+                "description": "GRACE KARIN Women's Stretchy Belt 1950s 3 Inch Wide Elastic Belts"
+            },
+            "totalReviews": 10917,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B073535TX8",
+            "url": "https://www.amazon.com/dp/B073535TX8",
+            "position": 11
+        },
+        {
+            "name": "SOJOS",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61FhIaBH5vL._AC_UL400_.jpg",
+                "description": "SOJOS Fashion Rectangle Sunglasses for Women Men Retro Vintage Narrow Sun Glasses SJ1162"
+            },
+            "totalReviews": 452,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.99,
+                "priceFraction": "99",
+                "beforePrice": 19.99
+            },
+            "asin": "B092M932Z6",
+            "url": "https://www.amazon.com/dp/B092M932Z6",
+            "position": 12
+        },
+        {
+            "name": "Nine West",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/715qxRKScOL._AC_UL400_.jpg",
+                "description": "Nine West Women's Rubberized Bracelet Watch"
+            },
+            "totalReviews": 2713,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 22.99,
+                "priceFraction": "99",
+                "beforePrice": 36.75
+            },
+            "asin": "B07MZ6TBWX",
+            "url": "https://www.amazon.com/dp/B07MZ6TBWX",
+            "position": 14
+        },
+        {
+            "name": "Zkptops",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81RYZoH9vHL._AC_UL400_.jpg",
+                "description": "Zkptops Spa Headband for Washing Face Wristband Set Sponge Makeup Skincare Headband Wrist Towels Bubble Soft Get Ready Hai..."
+            },
+            "totalReviews": 559,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 8.48,
+                "priceFraction": "48",
+                "beforePrice": 9.99
+            },
+            "asin": "B0BX7SS3J5",
+            "url": "https://www.amazon.com/dp/B0BX7SS3J5",
+            "position": 15
+        },
+        {
+            "name": "Huachi",
+            "leftInStock": "Only 19 left in stock - order soon.",
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81nw2zeWiYL._AC_UL400_.jpg",
+                "description": "Huachi Headbands for Women Wide Headband Vintage Printed Head Wraps Thick Hairbands Large African Retro Sport Yoga Turban ..."
+            },
+            "totalReviews": 3557,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 11.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C622SYSX",
+            "url": "https://www.amazon.com/dp/B0C622SYSX",
+            "position": 16
+        },
+        {
+            "name": "AKTVSHOW",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71gj6DDbtUL._AC_UL400_.jpg",
+                "description": "AKTVSHOW 7'' Wide Headbands for Women, Extra Large Turban Workout Headband Fashion Yoga Hair Bands Boho Twisted Thick Hair..."
+            },
+            "totalReviews": 186,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 19.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BTY3NH5N",
+            "url": "https://www.amazon.com/dp/B0BTY3NH5N",
+            "position": 17
+        },
+        {
+            "name": "GRACE KARIN",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81gfwynJf9L._AC_UL400_.jpg",
+                "description": "GRACE KARIN Womens Corset Belt Vintage Lace-up Cinch Elastic Waist Belt"
+            },
+            "totalReviews": 2336,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 15.99,
+                "priceFraction": "99",
+                "beforePrice": 18.99
+            },
+            "asin": "B07VYQ1QS4",
+            "url": "https://www.amazon.com/dp/B07VYQ1QS4",
+            "position": 18
+        },
+        {
+            "name": "SOJOS",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/6131E4WFXYL._AC_UL400_.jpg",
+                "description": "SOJOS Shining Oversized Round Rhinestone Sunglasses Festival Gem Sunnies SJ1095"
+            },
+            "totalReviews": 3369,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.79,
+                "priceFraction": "79",
+                "beforePrice": 19.99
+            },
+            "asin": "B07BPXR3MR",
+            "url": "https://www.amazon.com/dp/B07BPXR3MR",
+            "position": 19
+        },
+        {
+            "name": "Huachi",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71xweTWjdpL._AC_UL400_.jpg",
+                "description": "Huachi Boho Head Bands for Women's Hair Non Slip Twist Hair Bands for Short Hair Fashion Summer Hair Accessories, Solid Co..."
+            },
+            "totalReviews": 17137,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 16.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BYD4VVDB",
+            "url": "https://www.amazon.com/dp/B0BYD4VVDB",
+            "position": 20
+        },
+        {
+            "name": "Dokotoo",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81558nIJf5L._AC_UL400_.jpg",
+                "description": "Dokotoo Women's Oversized Denim Jacket Casual Long Boyfriend Distresse Jean Jacket Autumn Spring"
+            },
+            "totalReviews": 2922,
+            "rating": 4.25,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 45.97,
+                "priceFraction": "97",
+                "beforePrice": 60.99
+            },
+            "asin": "B09R7J3VY7",
+            "url": "https://www.amazon.com/dp/B09R7J3VY7",
+            "position": 21
+        },
+        {
+            "name": "BODIY",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51l-gCszF3L._AC_UL400_.jpg",
+                "description": "BODIY Punk Women Waist Belts PU Leather Fashion Body Chain Belt Rave Halloween Accessories Belt Adjustable Goth"
+            },
+            "totalReviews": 453,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 18.86,
+                "priceFraction": "86",
+                "beforePrice": 26.66
+            },
+            "asin": "B09YH96M34",
+            "url": "https://www.amazon.com/dp/B09YH96M34",
+            "position": 22
+        },
+        {
+            "name": "GRACE KARIN",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81atHyteE5L._AC_UL400_.jpg",
+                "description": "GRACE KARIN Women's Elastic Stretch Corset Waist Cincher Belt"
+            },
+            "totalReviews": 972,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.39,
+                "priceFraction": "39",
+                "beforePrice": 18.99
+            },
+            "asin": "B077RQWDTY",
+            "url": "https://www.amazon.com/dp/B077RQWDTY",
+            "position": 23
+        },
+        {
+            "name": "Tyfthui",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81pZlSEenZL._AC_UL400_.jpg",
+                "description": "Tyfthui Headbands for Women, Wide Headbands Knotted Headbands for Women, Headbands for Women Hair, Women Headbands Fashion..."
+            },
+            "totalReviews": 482,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 11.19,
+                "priceFraction": "19",
+                "beforePrice": 15.99
+            },
+            "asin": "B0BV2VBZHB",
+            "url": "https://www.amazon.com/dp/B0BV2VBZHB",
+            "position": 24
+        },
+        {
+            "name": "AUTOMET",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51PsyFddUZL._AC_UL400_.jpg",
+                "description": "AUTOMET Jumpsuits for Women Casual Summer Rompers Sleeveless Loose Spaghetti Strap Baggy Overalls Jumpers with Pockets 2023"
+            },
+            "totalReviews": 2032,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": true,
+            "amazonPrime": false,
+            "price": {
+                "discounted": true,
+                "priceSymbol": "$",
+                "currentPrice": 29.99,
+                "priceFraction": "99",
+                "beforePrice": 36.99
+            },
+            "asin": "B0BW8MZGR5",
+            "url": "https://www.amazon.com/dp/B0BW8MZGR5",
+            "position": 25
+        },
+        {
+            "name": "Mandydov",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71V+nK-D4tL._AC_UL400_.jpg",
+                "description": "8 Pack Wide Headbands for Women Girls, Soft Stretchy Turban Headband Boho Hairband with Twisted Knots, Non-Slip Adjustable..."
+            },
+            "totalReviews": 5,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 6.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C8H7PH4T",
+            "url": "https://www.amazon.com/dp/B0C8H7PH4T",
+            "position": 26
+        },
+        {
+            "name": "Glaudmeiss",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71AnM8M4aiL._AC_UL400_.jpg",
+                "description": "9 PCS Large Metal Hair Clips, Flower Claw Clips for Thick Thin Hair, Tulip Big Hair Claw Clips, Cute Hair Clips for Women ..."
+            },
+            "totalReviews": 79,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 15.99,
+                "priceFraction": "99",
+                "beforePrice": 17.99
+            },
+            "asin": "B0BRGSB9X6",
+            "url": "https://www.amazon.com/dp/B0BRGSB9X6",
+            "position": 27
+        },
+        {
+            "name": "Fila",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61K2k-8GKZL._AC_UL400_.jpg",
+                "description": "Fila Women's Disruptor II Sneaker"
+            },
+            "totalReviews": 18495,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 58.69,
+                "priceFraction": "69",
+                "beforePrice": 70.0
+            },
+            "asin": "B07445FMQQ",
+            "url": "https://www.amazon.com/dp/B07445FMQQ",
+            "position": 28
+        },
+        {
+            "name": "Tskestvy",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61Q2rKXEGJL._AC_UL400_.jpg",
+                "description": "Tskestvy 4 Pieces Retro Sunglasses Vintage Sunglasses Small Square Rectangle 90s Glasses Trendy Y2K for Women Aesthetic"
+            },
+            "totalReviews": 3798,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 15.99,
+                "priceFraction": "99",
+                "beforePrice": 19.99
+            },
+            "asin": "B09GN2R5SF",
+            "url": "https://www.amazon.com/dp/B09GN2R5SF",
+            "position": 29
+        },
+        {
+            "name": "Tobeffect",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71-vCPOaMjL._AC_UL400_.jpg",
+                "description": "Tobeffect Wide Headbands for Women, 7'' Extra Large Turban Headband Boho Hairband Hair Twisted Knot Accessories, 6 Pack"
+            },
+            "totalReviews": 2213,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 16.99,
+                "priceFraction": "99",
+                "beforePrice": 33.99
+            },
+            "asin": "B09ZYB2H7L",
+            "url": "https://www.amazon.com/dp/B09ZYB2H7L",
+            "position": 30
+        },
+        {
+            "name": "WLLHYF",
+            "leftInStock": "Only 3 left in stock - order soon.",
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71-ggpjddyL._AC_UL400_.jpg",
+                "description": "WLLHYF 2PCS Daisy Headbands Hippie Sunflower Hair Ties Fashion Festival Wreath Head Set Multicolor Flower Crown Accessorie..."
+            },
+            "totalReviews": null,
+            "rating": null,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 4.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0CBP7TJSP",
+            "url": "https://www.amazon.com/dp/B0CBP7TJSP",
+            "position": 31
+        },
+        {
+            "name": "Gaiam",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81MSlvhTviL._AC_UL400_.jpg",
+                "description": "Gaiam Women's Classic Fitness Running Hat - Ponytail Hats with Quick-Dry Sweatband for Hiking & Summer Beach Vacation"
+            },
+            "totalReviews": 847,
+            "rating": 4.25,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 11.99,
+                "priceFraction": "99",
+                "beforePrice": 14.99
+            },
+            "asin": "B08SYXB8PF",
+            "url": "https://www.amazon.com/dp/B08SYXB8PF",
+            "position": 32
+        },
+        {
+            "name": "Bantoye",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71QsdQSsLXL._AC_UL400_.jpg",
+                "description": "100 Packs Assorted Color Butterfly Hair Clips, Bantoye Girls Beautiful Mini Butterfly Hair Clips Hair Accessories for Girl..."
+            },
+            "totalReviews": 14654,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 5.95,
+                "priceFraction": "95",
+                "beforePrice": null
+            },
+            "asin": "B07D525VZS",
+            "url": "https://www.amazon.com/dp/B07D525VZS",
+            "position": 33
+        },
+        {
+            "name": "GUESS",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61I2w8sKHDL._AC_UL400_.jpg",
+                "description": "GUESS Women's Toggle Logo Charm Necklace, Silver, One Size"
+            },
+            "totalReviews": 1229,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 20.75,
+                "priceFraction": "75",
+                "beforePrice": null
+            },
+            "asin": "B07HQTLD1K",
+            "url": "https://www.amazon.com/dp/B07HQTLD1K",
+            "position": 34
+        },
+        {
+            "name": "KAYZON",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/716xuYlBcKL._AC_UL400_.jpg",
+                "description": "KAYZON Wedding Hair Accessories for Kids, Flower Girl Hair Accessory, Princess Headpiece White Flower Headband Pearl for G..."
+            },
+            "totalReviews": 225,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C3D5G9GM",
+            "url": "https://www.amazon.com/dp/B0C3D5G9GM",
+            "position": 35
+        },
+        {
+            "name": "GRACE KARIN",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61z+iDhydkL._AC_UL400_.jpg",
+                "description": "GRACE KARIN Women's 50s Petticoat Skirts Tutu Crinoline Slips Underskirts CL008922"
+            },
+            "totalReviews": 25286,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 27.99,
+                "priceFraction": "99",
+                "beforePrice": 45.99
+            },
+            "asin": "B011RIZW6K",
+            "url": "https://www.amazon.com/dp/B011RIZW6K",
+            "position": 36
+        },
+        {
+            "name": "XTREND",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/810c7oyzx6L._AC_UL400_.jpg",
+                "description": "1 Piece Stretch Halo Turban for Men Fashion Vintage Twist Head Wraps Breathable Halo Tshirt Turban Modal and Satin Do-rag ..."
+            },
+            "totalReviews": 38,
+            "rating": 4.25,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 8.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C3VM47MP",
+            "url": "https://www.amazon.com/dp/B0C3VM47MP",
+            "position": 37
+        },
+        {
+            "name": "SOJOS",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/61Edv4bE0zL._AC_UL400_.jpg",
+                "description": "SOJOS Classic Square Oversized Sunglasses for Women Big Large Designer Style Sunnies SJ1082"
+            },
+            "totalReviews": 6134,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 14.99,
+                "priceFraction": "99",
+                "beforePrice": 22.99
+            },
+            "asin": "B07BXCTJQQ",
+            "url": "https://www.amazon.com/dp/B07BXCTJQQ",
+            "position": 38
+        },
+        {
+            "name": "BGTY",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71mMapFm3nL._AC_UL400_.jpg",
+                "description": "BGTY Vintage Harajuku Punk Cool Pants Key Chain Fashion Jewelry Accessory for Women Girls Cute Waist Chain"
+            },
+            "totalReviews": 1607,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 8.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B08L2ZR7LQ",
+            "url": "https://www.amazon.com/dp/B08L2ZR7LQ",
+            "position": 39
+        },
+        {
+            "name": "SOJOS",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51kizhLfCNL._AC_UL400_.jpg",
+                "description": "SOJOS Trendy Sunglasses for Women and Men"
+            },
+            "totalReviews": 2757,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.99,
+                "priceFraction": "99",
+                "beforePrice": 19.99
+            },
+            "asin": "B099229DYX",
+            "url": "https://www.amazon.com/dp/B099229DYX",
+            "position": 40
+        },
+        {
+            "name": "Magicsky",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71LVI5VkNKL._AC_UL400_.jpg",
+                "description": "28 PCS Hingwah Pearls and Acrylic Resin Hair Clips, Handmade Hair Barrettes, Marble Alligator bobby pins, Glitter Crystal ..."
+            },
+            "totalReviews": 11111,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": 13.99
+            },
+            "asin": "B081YHKTD9",
+            "url": "https://www.amazon.com/dp/B081YHKTD9",
+            "position": 41
+        },
+        {
+            "name": "Ooosonlu",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71D8Z8fapZL._AC_UL400_.jpg",
+                "description": "Ooosonlu Fashion Headbands for Women Girls Headbands Set Women headbands Pearl Hairband Non-slip Hair Bands Hair Accessori..."
+            },
+            "totalReviews": 101,
+            "rating": 4.35,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0BRVFS7N6",
+            "url": "https://www.amazon.com/dp/B0BRVFS7N6",
+            "position": 42
+        },
+        {
+            "name": "Lauren Friedman",
+            "leftInStock": "Only 9 left in stock - order soon.",
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/41UfurfjBSL._AC_UL400_.jpg",
+                "description": "50 Ways to Wear Accessories: (Fashion Books, Hair Accessories Book, Fashion Accessories Book)"
+            },
+            "totalReviews": 67,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 12.44,
+                "priceFraction": "44",
+                "beforePrice": 14.95
+            },
+            "asin": "145216648X",
+            "url": "https://www.amazon.com/dp/145216648X",
+            "position": 43
+        },
+        {
+            "name": "OQQ",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51d6OtIphjL._AC_UL400_.jpg",
+                "description": "OQQ Women's 3 Piece Tank Tops Ribbed Seamless Workout Exercise Shirts Yoga Crop Tops"
+            },
+            "totalReviews": 3411,
+            "rating": 4.45,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 17.42,
+                "priceFraction": "42",
+                "beforePrice": 21.99
+            },
+            "asin": "B0B1ZSJCKL",
+            "url": "https://www.amazon.com/dp/B0B1ZSJCKL",
+            "position": 44
+        },
+        {
+            "name": "Mehayi",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/51jPQBfzODL._AC_UL400_.jpg",
+                "description": "Mehayi 20 PCS Macaron Pearl Acrylic Resin Fashion Hair Clips Set, Cute Hair Barrettes Bobby Pins, Boho Fancy Hairpin Acces..."
+            },
+            "totalReviews": 4386,
+            "rating": 4.55,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.99,
+                "priceFraction": "99",
+                "beforePrice": 12.99
+            },
+            "asin": "B08668FQ8Y",
+            "url": "https://www.amazon.com/dp/B08668FQ8Y",
+            "position": 45
+        },
+        {
+            "name": "MISUPORVE",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81VsrMU6HxL._AC_UL400_.jpg",
+                "description": "MISUPORVE Boho Wide Headbands for Women Non Slip Stretch Cloth Workout Headband Yoga Running Sport Hairbands Fashion Head ..."
+            },
+            "totalReviews": 19,
+            "rating": 4.85,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 9.98,
+                "priceFraction": "98",
+                "beforePrice": null
+            },
+            "asin": "B0BY262HDH",
+            "url": "https://www.amazon.com/dp/B0BY262HDH",
+            "position": 46
+        },
+        {
+            "name": "Barbie",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/812ayKW43EL._AC_UL400_.jpg",
+                "description": "Barbie Fashions 2-Pack, 2 Outfits & 2 Accessories: Shirt, Shorts & Kimono, Sleeveless Sunflower Dress, Purse & Sunglasses,..."
+            },
+            "totalReviews": 195,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 10.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B09P9TCT1P",
+            "url": "https://www.amazon.com/dp/B09P9TCT1P",
+            "position": 47
+        },
+        {
+            "name": "Dr. Martens",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/71xlsLm+WlL._AC_UL400_.jpg",
+                "description": "Dr. Martens Leona Boot"
+            },
+            "totalReviews": 5903,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 159.75,
+                "priceFraction": "75",
+                "beforePrice": 200.0
+            },
+            "asin": "B01MT46WZQ",
+            "url": "https://www.amazon.com/dp/B01MT46WZQ",
+            "position": 48
+        },
+        {
+            "name": "Lutron",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/41Wij6hPyYL._AC_UL400_.jpg",
+                "description": "Lutron Caseta Wireless Pedestal for Pico Smart Remote, L-PED1-WH, White"
+            },
+            "totalReviews": 1487,
+            "rating": 4.95,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": true,
+            "amazonPrime": false,
+            "price": {
+                "discounted": true,
+                "priceSymbol": "$",
+                "currentPrice": 12.44,
+                "priceFraction": "44",
+                "beforePrice": null
+            },
+            "asin": "B003WGU2MU",
+            "url": "https://www.amazon.com/dp/B003WGU2MU",
+            "position": 49
+        },
+        {
+            "name": "GLBCC",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/81S8awJHtCL._AC_UL400_.jpg",
+                "description": "Pearl Knotted Headband for Women White Pearl Rhinestone Crystal Jeweled Embellished Hairband Fashion Elegant Ladies Wide T..."
+            },
+            "totalReviews": 25,
+            "rating": 4.65,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 13.99,
+                "priceFraction": "99",
+                "beforePrice": null
+            },
+            "asin": "B0C7BBB1NN",
+            "url": "https://www.amazon.com/dp/B0C7BBB1NN",
+            "position": 50
+        },
+        {
+            "name": "ARIAT",
+            "leftInStock": null,
+            "image": {
+                "url": "https://m.media-amazon.com/images/I/41CP5hhW7VL._AC_UL400_.jpg",
+                "description": "ARIAT Turquoise Concho Chain Belt - Ladies, Silver"
+            },
+            "totalReviews": 429,
+            "rating": 4.75,
+            "sponsored": false,
+            "amazonChoice": false,
+            "bestSeller": false,
+            "amazonPrime": false,
+            "price": {
+                "discounted": false,
+                "priceSymbol": "$",
+                "currentPrice": 52.0,
+                "priceFraction": "00",
+                "beforePrice": null
+            },
+            "asin": "B00U81S3LO",
+            "url": "https://www.amazon.com/dp/B00U81S3LO",
+            "position": 51
+        }
+    ],
+    "categories": [
+        {
+            "name": "Women's Fashion",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A7147440011&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_1&ds=v1%3AAPJYuWEXv048WjisHaSyZq7DGVYv8TEVgvNktLnariE",
+            "categoryId": "n/7147440011"
+        },
+        {
+            "name": "Women's Jewelry",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A7147440011%2Cn%3A7192394011&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_2&ds=v1%3AUs8Ngyoguhzthapl44qckwLCr3r50exQF9ggCjB4g%2BY",
+            "categoryId": "n/7192394011"
+        },
+        {
+            "name": "Women's Clothing",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A7147440011%2Cn%3A1040660&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_3&ds=v1%3AIqb7JpgVAzwSgFH%2F%2BSN%2BuzyluJ%2Fgfdu7nbjqPoKDL7M",
+            "categoryId": "n/1040660"
+        },
+        {
+            "name": "Women's Sunglasses",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A7147440011%2Cn%3A2474971011&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_4&ds=v1%3Ai0zzMQK6RbX3EZ2U4Mzv%2BHeJA7TbocWXBiLLUlrsJww",
+            "categoryId": "n/2474971011"
+        },
+        {
+            "name": "Books",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A283155&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_5&ds=v1%3AS31BiSyH1w9aUGkTN%2FlRxy1TE8imjiO1QZ3IqwImQis",
+            "categoryId": "n/283155"
+        },
+        {
+            "name": "Fashion Design",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A283155%2Cn%3A1844&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_6&ds=v1%3AjHBHLtWN3PMtnVEE0MBNoQRNou9NukC%2B0e%2FlUnV4H9A",
+            "categoryId": "n/1844"
+        },
+        {
+            "name": "Hair Care Products",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A11057241&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_7&ds=v1%3AfSD%2FafLZ8tCpHas3TYAcrsW2eDp3BrXoN2Xk93LIxU4",
+            "categoryId": "n/11057241"
+        },
+        {
+            "name": "Hair Styling Accessories",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A11057241%2Cn%3A11057971&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_8&ds=v1%3AcR8maHZirJah%2B%2B6ftJp5a%2F5hhoFXxmkXZLZVI61AwOk",
+            "categoryId": "n/11057971"
+        },
+        {
+            "name": "Men's Fashion",
+            "categoryLink_url": "https://www.amazon.com//s?k=fashion+and+accessories&rh=n%3A7147441011&s=relevanceblender&dc&language=en_US&qid=1691893660&rnid=2941120011&ref=sr_nr_n_9&ds=v1%3AxTL05w50zw7Pu4hQ7IXdwtWYq4Dn5xmi4an0tELKu1k",
+            "categoryId": "n/7147441011"
+        }
+    ]
+}

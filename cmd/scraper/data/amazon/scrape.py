@@ -40,10 +40,8 @@ def extract_description(path, driver, wait):
     listing_url = path
     driver.get(listing_url)
 
-    wait.until(
-        EC.presence_of_element_located((By.ID, "productTitle"))
-    )
-    
+    wait.until(EC.presence_of_element_located((By.ID, "productTitle")))
+
     feature_bullets_div = None
     try:
         feature_bullets_div = driver.find_element(By.ID, "feature-bullets")
@@ -175,7 +173,7 @@ def main():
     if args.action == "populate":
         url = os.getenv("AMAZON_RAPID_API_URL")
         categories = [
-            # "Electronics and Gadgets",
+            "Electronics and Gadgets",
             "Home and Kitchen",
             "Fashion and Accessories",
             "Books and Stationery",
