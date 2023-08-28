@@ -28,7 +28,7 @@
         "categories": [
             "Travel and Adventure"
         ],
-        "price": null,
+        "price": 10.50,
         "platform": "Amazon",
         "purchaseUrl": "https://www.amazon.com/dp/B08FBMM41L"
     },
