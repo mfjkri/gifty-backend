@@ -19,7 +19,9 @@ export default async function handleResetPassword(
   params: ResetPasswordParams
 ) {
   try {
-    const user = await User.findOne({ where: { email: params.email } });
+    const user = await User.findOne({
+      where: { email: params.email.toLowerCase() },
+    });
     if (!user) {
       return res.status(400).json({ message: ERROR_USER_NOT_FOUND });
     }

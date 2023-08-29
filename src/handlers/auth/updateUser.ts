@@ -21,7 +21,7 @@ export default async function handleUpdateUser(
       user.username = params.newUsername;
     }
     if (params.newEmail) {
-      user.email = params.newEmail;
+      user.email = params.newEmail.toLowerCase();
     }
     await user.save();
 

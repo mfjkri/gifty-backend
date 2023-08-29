@@ -18,7 +18,7 @@ export default async function handleRegister(
   try {
     if (
       (await User.findOne({ where: { username: params.username } })) ||
-      (await User.findOne({ where: { email: params.email } }))
+      (await User.findOne({ where: { email: params.email.toLowerCase() } }))
     ) {
       return res.status(400).json({ message: ERROR_USER_ALREADY_EXIST });
     }
@@ -30,7 +30,7 @@ export default async function handleRegister(
 
     const user = await User.create({
       username: params.username,
-      email: params.email,
+      email: params.email.toLowerCase(),
       password: params.password,
       birthday: new Date(params.birthday),
     });

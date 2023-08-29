@@ -20,7 +20,7 @@ export default async function handleLogin(
     const password = req.body.password as string;
     const email = req.body.email as string;
 
-    const user = await User.findOne({ where: { email } });
+    const user = await User.findOne({ where: { email: email.toLowerCase() } });
     if (!user) {
       return res.status(404).json({ message: ERROR_USER_DOES_NOT_EXIST });
     }
