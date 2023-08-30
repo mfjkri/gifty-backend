@@ -1,13 +1,19 @@
 import dotenv from "dotenv";
 
-type Config = {
-  ServerPort: number;
-  JWTSecretKey: string;
+type DBConfig = {
   DBHostname: string;
   DBPort: number;
   DBName: string;
   DBUsername: string;
   DBPassword: string;
+};
+
+type Config = DBConfig & {
+  ServerPort: number;
+  JWTSecretKey: string;
+
+  UseLocalDB: boolean;
+
   EmailUsername: string;
   EmailPassword: string;
 };
@@ -23,25 +29,45 @@ export function getConfig(): Config {
 
     JWT_SECRET_KEY,
 
+    USE_LOCAL_DB,
     DB_HOSTNAME,
     DB_PORT,
     DB_NAME,
     DB_USERNAME,
     DB_PASSWORD,
+    LOCAL_DB_HOSTNAME,
+    LOCAL_DB_PORT,
+    LOCAL_DB_NAME,
+    LOCAL_DB_USERNAME,
+    LOCAL_DB_PASSWORD,
 
     EMAIL_USERNAME,
     EMAIL_PASSWORD,
   } = process.env;
+  const dbConfig: DBConfig =
+    USE_LOCAL_DB === "true"
+      ? {
+          DBHostname: LOCAL_DB_HOSTNAME || "localhost",
+          DBPort: parseInt(LOCAL_DB_PORT || "5432"),
+          DBName: LOCAL_DB_NAME || "postgres",
+          DBUsername: LOCAL_DB_USERNAME || "postgres",
+          DBPassword: LOCAL_DB_PASSWORD || "postgres",
+        }
+      : {
+          DBHostname: DB_HOSTNAME || "localhost",
+          DBPort: parseInt(DB_PORT || "5432"),
+          DBName: DB_NAME || "postgres",
+          DBUsername: DB_USERNAME || "postgres",
+          DBPassword: DB_PASSWORD || "postgres",
+        };
+
   return {
     ServerPort: parseInt(SERVER_PORT || "8080"),
 
     JWTSecretKey: JWT_SECRET_KEY || "secret",
 
-    DBHostname: DB_HOSTNAME || "localhost",
-    DBPort: parseInt(DB_PORT || "5432"),
-    DBName: DB_NAME || "postgres",
-    DBUsername: DB_USERNAME || "postgres",
-    DBPassword: DB_PASSWORD || "postgres",
+    UseLocalDB: USE_LOCAL_DB === "true",
+    ...dbConfig,
 
     EmailUsername: EMAIL_USERNAME || "",
     EmailPassword: EMAIL_PASSWORD || "",
