@@ -2,21 +2,39 @@ import { Op, OrderItem } from "sequelize";
 import { Request, Response } from "express";
 
 import { getListing } from "./listing";
-import { ListWishlistedListingParams } from "../../params/listing/listWishlistedListing";
+import { ListMyWishlistedListingParams } from "../../params/listing/listMyWishlistedListing";
 import WishlistedListing from "../../models/wishlistedListing";
+import Person from "../../models/person";
+import User from "../../models/user";
 
 const SUCCESS_LIST_LISTING = "Listed listing successfully";
 
+const ERROR_PERSON_NOT_FOUND = "Person not found";
+const ERROR_USER_NOT_FOUND = "User not found";
 const ERROR_FAILED_TO_LIST_LISTING = "Failed to list listing";
 
-export default async function handleListWishlistedListing(
-  req: Request<any, any, any, ListWishlistedListingParams>,
+export default async function handleListMyWishlistedListing(
+  req: Request<any, any, any, ListMyWishlistedListingParams>,
   res: Response,
-  params: ListWishlistedListingParams
+  params: ListMyWishlistedListingParams
 ) {
   try {
+    const { userId, search } = req.query;
+    let user: User | null;
+    if (userId && userId !== 0) {
+      user = await User.findOne({ where: { id: userId } });
+    } else {
+      user = req.body.user;
+    }
+
+    if (!user) {
+      user = req.body.user;
+    }
+    if (!user) {
+      return res.status(400).json({ message: ERROR_USER_NOT_FOUND });
+    }
+
     const whereClause: any = {};
-    const { personId, search } = req.query;
     if (search) {
       whereClause[Op.or] = [
         { title: { [Op.iLike]: `%${search}%` } },
@@ -27,15 +45,19 @@ export default async function handleListWishlistedListing(
     const order: OrderItem[] = [];
     order.push(["updatedAt", "DESC"]);
 
+    const person = await Person.findOne({
+      where: {
+        userId: user.id,
+        ownerId: user.id,
+      },
+    });
+
+    if (!person) {
+      return res.status(400).json({ message: ERROR_PERSON_NOT_FOUND });
+    }
+
     const wishlistedListings = await WishlistedListing.findAll({
-      where: [
-        {
-          userId: req.body.user.id,
-          personId: personId,
-          isWishlisted: true,
-        },
-        // whereClause,
-      ],
+      where: [{ userId: user.id, personId: person.id, isWishlisted: true }],
       order,
     });
 
@@ -43,7 +65,7 @@ export default async function handleListWishlistedListing(
     for (const wishlistedListing of wishlistedListings) {
       const listingJoined = await getListing(
         wishlistedListing.listingId,
-        req.body.user,
+        user,
         res
       );
       if (listingJoined) {
@@ -56,7 +78,6 @@ export default async function handleListWishlistedListing(
       listing: listingsJoined,
     });
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: ERROR_FAILED_TO_LIST_LISTING, error });
   }
 }

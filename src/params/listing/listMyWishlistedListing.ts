@@ -1,14 +1,14 @@
 import { castParams } from "../params";
 
-export interface ListWishlistedListingParams {
+export interface ListMyWishlistedListingParams {
   search?: string;
-  personId?: number;
+  userId?: number;
 }
 
 export function parseParams(
   json: any
-): ListWishlistedListingParams | undefined {
-  return castParams<ListWishlistedListingParams>(json, typeMap);
+): ListMyWishlistedListingParams | undefined {
+  return castParams<ListMyWishlistedListingParams>(json, typeMap);
 }
 
 const typeMap: any = {
@@ -20,7 +20,7 @@ const typeMap: any = {
       opt: true,
       defaultValue: "",
     },
-    { json: "personId", js: "personId", typ: 0, opt: true, defaultValue: 0 },
+    { json: "userId", js: "userId", typ: 0, opt: true, defaultValue: 0 },
   ],
   additional: false,
 };

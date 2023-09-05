@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import ListGiftedListingRouter from "./listGiftedListing";
 import ListListingRouter from "./listListing";
+import ListMyWishlistedListingRouter from "./listMyWishlistedListing";
 import ListSavedListingRouter from "./listSavedListing";
 import ListWislistedListingRouter from "./listWishlistedListing";
 import RandomListingRouter from "./randomListing";
@@ -13,6 +14,7 @@ router.use(
   "/listing",
   ListGiftedListingRouter,
   ListListingRouter,
+  ListMyWishlistedListingRouter,
   ListSavedListingRouter,
   ListWislistedListingRouter,
   RandomListingRouter,

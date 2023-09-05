@@ -29,7 +29,6 @@ export default async function seed() {
             );
 
             for (const item of jsonData) {
-              console.log("Inserting", item.title, item);
               const creationDate = new Date(
                 dateNow - Math.floor(Math.random() * 10000000)
               );
@@ -47,6 +46,15 @@ export default async function seed() {
 
                 createdAt: creationDate,
                 updatedAt: creationDate,
+              }).catch((error) => {
+                console.log(
+                  "Error inserting",
+                  platform,
+                  category,
+                  item.title,
+                  error
+                );
+                throw error;
               });
             }
           }

@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import User from "../../models/user";
 import getTokens from "./jwt";
 import { RegisterParams } from "../../params/auth/register";
+import Person from "../../models/person";
 
 const SUCCESS_USER_REGISTERED = "User registered successfully";
 
@@ -33,6 +34,12 @@ export default async function handleRegister(
       email: params.email.toLowerCase(),
       password: params.password,
       birthday: new Date(params.birthday),
+    });
+    await Person.create({
+      ownerId: user.id,
+      name: user.username,
+      userId: user.id,
+      selfOwned: true,
     });
 
     const tokens = getTokens(user);

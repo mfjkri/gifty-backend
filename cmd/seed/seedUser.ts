@@ -1,3 +1,4 @@
+import Person from "../../src/models/person";
 import User from "../../src/models/user";
 
 const users = [
@@ -23,6 +24,12 @@ const users = [
 
 export default async function seed() {
   for (const user of users) {
-    await User.create(user);
+    const newUser = await User.create(user);
+    await Person.create({
+      ownerId: newUser.id,
+      name: newUser.username,
+      userId: newUser.id,
+      selfOwned: true,
+    });
   }
 }

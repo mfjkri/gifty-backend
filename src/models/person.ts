@@ -4,6 +4,7 @@ import {
   InferAttributes,
   InferCreationAttributes,
   Model,
+  NonAttribute,
   Sequelize,
 } from "sequelize";
 
@@ -15,7 +16,11 @@ export default class Person extends Model<
   InferCreationAttributes<Person>
 > {
   declare id: CreationOptional<number>;
-  declare userId: number;
+  declare ownerId: number;
+
+  declare userId: CreationOptional<number>;
+  declare readonly user?: NonAttribute<User>;
+  declare selfOwned: boolean;
 
   declare name: string;
 
@@ -31,13 +36,26 @@ export function init(db?: Sequelize) {
         primaryKey: true,
         autoIncrement: true,
       },
-      userId: {
+      ownerId: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
           model: User,
           key: "id",
         },
+      },
+
+      userId: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+          model: User,
+          key: "id",
+        },
+      },
+      selfOwned: {
+        type: DataTypes.BOOLEAN,
+        allowNull: true,
       },
 
       name: {
@@ -51,6 +69,11 @@ export function init(db?: Sequelize) {
     { sequelize: db || getDB() }
   );
 
+  Person.belongsTo(User, {
+    as: "owner",
+    foreignKey: "ownerId",
+    onDelete: "CASCADE",
+  });
   Person.belongsTo(User, {
     as: "user",
     foreignKey: "userId",

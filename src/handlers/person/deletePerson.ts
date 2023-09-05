@@ -22,7 +22,7 @@ export default async function handleDeletePerson(
     if (!person) {
       return res.status(400).json({ message: ERROR_PERSON_DOES_NOT_EXIST });
     }
-    if (person.userId !== user.id) {
+    if (person.ownerId !== user.id) {
       return res.status(400).json({ message: ERROR_MISSING_PERMISSIONS });
     }
     await person.destroy();

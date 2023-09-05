@@ -17,12 +17,18 @@ export default async function handleUpdatePerson(
 ) {
   try {
     const user: User = req.body.user;
-    const person = await Person.findOne({ where: { id: params.id } });
+    const person = await Person.findOne({
+      where: { id: params.id },
+      include: { model: User, as: "user" },
+    });
 
     if (!person) {
       return res.status(400).json({ message: ERROR_PERSON_DOES_NOT_EXIST });
     }
-    if (person.userId !== user.id) {
+    if (person.ownerId !== user.id) {
+      return res.status(400).json({ message: ERROR_MISSING_PERMISSIONS });
+    }
+    if (person.user) {
       return res.status(400).json({ message: ERROR_MISSING_PERMISSIONS });
     }
 
