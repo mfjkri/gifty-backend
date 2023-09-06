@@ -20,7 +20,9 @@ export default async function handleListUser(
     const whereClause: any = {};
     const searchParam = req.params.search;
     if (searchParam) {
-      whereClause[Op.or] = [{ username: { [Op.iLike]: `%${searchParam}%` } }];
+      whereClause[Op.or] = [
+        { username: { [Op.iLike]: `%${searchParam.toLowerCase()}%` } },
+      ];
     }
     const order: OrderItem[] = [];
     order.push(["username", "ASC"]);
@@ -36,7 +38,11 @@ export default async function handleListUser(
 
     const sanitisedUsers = users
       .filter((other_user) => other_user.id !== user.id)
-      .filter((other_user) => other_user.username.includes(searchParam))
+      .filter((other_user) =>
+        searchParam
+          ? other_user.username.includes(searchParam.toLowerCase())
+          : true
+      )
       .map((other_user) => ({
         id: other_user.id,
         username: other_user.username,
